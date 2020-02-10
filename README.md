@@ -31,3 +31,53 @@ Guitar effects pedal built on FPGA
 ## Integration
 * Pmod I2S2 + Basys 3
   * https://blog.digilentinc.com/where-to-plug-in-your-pmod-fpga/
+
+## Background
+* Effects
+  * https://en.wikipedia.org/wiki/Effects_unit
+  * https://en.wikipedia.org/wiki/Category:Audio_effects
+  * Distortion
+    * https://en.wikipedia.org/wiki/Distortion_(music)
+    * Clipping
+      * Performs truncation of peaks to a minimum or maximum limit
+      * Used to achieve general distortion, overdrive (soft clipping), "fuzz box" effects (near square wave)
+      * Non-linear
+      * Hard clipping is a complete cutoff beyond limit. Soft clipping is a reduced gain beyond limit.
+      * https://en.wikipedia.org/wiki/Clipping_(signal_processing)
+      * Extreme version of limiter: https://en.wikipedia.org/wiki/Limiter
+  * Dynamics
+    * Volume and amplitude effects
+    * Boost/volume effect
+      * Scale amplitude by a constant factor
+    * Compressor
+      * Reduce volume of loud sounds and increase volume of quiet sounds
+      * https://en.wikipedia.org/wiki/Dynamic_range_compression
+  * Filters
+    * Alter frequency content
+    * Equalizer
+      * An equalizer is a set of linear filters that strengthen ("boost") or weaken ("cut") specific frequency regions.
+      * https://en.wikipedia.org/wiki/Equalization_(audio)
+    * Talk box
+    * Wah-wah
+  * Modulation
+    * Chorus
+    * Flanger
+    * Phaser
+    * Ring modulator
+    * Tremelo
+    * Vibrato
+  * Pitch/frequency
+    * Pitch shifter
+      * Modifies pitch by altering frequency
+    * Harmonizer
+  * Time based
+    * Delay/echo
+      * Combines live data with previous data
+    * Reverb
+      * Large number of echos
+  * Feedback
+  * Pitch correction
+  * Bitcrusher
+    * Reduce fidelity by downsampling
+  
+ 

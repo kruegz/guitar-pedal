@@ -53,6 +53,7 @@ Guitar effects pedal built on FPGA
       * Reduce volume of loud sounds and increase volume of quiet sounds
       * https://en.wikipedia.org/wiki/Dynamic_range_compression
   * Filters
+    * https://github.com/ZipCPU/dspfilters
     * Alter frequency content
     * Equalizer
       * An equalizer is a set of linear filters that strengthen ("boost") or weaken ("cut") specific frequency regions.
@@ -79,5 +80,9 @@ Guitar effects pedal built on FPGA
   * Pitch correction
   * Bitcrusher
     * Reduce fidelity by downsampling
-  
+* Singal generation
+  * Sine wave
+    * https://zipcpu.com/dsp/2017/07/11/simplest-sinewave-generator.html
+  * CORDIC algorithms
+    * http://www.andraka.com/files/crdcsrvy.pdf
  

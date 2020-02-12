@@ -59,6 +59,8 @@ package my_testbench_pkg;
   class my_test extends uvm_test;
     `uvm_component_utils(my_test)
     
+    string report_id = "MY_TEST";
+    
     my_env env;
 
     function new(string name, uvm_component parent);
@@ -66,16 +68,19 @@ package my_testbench_pkg;
     endfunction
     
     function void build_phase(uvm_phase phase);
+      `uvm_info(report_id, "build_phase begin", UVM_LOW)
       env = my_env::type_id::create("env", this);
+      `uvm_info(report_id, "build_phase end", UVM_LOW)
     endfunction
     
     task run_phase(uvm_phase phase);
+      `uvm_info(report_id, "run_phase begin", UVM_LOW)
       // We raise objection to keep the test from completing
       phase.raise_objection(this);
       #10;
-      `uvm_warning("", "Hello World!")
       // We drop objection to allow the test to complete
       phase.drop_objection(this);
+      `uvm_info(report_id, "run_phase end", UVM_LOW)
     endtask
 
   endclass

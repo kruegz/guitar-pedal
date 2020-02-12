@@ -11,9 +11,9 @@
         "module",
         2
     ],
-    "_vcs_unit__3996809064": [
-        "_vcs_unit__3996809064",
-        "NCzrI",
+    "_vcs_unit__871140201": [
+        "_vcs_unit__871140201",
+        "ZIuLv",
         "module",
         3
     ],
@@ -35,28 +35,40 @@
         "module",
         6
     ],
-    "clip_filter_if": [
-        "clip_filter_if",
-        "ZiJzb",
+    "limiter_if": [
+        "limiter_if",
+        "EWZYS",
         "module",
         7
+    ],
+    "scaler_if": [
+        "scaler_if",
+        "PfEf9",
+        "module",
+        8
+    ],
+    "effect_controller_if": [
+        "effect_controller_if",
+        "dsNNQ",
+        "module",
+        9
     ],
     "my_testbench_pkg": [
         "my_testbench_pkg",
         "au1Ac",
         "module",
-        8
+        10
     ],
     "top": [
         "top",
         "Emx8S",
         "module",
-        9
+        11
     ],
     "...MASTER...": [
         "SIM",
         "amcQw",
         "module",
-        10
+        12
     ]
 }

@@ -16,20 +16,20 @@ module top;
   import my_testbench_pkg::*;
   
   // Instantiate the interface
-  clip_filter_if clip_filter_if0();
+  effect_controller_if effect_controller_if0();
   
   // Instantiate the DUT and connect it to the interface
-  clip_filter clip_filter0(.clip_filter_if0(clip_filter_if0));
+  effect_controller effect_controller0(.effect_controller_if0(effect_controller_if0));
   
   // Clock generator
   initial begin
-    clip_filter_if0.clock = 0;
-    forever #5 clip_filter_if0.clock = ~clip_filter_if0.clock;
+    effect_controller_if0.clock = 0;
+    forever #5 effect_controller_if0.clock = ~effect_controller_if0.clock;
   end
   
   initial begin
     // Place the interface into the UVM configuration database
-    uvm_config_db#(virtual clip_filter_if)::set(null, "*", "clip_filter_if", clip_filter_if0);
+    uvm_config_db#(virtual effect_controller_if)::set(null, "*", "effect_controller_if", effect_controller_if0);
     // Start the test
     run_test("my_test");
   end

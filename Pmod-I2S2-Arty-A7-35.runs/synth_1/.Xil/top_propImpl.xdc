@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/zachkrueger/Pmod-I2S2-master/arty-a7-35/proj/Pmod-I2S2-Arty-A7-35.srcs/constrs_1/imports/constraints/Basys3_Master.xdc rfile:../../../Pmod-I2S2-Arty-A7-35.srcs/constrs_1/imports/constraints/Basys3_Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/constrs_1/imports/constraints/Basys3_Master.xdc rfile:../../../Pmod-I2S2-Arty-A7-35.srcs/constrs_1/imports/constraints/Basys3_Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN R2 [get_ports reset]
 set_property src_info {type:XDC file:1 line:41 export:INPUT save:INPUT read:READ} [current_design]

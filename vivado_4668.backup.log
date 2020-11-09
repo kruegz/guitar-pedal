@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Nov  4 21:15:47 2020
+# Process ID: 4668
+# Current directory: C:/Users/zachkrueger/guitar-pedal
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3284 C:\Users\zachkrueger\guitar-pedal\Pmod-I2S2-Arty-A7-35.xpr
+# Log file: C:/Users/zachkrueger/guitar-pedal/vivado.log
+# Journal file: C:/Users/zachkrueger/guitar-pedal\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/zachkrueger/Pmod-I2S2-master/arty-a7-35/proj' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [filemgmt 56-1] Board Part Repository Path: Directory not found as 'C:/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'; using path 'C:/Users/zachkrueger/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/Users/repo'; using path 'C:/Users/zachkrueger/Pmod-I2S2-master/repo' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/zachkrueger/Pmod-I2S2-master/repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 814.227 ; gain = 231.055
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Nov  4 21:17:09 2020] Launched synth_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+[Wed Nov  4 21:17:09 2020] Launched impl_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 976.441 ; gain = 12.094
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714820A
+set_property PROGRAM.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183714820A

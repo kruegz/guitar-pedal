@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/zachkrueger/Pmod-I2S2-master/arty-a7-35/proj/Pmod-I2S2-Arty-A7-35.runs/synth_1'
+HD_PWD='C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Wed Nov  4 21:17:12 2020
-# Process ID: 4156
+# Start of session at: Mon Nov 16 21:09:50 2020
+# Process ID: 3908
 # Current directory: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/top.vds
@@ -19,26 +19,36 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4756 
+INFO: Helper process launched with PID 9208 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 838.305 ; gain = 177.371
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 838.816 ; gain = 178.594
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/imports/hdl/top.v:20]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/imports/hdl/top.v:21]
 	Parameter NUMBER_OF_SWITCHES bound to: 4 - type: integer 
 	Parameter RESET_POLARITY bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/.Xil/Vivado-4156-ZACHKRUEGERD104/realtime/clk_wiz_0_stub.vhdl:13]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/.Xil/Vivado-3908-ZACHKRUEGERD104/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/.Xil/Vivado-3908-ZACHKRUEGERD104/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Seven_segment_LED_Display_Controller' [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/new/seven_segment.sv:5]
+INFO: [Synth 8-226] default block is never used [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/new/seven_segment.sv:79]
+WARNING: [Synth 8-6014] Unused sequential element one_second_counter_reg was removed.  [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/new/seven_segment.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'Seven_segment_LED_Display_Controller' (2#1) [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/new/seven_segment.sv:5]
 INFO: [Synth 8-6157] synthesizing module 'axis_i2s2' [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/imports/hdl/axis_i2s2.v:24]
 	Parameter EOF_COUNT bound to: 9'b111000111 
-INFO: [Synth 8-6155] done synthesizing module 'axis_i2s2' (1#1) [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/imports/hdl/axis_i2s2.v:24]
-WARNING: [Synth 8-689] width (24) of port connection 'rx_axis_m_data' does not match port width (32) of module 'axis_i2s2' [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/imports/hdl/top.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'axis_i2s2' (3#1) [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/imports/hdl/axis_i2s2.v:24]
+WARNING: [Synth 8-689] width (24) of port connection 'rx_axis_m_data' does not match port width (32) of module 'axis_i2s2' [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/imports/hdl/top.v:99]
 INFO: [Synth 8-6157] synthesizing module 'axis_volume_controller' [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/imports/hdl/axis_volume_controller.v:21]
 	Parameter SWITCH_WIDTH bound to: 4 - type: integer 
 	Parameter DATA_WIDTH bound to: 24 - type: integer 
 	Parameter MULTIPLIER_WIDTH bound to: 24 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axis_volume_controller' (2#1) [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/imports/hdl/axis_volume_controller.v:21]
-INFO: [Synth 8-6155] done synthesizing module 'top' (3#1) [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/imports/hdl/top.v:20]
+INFO: [Synth 8-6157] synthesizing module 'limiter' [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/new/limiter.sv:59]
+INFO: [Synth 8-6155] done synthesizing module 'limiter' (4#1) [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/new/limiter.sv:59]
+INFO: [Synth 8-6155] done synthesizing module 'axis_volume_controller' (5#1) [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/imports/hdl/axis_volume_controller.v:21]
+WARNING: [Synth 8-5788] Register seconds_reg in module top is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/imports/hdl/top.v:65]
+WARNING: [Synth 8-5788] Register delay_reg in module top is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/imports/hdl/top.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'top' (6#1) [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/imports/hdl/top.v:21]
+WARNING: [Synth 8-3301] Unused top level parameter/generic DATA_WIDTH
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 903.879 ; gain = 242.945
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 903.637 ; gain = 243.414
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -51,10 +61,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 903.879 ; gain = 242.945
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 903.637 ; gain = 243.414
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 903.879 ; gain = 242.945
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 903.637 ; gain = 243.414
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -68,20 +78,20 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1029.781 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1037.473 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1029.781 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1037.473 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1029.781 ; gain = 368.848
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1037.473 ; gain = 377.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1029.781 ; gain = 368.848
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1037.473 ; gain = 377.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -90,12 +100,12 @@ Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/z
 Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
 Applied set_property DONT_TOUCH = true for m_clk. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1029.781 ; gain = 368.848
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1037.473 ; gain = 377.250
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 6 [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/imports/hdl/axis_volume_controller.v:77]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 6 [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/imports/hdl/axis_volume_controller.v:78]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 6 [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/imports/hdl/axis_volume_controller.v:99]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 6 [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/imports/hdl/axis_volume_controller.v:100]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1029.781 ; gain = 368.848
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1037.473 ; gain = 377.250
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -109,12 +119,15 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   3 Input     48 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
 	   2 Input      9 Bit       Adders := 1     
 +---Registers : 
 	               48 Bit    Registers := 2     
-	               32 Bit    Registers := 4     
-	               24 Bit    Registers := 4     
+	               32 Bit    Registers := 5     
+	               24 Bit    Registers := 6     
 	               18 Bit    Registers := 4     
+	               16 Bit    Registers := 1     
 	               15 Bit    Registers := 2     
 	                9 Bit    Registers := 7     
 	                4 Bit    Registers := 3     
@@ -123,9 +136,11 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     48 Bit        Muxes := 3     
 	   3 Input     32 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
 	   4 Input     24 Bit        Muxes := 2     
-	   2 Input     24 Bit        Muxes := 3     
+	   2 Input     24 Bit        Muxes := 6     
+	   2 Input     16 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 10    
 	   4 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
@@ -135,6 +150,21 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 2     
+Module Seven_segment_LED_Display_Controller 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
 Module axis_i2s2 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -152,12 +182,19 @@ Detailed RTL Component Info :
 	   2 Input     24 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 8     
 	   4 Input      1 Bit        Muxes := 1     
+Module limiter 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 3     
 Module axis_volume_controller 
 Detailed RTL Component Info : 
 +---Adders : 
 	   3 Input     48 Bit       Adders := 2     
 +---Registers : 
 	               48 Bit    Registers := 2     
+	               24 Bit    Registers := 1     
 	               18 Bit    Registers := 4     
 	               15 Bit    Registers := 2     
 	                9 Bit    Registers := 6     
@@ -183,8 +220,104 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[31]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[30]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[29]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[28]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[27]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[26]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[25]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[24]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[23]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[21]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[22]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[20]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[19]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[18]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[17]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[15]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[16]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[14]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[12]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[13]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[11]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[10]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[9]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[8]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[7]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[6]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[5]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[4]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[3]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[2]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[1]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_reg[0]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\seconds_reg[1]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\seconds_reg[5]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\seconds_reg[9]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\seconds_reg[13]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\seconds_reg[0]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\seconds_reg[4]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\seconds_reg[8]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\seconds_reg[12]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\seconds_reg[2]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\seconds_reg[6]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\seconds_reg[10]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\seconds_reg[14]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\seconds_reg[3]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\seconds_reg[7]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\seconds_reg[11]_C )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\seconds_reg[15]_C )
+WARNING: [Synth 8-3332] Sequential element (delay_reg[31]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[30]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[29]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[28]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[27]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[26]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[25]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[24]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[23]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[22]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[21]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[20]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[19]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[18]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[17]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[16]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[15]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[14]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[13]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[12]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[11]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[10]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[9]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[8]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[7]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[6]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[5]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[4]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[3]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[2]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[1]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (delay_reg[0]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[15]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[14]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[13]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[12]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[11]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[10]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[9]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[8]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[7]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[6]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[5]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[4]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[3]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[2]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[1]_C) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (seconds_reg[0]_C) is unused and will be removed from module top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1029.781 ; gain = 368.848
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1037.473 ; gain = 377.250
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -198,7 +331,7 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'm_clk/axis_clk' to pin 'm_clk/bbstub_axis_clk/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1048.570 ; gain = 387.637
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1052.121 ; gain = 391.898
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -210,7 +343,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1071.086 ; gain = 410.152
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1075.145 ; gain = 414.922
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -228,7 +361,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1076.871 ; gain = 415.938
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1080.930 ; gain = 420.707
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -241,7 +374,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1076.871 ; gain = 415.938
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1080.930 ; gain = 420.707
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -253,7 +386,7 @@ Report RTL Partitions:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1076.871 ; gain = 415.938
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1080.930 ; gain = 420.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -267,54 +400,63 @@ Report BlackBoxes:
 +------+--------------+----------+
 
 Report Cell Usage: 
-+------+-----------------+------+
-|      |Cell             |Count |
-+------+-----------------+------+
-|1     |clk_wiz_0_bbox_0 |     1|
-|2     |CARRY4           |    14|
-|3     |DSP48E1          |     6|
-|4     |DSP48E1_1        |     4|
-|5     |LUT1             |     2|
-|6     |LUT2             |    35|
-|7     |LUT3             |    97|
-|8     |LUT4             |   137|
-|9     |LUT5             |    12|
-|10    |LUT6             |    11|
-|11    |FDRE             |   271|
-|12    |IBUF             |     6|
-|13    |OBUF             |     7|
-+------+-----------------+------+
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz_0 |     1|
+|2     |CARRY4    |    31|
+|3     |DSP48E1   |     6|
+|4     |DSP48E1_1 |     4|
+|5     |LUT1      |     4|
+|6     |LUT2      |   104|
+|7     |LUT3      |   190|
+|8     |LUT4      |   158|
+|9     |LUT5      |    16|
+|10    |LUT6      |    21|
+|11    |FDCE      |    20|
+|12    |FDPE      |    48|
+|13    |FDRE      |   319|
+|14    |LDC       |    48|
+|15    |IBUF      |     6|
+|16    |OBUF      |    18|
++------+----------+------+
 
 Report Instance Areas: 
-+------+---------+-----------------------+------+
-|      |Instance |Module                 |Cells |
-+------+---------+-----------------------+------+
-|1     |top      |                       |   603|
-|2     |  m_i2s2 |axis_i2s2              |   309|
-|3     |  m_vc   |axis_volume_controller |   280|
-+------+---------+-----------------------+------+
++------+-------------+-------------------------------------+------+
+|      |Instance     |Module                               |Cells |
++------+-------------+-------------------------------------+------+
+|1     |top          |                                     |   994|
+|2     |  s          |Seven_segment_LED_Display_Controller |    41|
+|3     |  m_i2s2     |axis_i2s2                            |   309|
+|4     |  m_vc       |axis_volume_controller               |   330|
+|5     |    limiter0 |limiter                              |    26|
++------+-------------+-------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1076.871 ; gain = 415.938
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1080.930 ; gain = 420.707
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 1076.871 ; gain = 290.035
-Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1076.871 ; gain = 415.938
+Synthesis finished with 0 errors, 0 critical warnings and 48 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 1080.930 ; gain = 286.871
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1080.930 ; gain = 420.707
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 89 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1095.918 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1097.008 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 48 instances were transformed.
+  LDC => LDCE: 48 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-26 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+81 Infos, 53 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 1095.918 ; gain = 669.766
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1095.918 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1097.008 ; gain = 670.402
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1097.008 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Nov  4 21:17:58 2020...
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 16 21:10:44 2020...

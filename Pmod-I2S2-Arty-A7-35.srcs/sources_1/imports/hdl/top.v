@@ -17,6 +17,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
+
 module top #(
 	parameter NUMBER_OF_SWITCHES = 4,
 	parameter RESET_POLARITY = 0
@@ -32,7 +33,10 @@ module top #(
     output wire rx_mclk,
     output wire rx_lrck,
     output wire rx_sclk,
-    input  wire rx_data
+    input  wire rx_data,
+    
+    output wire [3:0] Anode_Activate, // anode signals of the 7-segment LED display
+    output wire [6:0] LED_out// cathode patterns of the 7-segment LED display
 );
     wire axis_clk;
     
@@ -45,13 +49,43 @@ module top #(
     wire axis_rx_valid;
     wire axis_rx_ready;
     wire axis_rx_last;
+    
+    //logic clk; // 100 Mhz clock source on Basys 3 FPGA
+    //logic reset; // reset
+    reg [15:0] seconds = 0; // number to be displayed
+    //reg [3:0] Anode_Activate; // anode signals of the 7-segment LED display
+    //reg [6:0] LED_out;// cathode patterns of the 7-segment LED display
+    reg [31:0] delay = 0;
 
 	wire resetn = (reset == RESET_POLARITY) ? 1'b0 : 1'b1;
+	
+	always @(posedge clk, negedge resetn) begin
+	   if (resetn) begin
+	       if (delay == 32'd100000000) begin
+               seconds <= seconds + 1;
+               delay <= 0;
+           end else begin
+               delay <= delay + 1;
+           end
+	   end else begin
+	       seconds <= 0;
+	       delay <= 0;
+	   end
+	   
+	   
+	end
+	
+	reg [31:0] m_axis_data_d = 0;
+	always @(posedge seconds) begin
+	   //m_axis_data_d <= seconds;
+	end
 	
     clk_wiz_0 m_clk (
         .clk_in1(clk),
         .axis_clk(axis_clk)
     );
+    
+    Seven_segment_LED_Display_Controller s(clk, reset, seconds, Anode_Activate, LED_out);
 
     axis_i2s2 m_i2s2 (
         .axis_clk(axis_clk),
@@ -82,6 +116,7 @@ module top #(
 		.DATA_WIDTH(24)
 	) m_vc (
         .clk(axis_clk),
+        .rst_n(~reset),
         .sw(sw),
         
         .s_axis_data(axis_rx_data),
@@ -94,4 +129,11 @@ module top #(
         .m_axis_ready(axis_tx_ready),
         .m_axis_last(axis_tx_last)
     );
+    
+    
+    
+    
+    
 endmodule
+
+

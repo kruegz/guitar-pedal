@@ -2,28 +2,197 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sun Nov  8 18:25:14 2020
-# Process ID: 1268
+# Start of session at: Thu Nov 19 21:33:43 2020
+# Process ID: 3704
 # Current directory: C:/Users/zachkrueger/guitar-pedal
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8996 C:\Users\zachkrueger\guitar-pedal\Pmod-I2S2-Arty-A7-35.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4080 C:\Users\zachkrueger\guitar-pedal\Pmod-I2S2-Arty-A7-35.xpr
 # Log file: C:/Users/zachkrueger/guitar-pedal/vivado.log
 # Journal file: C:/Users/zachkrueger/guitar-pedal\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.xpr
-update_compile_order -fileset sources_1
-open_hw
-connect_hw_server
-disconnect_hw_server localhost:3121
-connect_hw_server
-disconnect_hw_server localhost:3121
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+launch_simulation
+source testbench.tcl
+run 1 ms
+run 1 ms
+close_sim
+launch_simulation
+source testbench.tcl
+run 1 ms
+restart
+run 1 ms
+current_wave_config {Untitled 2}
+add_wave {{/testbench/top0/m_vc/limiter0/clock}} {{/testbench/top0/m_vc/limiter0/reset_n}} {{/testbench/top0/m_vc/limiter0/enable}} {{/testbench/top0/m_vc/limiter0/limit}} {{/testbench/top0/m_vc/limiter0/polarity}} {{/testbench/top0/m_vc/limiter0/in}} {{/testbench/top0/m_vc/limiter0/out}} 
+restart
+run 1 ms
+restart
+run 1 ms
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source testbench.tcl
+run 1 us
+run 1 us
+run 100 us
+close_sim
+launch_simulation
+source testbench.tcl
+current_wave_config {Untitled 4}
+add_wave {{/testbench/avc0/clk}} {{/testbench/avc0/rst_n}} {{/testbench/avc0/sw}} {{/testbench/avc0/s_axis_data}} {{/testbench/avc0/s_axis_valid}} {{/testbench/avc0/s_axis_ready}} {{/testbench/avc0/s_axis_last}} {{/testbench/avc0/m_axis_data}} {{/testbench/avc0/m_axis_valid}} {{/testbench/avc0/m_axis_ready}} {{/testbench/avc0/m_axis_last}} {{/testbench/avc0/data}} {{/testbench/avc0/sw_sync_r}} {{/testbench/avc0/sw_sync}} {{/testbench/avc0/multiplier}} {{/testbench/avc0/m_select}} {{/testbench/avc0/m_new_word}} {{/testbench/avc0/m_new_packet}} {{/testbench/avc0/s_select}} {{/testbench/avc0/s_new_word}} {{/testbench/avc0/s_new_packet}} {{/testbench/avc0/s_new_packet_r}} {{/testbench/avc0/limit}} {{/testbench/avc0/data_out}} {{/testbench/avc0/m_axis_data_d}} {{/testbench/avc0/m_axis_data_w}} {{/testbench/avc0/SWITCH_WIDTH}} {{/testbench/avc0/DATA_WIDTH}} {{/testbench/avc0/MULTIPLIER_WIDTH}} 
+restart
+run 100 us
+close_sim
+launch_simulation
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+restart
+run 100 us
+save_wave_config {C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg
+set_property xsim.view C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg
+source testbench.tcl
+restart
+run 100 us
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/avc0/m_select}} {{/testbench/avc0/m_new_word}} {{/testbench/avc0/m_new_packet}} {{/testbench/avc0/s_select}} {{/testbench/avc0/s_new_word}} {{/testbench/avc0/s_new_packet}} {{/testbench/avc0/s_new_packet_r}} 
+restart
+run 100 us
+save_wave_config {C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg
+source testbench.tcl
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/avc0/limiter0/clock}} {{/testbench/avc0/limiter0/reset_n}} {{/testbench/avc0/limiter0/enable}} {{/testbench/avc0/limiter0/limit}} {{/testbench/avc0/limiter0/polarity}} {{/testbench/avc0/limiter0/in}} {{/testbench/avc0/limiter0/out}} 
+restart
+run 100 us
+save_wave_config {C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg
+source testbench.tcl
+restart
+run 10 us
+save_wave_config {C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg
+source testbench.tcl
+save_wave_config {C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg
+source testbench.tcl
+restart
+run 1 us
+save_wave_config {C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg
+source testbench.tcl
+restart
+run 1 us
+run 1 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg
+source testbench.tcl
+run 1 us

@@ -1,0 +1,696 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Nov  8 18:25:14 2020
+# Process ID: 1268
+# Current directory: C:/Users/zachkrueger/guitar-pedal
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8996 C:\Users\zachkrueger\guitar-pedal\Pmod-I2S2-Arty-A7-35.xpr
+# Log file: C:/Users/zachkrueger/guitar-pedal/vivado.log
+# Journal file: C:/Users/zachkrueger/guitar-pedal\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/zachkrueger/Pmod-I2S2-master/repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1085.184 ; gain = 168.039
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714820A
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2086.887 ; gain = 1001.703
+set_property PROGRAM.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Sun Nov  8 22:53:57 2020] Launched synth_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+[Sun Nov  8 22:53:57 2020] Launched impl_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/runme.log
+set_property target_language Verilog [current_project]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/imports/hdl/axis_volume_controller.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/imports/hdl/top.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+reset_run synth_1
+reset_run clk_wiz_0_synth_1
+launch_runs impl_1 -to_step write_bitstream
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+[Sun Nov  8 22:56:32 2020] Launched clk_wiz_0_synth_1, synth_1...
+Run output will be captured here:
+clk_wiz_0_synth_1: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/clk_wiz_0_synth_1/runme.log
+synth_1: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+[Sun Nov  8 22:56:32 2020] Launched impl_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Sun Nov  8 23:07:05 2020] Launched synth_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+[Sun Nov  8 23:07:05 2020] Launched impl_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183714820A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714820A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183714820A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714820A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183714820A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714820A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon Nov  9 21:33:36 2020] Launched synth_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+[Mon Nov  9 21:33:36 2020] Launched impl_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183714820A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714820A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon Nov  9 21:41:01 2020] Launched synth_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+[Mon Nov  9 21:41:02 2020] Launched impl_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon Nov  9 21:52:09 2020] Launched synth_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+[Mon Nov  9 21:52:09 2020] Launched impl_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon Nov  9 21:55:27 2020] Launched synth_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+[Mon Nov  9 21:55:27 2020] Launched impl_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183714820A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714820A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Nov 11 14:46:08 2020] Launched synth_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+[Wed Nov 11 14:46:08 2020] Launched impl_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'm_clk'
+INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-35] Removing redundant IBUF, m_clk/inst/clkin1_ibufg, from the path connected to top-level port: clk 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'm_clk/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [c:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'm_clk/inst'
+Finished Parsing XDC File [c:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'm_clk/inst'
+Parsing XDC File [c:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'm_clk/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3153.793 ; gain = 548.988
+Finished Parsing XDC File [c:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'm_clk/inst'
+Parsing XDC File [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/constrs_1/imports/constraints/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/constrs_1/imports/constraints/Basys3_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3153.793 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 3177.637 ; gain = 784.148
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*tx_dagta*" ]
+WARNING: [Vivado 12-507] No nets matched '*tx_dagta*'.
+WARNING: [Coretcl 2-1122] No objects found.
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*tx_data*" ]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+connect_debug_port u_ila_0/clk [get_nets [list m_clk/inst/axis_clk ]]
+set_property port_width 24 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {axis_tx_data[0]} {axis_tx_data[1]} {axis_tx_data[2]} {axis_tx_data[3]} {axis_tx_data[4]} {axis_tx_data[5]} {axis_tx_data[6]} {axis_tx_data[7]} {axis_tx_data[8]} {axis_tx_data[9]} {axis_tx_data[10]} {axis_tx_data[11]} {axis_tx_data[12]} {axis_tx_data[13]} {axis_tx_data[14]} {axis_tx_data[15]} {axis_tx_data[16]} {axis_tx_data[17]} {axis_tx_data[18]} {axis_tx_data[19]} {axis_tx_data[20]} {axis_tx_data[21]} {axis_tx_data[22]} {axis_tx_data[23]} ]]
+set_property target_constrs_file C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/constrs_1/imports/constraints/Basys3_Master.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3275.500 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 3282.527 ; gain = 7.027
+[Wed Nov 11 14:59:21 2020] Launched impl_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Nov-11 15:04:36
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Nov-11 15:04:59
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Nov-11 15:05:25
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Nov-11 15:05:27
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Nov-11 15:05:30
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Nov-11 15:05:32
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Nov-11 15:06:11
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Nov-11 15:07:07
+set_property TRIGGER_COMPARE_VALUE neq24'hXX_XXXX [get_hw_probes axis_tx_data -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Nov-11 15:08:18
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0 ]
+endgroup
+connect_debug_port u_ila_0/clk [get_nets [list m_clk/inst/axis_clk ]]
+set_property port_width 24 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {axis_tx_data[0]} {axis_tx_data[1]} {axis_tx_data[2]} {axis_tx_data[3]} {axis_tx_data[4]} {axis_tx_data[5]} {axis_tx_data[6]} {axis_tx_data[7]} {axis_tx_data[8]} {axis_tx_data[9]} {axis_tx_data[10]} {axis_tx_data[11]} {axis_tx_data[12]} {axis_tx_data[13]} {axis_tx_data[14]} {axis_tx_data[15]} {axis_tx_data[16]} {axis_tx_data[17]} {axis_tx_data[18]} {axis_tx_data[19]} {axis_tx_data[20]} {axis_tx_data[21]} {axis_tx_data[22]} {axis_tx_data[23]} ]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3461.480 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.155 . Memory (MB): peak = 3482.801 ; gain = 21.215
+[Wed Nov 11 15:16:35 2020] Launched impl_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {axis_tx_data} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Nov-11 15:22:56
+set_property TRIGGER_COMPARE_VALUE eq24'hXX_XXXX [get_hw_probes axis_tx_data -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtoolstcl 44-152] hw_probe 'axis_tx_data[23:0]' does not have property 'TRIGGER_COMPARE_VALUE'
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Nov-11 15:23:07
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Nov-11 15:23:09
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Nov-11 15:23:51
+delete_debug_core [get_debug_cores {u_ila_0 }]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*axis_data*" ]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+connect_debug_port u_ila_0/clk [get_nets [list m_clk/inst/axis_clk ]]
+set_property port_width 24 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {m_vc/m_axis_data[0]} {m_vc/m_axis_data[1]} {m_vc/m_axis_data[2]} {m_vc/m_axis_data[3]} {m_vc/m_axis_data[4]} {m_vc/m_axis_data[5]} {m_vc/m_axis_data[6]} {m_vc/m_axis_data[7]} {m_vc/m_axis_data[8]} {m_vc/m_axis_data[9]} {m_vc/m_axis_data[10]} {m_vc/m_axis_data[11]} {m_vc/m_axis_data[12]} {m_vc/m_axis_data[13]} {m_vc/m_axis_data[14]} {m_vc/m_axis_data[15]} {m_vc/m_axis_data[16]} {m_vc/m_axis_data[17]} {m_vc/m_axis_data[18]} {m_vc/m_axis_data[19]} {m_vc/m_axis_data[20]} {m_vc/m_axis_data[21]} {m_vc/m_axis_data[22]} {m_vc/m_axis_data[23]} ]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3619.961 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.098 . Memory (MB): peak = 3641.125 ; gain = 16.871
+[Wed Nov 11 15:26:07 2020] Launched impl_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {m_vc/m_axis_data} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Nov-11 15:28:49
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Nov-11 15:29:11
+delete_debug_core [get_debug_cores {u_ila_0 }]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*data*" ]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*axis_data*" ]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0 ]
+endgroup
+connect_debug_port u_ila_0/clk [get_nets [list m_clk/inst/axis_clk ]]
+set_property port_width 24 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {m_vc/m_axis_data[0]} {m_vc/m_axis_data[1]} {m_vc/m_axis_data[2]} {m_vc/m_axis_data[3]} {m_vc/m_axis_data[4]} {m_vc/m_axis_data[5]} {m_vc/m_axis_data[6]} {m_vc/m_axis_data[7]} {m_vc/m_axis_data[8]} {m_vc/m_axis_data[9]} {m_vc/m_axis_data[10]} {m_vc/m_axis_data[11]} {m_vc/m_axis_data[12]} {m_vc/m_axis_data[13]} {m_vc/m_axis_data[14]} {m_vc/m_axis_data[15]} {m_vc/m_axis_data[16]} {m_vc/m_axis_data[17]} {m_vc/m_axis_data[18]} {m_vc/m_axis_data[19]} {m_vc/m_axis_data[20]} {m_vc/m_axis_data[21]} {m_vc/m_axis_data[22]} {m_vc/m_axis_data[23]} ]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3641.125 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.150 . Memory (MB): peak = 3644.426 ; gain = 3.301
+[Wed Nov 11 15:33:58 2020] Launched impl_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Nov-11 15:40:16
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Nov-11 15:40:24
+delete_debug_core [get_debug_cores {u_ila_0 }]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*sw*" ]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0 ]
+endgroup
+connect_debug_port u_ila_0/clk [get_nets [list m_clk/inst/axis_clk ]]
+set_property port_width 4 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {sw_IBUF[0]} {sw_IBUF[1]} {sw_IBUF[2]} {sw_IBUF[3]} ]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3732.051 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.206 . Memory (MB): peak = 3732.051 ; gain = 0.000
+[Wed Nov 11 15:51:11 2020] Launched impl_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {sw_IBUF} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Nov-11 15:57:15
+delete_debug_core [get_debug_cores {u_ila_0 }]
+file mkdir C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/new
+close [ open C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/new/limiter.sv w ]
+add_files C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/new/limiter.sv
+update_compile_order -fileset sources_1
+save_constraints
+reset_run synth_1
+launch_runs synth_1
+CRITICAL WARNING: [HDL 9-806] Syntax error near "*)". [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/imports/hdl/top.v:208]
+[Wed Nov 11 20:12:33 2020] Launched synth_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+update_compile_order -fileset sources_1
+set_property generic {NUMBER_OF_SWITCHES=4 RESET_POLARITY=0 DATA_WIDTH=24} [current_fileset]
+reset_run synth_1
+launch_runs synth_1
+CRITICAL WARNING: [HDL 9-806] Syntax error near "*)". [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/imports/hdl/top.v:210]
+[Wed Nov 11 20:15:28 2020] Launched synth_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1
+CRITICAL WARNING: [HDL 9-806] Syntax error near "*)". [C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/imports/hdl/top.v:217]
+[Wed Nov 11 20:19:08 2020] Launched synth_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+[Wed Nov 11 20:23:36 2020] Launched synth_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1
+[Wed Nov 11 20:25:25 2020] Launched synth_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1
+[Wed Nov 11 20:27:07 2020] Launched synth_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1
+[Wed Nov 11 20:28:03 2020] Launched synth_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1
+[Wed Nov 11 20:31:37 2020] Launched synth_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1
+[Wed Nov 11 20:34:51 2020] Launched synth_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1
+[Wed Nov 11 20:43:39 2020] Launched synth_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+launch_runs impl_1
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Nov 11 20:44:51 2020] Launched impl_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+[Wed Nov 11 20:46:30 2020] Launched impl_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/runme.log
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183714820A
+ERROR: [Labtoolstcl 44-514] HW Server shutdown. Disconnecting from server: localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3766.375 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714820A
+set_property PROGRAM.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+[Thu Nov 12 20:20:05 2020] Launched impl_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+[Thu Nov 12 20:22:11 2020] Launched impl_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Nov 12 20:27:30 2020] Launched synth_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+[Thu Nov 12 20:27:30 2020] Launched impl_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Nov 12 20:32:56 2020] Launched synth_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+[Thu Nov 12 20:32:56 2020] Launched impl_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Nov 12 20:35:53 2020] Launched synth_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+[Thu Nov 12 20:35:53 2020] Launched impl_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close [ open C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/new/seven_segment.sv w ]
+add_files C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/new/seven_segment.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Nov 12 20:41:28 2020] Launched synth_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+[Thu Nov 12 20:41:28 2020] Launched impl_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Nov 12 20:53:30 2020] Launched synth_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+[Thu Nov 12 20:53:30 2020] Launched impl_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Nov 12 21:04:57 2020] Launched synth_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+[Thu Nov 12 21:04:57 2020] Launched impl_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Nov 12 21:13:17 2020] Launched synth_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+[Thu Nov 12 21:13:17 2020] Launched impl_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Nov 12 21:16:55 2020] Launched synth_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+[Thu Nov 12 21:16:55 2020] Launched impl_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'm_clk/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.311 . Memory (MB): peak = 3868.555 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.312 . Memory (MB): peak = 3868.555 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3868.555 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3931.789 ; gain = 165.414
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Nov 12 21:20:36 2020] Launched synth_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+[Thu Nov 12 21:20:36 2020] Launched impl_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Nov 12 21:26:18 2020] Launched synth_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+[Thu Nov 12 21:26:18 2020] Launched impl_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Nov 12 21:31:39 2020] Launched synth_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/synth_1/runme.log
+[Thu Nov 12 21:31:39 2020] Launched impl_1...
+Run output will be captured here: C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183714820A

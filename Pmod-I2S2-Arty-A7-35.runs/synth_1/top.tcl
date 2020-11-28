@@ -17,6 +17,8 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param tcl.collectionResultDisplayLimit 0
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -27,14 +29,18 @@ set_property webtalk.parent_dir C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty
 set_property parent.project_path C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.xpr [current_project]
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
-set_property target_language VHDL [current_project]
+set_property target_language Verilog [current_project]
 set_property board_part_repo_paths {C:/Users/zachkrueger/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store} [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
 set_property ip_repo_paths c:/Users/zachkrueger/Pmod-I2S2-master/repo [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/Users/zachkrueger/Pmod-I2S2-master/repo/cache [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-set_property generic {NUMBER_OF_SWITCHES=4 RESET_POLARITY=0} [current_fileset]
+set_property generic {NUMBER_OF_SWITCHES=4 RESET_POLARITY=0 DATA_WIDTH=24} [current_fileset]
+read_verilog -library xil_defaultlib -sv {
+  C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/new/limiter.sv
+  C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/new/seven_segment.sv
+}
 read_verilog -library xil_defaultlib {
   C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/imports/hdl/axis_i2s2.v
   C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.srcs/sources_1/imports/hdl/axis_volume_controller.v

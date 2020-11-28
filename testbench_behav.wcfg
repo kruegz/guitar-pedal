@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="testbench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="154635000fs"></ZoomStartTime>
+      <ZoomEndTime time="274035001fs"></ZoomEndTime>
+      <Cursor1Time time="176935000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="263"></NameColumnWidth>
+      <ValueColumnWidth column_width="198"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="32" />
+   <wvobject fp_name="/testbench/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/sw" type="array">
+      <obj_property name="ElementShortName">sw[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/s_axis_data" type="array">
+      <obj_property name="ElementShortName">s_axis_data[23:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/s_axis_valid" type="logic">
+      <obj_property name="ElementShortName">s_axis_valid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/s_axis_ready" type="logic">
+      <obj_property name="ElementShortName">s_axis_ready</obj_property>
+      <obj_property name="ObjectShortName">s_axis_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/s_axis_last" type="logic">
+      <obj_property name="ElementShortName">s_axis_last</obj_property>
+      <obj_property name="ObjectShortName">s_axis_last</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/avc0/m_axis_data_d" type="array">
+      <obj_property name="ElementShortName">m_axis_data_d[23:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_d[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/avc0/m_axis_data_w" type="array">
+      <obj_property name="ElementShortName">m_axis_data_w[23:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_w[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/m_axis_data" type="array">
+      <obj_property name="ElementShortName">m_axis_data[23:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/m_axis_valid" type="logic">
+      <obj_property name="ElementShortName">m_axis_valid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/m_axis_ready" type="logic">
+      <obj_property name="ElementShortName">m_axis_ready</obj_property>
+      <obj_property name="ObjectShortName">m_axis_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/m_axis_last" type="logic">
+      <obj_property name="ElementShortName">m_axis_last</obj_property>
+      <obj_property name="ObjectShortName">m_axis_last</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/packet_done" type="logic">
+      <obj_property name="ElementShortName">packet_done</obj_property>
+      <obj_property name="ObjectShortName">packet_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[1:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/avc0/data" type="array">
+      <obj_property name="ElementShortName">data[1:0][47:0]</obj_property>
+      <obj_property name="ObjectShortName">data[1:0][47:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/avc0/limit_data" type="array">
+      <obj_property name="ElementShortName">limit_data[1:0][47:0]</obj_property>
+      <obj_property name="ObjectShortName">limit_data[1:0][47:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/avc0/m_select" type="logic">
+      <obj_property name="ElementShortName">m_select</obj_property>
+      <obj_property name="ObjectShortName">m_select</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/avc0/m_new_word" type="logic">
+      <obj_property name="ElementShortName">m_new_word</obj_property>
+      <obj_property name="ObjectShortName">m_new_word</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/avc0/m_new_packet" type="logic">
+      <obj_property name="ElementShortName">m_new_packet</obj_property>
+      <obj_property name="ObjectShortName">m_new_packet</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/avc0/s_select" type="logic">
+      <obj_property name="ElementShortName">s_select</obj_property>
+      <obj_property name="ObjectShortName">s_select</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/avc0/s_new_word" type="logic">
+      <obj_property name="ElementShortName">s_new_word</obj_property>
+      <obj_property name="ObjectShortName">s_new_word</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/avc0/s_new_packet" type="logic">
+      <obj_property name="ElementShortName">s_new_packet</obj_property>
+      <obj_property name="ObjectShortName">s_new_packet</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/avc0/s_new_packet_r" type="logic">
+      <obj_property name="ElementShortName">s_new_packet_r</obj_property>
+      <obj_property name="ObjectShortName">s_new_packet_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/avc0/limiter0/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/avc0/limiter0/reset_n" type="logic">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/avc0/limiter0/enable" type="logic">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/avc0/limiter0/limit" type="array">
+      <obj_property name="ElementShortName">limit[23:0]</obj_property>
+      <obj_property name="ObjectShortName">limit[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/avc0/limiter0/polarity" type="logic">
+      <obj_property name="ElementShortName">polarity</obj_property>
+      <obj_property name="ObjectShortName">polarity</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/avc0/limiter0/in" type="array">
+      <obj_property name="ElementShortName">in[23:0]</obj_property>
+      <obj_property name="ObjectShortName">in[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/avc0/limiter0/out" type="array">
+      <obj_property name="ElementShortName">out[23:0]</obj_property>
+      <obj_property name="ObjectShortName">out[23:0]</obj_property>
+   </wvobject>
+</wave_config>

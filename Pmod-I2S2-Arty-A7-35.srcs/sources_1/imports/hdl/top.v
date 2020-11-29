@@ -19,12 +19,12 @@
 
 
 module top #(
-	parameter NUMBER_OF_SWITCHES = 4,
+	parameter SWITCH_WIDTH = 4,
     parameter DATA_WIDTH = 24,
 	parameter RESET_POLARITY = 0
 ) (
     input wire       clk,
-    input wire [NUMBER_OF_SWITCHES-1:0] sw,
+    input wire [SWITCH_WIDTH-1:0] sw,
     input wire       reset,
     
     output wire tx_mclk,
@@ -113,7 +113,7 @@ module top #(
     );
     
     axis_volume_controller #(
-		.SWITCH_WIDTH(NUMBER_OF_SWITCHES),
+		.SWITCH_WIDTH(SWITCH_WIDTH),
 		.DATA_WIDTH(24)
 	) m_vc (
         .clk(axis_clk),

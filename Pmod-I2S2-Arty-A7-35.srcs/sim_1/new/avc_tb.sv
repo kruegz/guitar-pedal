@@ -5,7 +5,7 @@
 // 
 // Create Date: 11/17/2020 10:08:42 PM
 // Design Name: 
-// Module Name: avc_testbench
+// Module Name: avc_tb
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module avc_testbench #(
+module avc_tb #(
 	parameter SWITCH_WIDTH = 16,
 	parameter RESET_POLARITY = 0,
 	parameter CLK_HALF_PERIOD = 5,
@@ -97,21 +97,26 @@ module avc_testbench #(
 
     initial begin
         $dumpfile("waves.vcd");
-        $dumpvars(0,avc_testbench);
+        $dumpvars(0,avc_tb);
         #TIMEOUT;
         $finish;
+    end
+
+    always @(posedge clk) begin
+        sw <= sw + 1;
+        #100;
     end
     
     initial begin
         // $monitor("%h %h %h", clk, reset, sw);
         reset = 1;
-        sw = 'hFF;
+        sw = 'hF;
         clk = 0;
         rx_data = 0;
         #100ns;
         reset = 0;
         #100ns;
-        sw = 'hFFF;
+        // sw = 'hFFF;
     end
     
 endmodule

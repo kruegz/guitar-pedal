@@ -24,7 +24,7 @@ module testbench #(
 	parameter NUMBER_OF_SWITCHES = 4,
 	parameter RESET_POLARITY = 0,
 	parameter CLK_HALF_PERIOD = 5,
-    parameter TIMEOUT = 100,
+    parameter TIMEOUT = 10000,
 	parameter DATA_WIDTH = 24
 	) ();
     

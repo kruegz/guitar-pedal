@@ -196,3 +196,39 @@ launch_simulation
 open_wave_config C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg
 source testbench.tcl
 run 1 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg
+source testbench.tcl
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/avc0/s}} 
+restart
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+save_wave_config {C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg}
+close_sim
+close_project
+open_project C:/Users/zachkrueger/guitar-pedal/Pmod-I2S2-Arty-A7-35.xpr
+launch_simulation
+open_wave_config C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/zachkrueger/guitar-pedal/testbench_behav.wcfg
+source testbench.tcl
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1

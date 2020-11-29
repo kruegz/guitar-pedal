@@ -23,7 +23,8 @@
 module testbench #(
 	parameter NUMBER_OF_SWITCHES = 4,
 	parameter RESET_POLARITY = 0,
-	parameter CLK_HALF_PERIOD = 5ns,
+	parameter CLK_HALF_PERIOD = 5,
+    parameter TIMEOUT = 100,
 	parameter DATA_WIDTH = 24
 	) ();
     
@@ -52,10 +53,10 @@ module testbench #(
     reg s_axis_last = 0;
     
     // AXIS MASTER INTERFACE
-    reg [DATA_WIDTH-1:0] m_axis_data = 1'b0;
-    reg m_axis_valid = 1'b0;
+    reg [DATA_WIDTH-1:0] m_axis_data;
+    reg m_axis_valid;
     wire m_axis_ready;
-    reg m_axis_last = 1'b0;
+    reg m_axis_last;
     
     reg packet_done = 0;   
     reg [1:0] cnt = 0;        
@@ -85,12 +86,22 @@ module testbench #(
 //    top top0(.*);
     axis_volume_controller avc0(.*);
     
-    always #CLK_HALF_PERIOD clk = !clk; 
+    always begin
+        #CLK_HALF_PERIOD;
+        // #1;
+        clk = !clk; 
+    end
     always @(posedge clk) begin
         rx_data = !rx_data;
     end
+
+    initial begin
+        #TIMEOUT;
+        $finish;
+    end
     
     initial begin
+        $monitor("%h %h %h", clk, reset, sw);
         reset = 1;
         sw = 4'b0011;
         clk = 0;

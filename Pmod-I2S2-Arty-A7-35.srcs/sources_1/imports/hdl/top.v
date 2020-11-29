@@ -20,6 +20,7 @@
 
 module top #(
 	parameter NUMBER_OF_SWITCHES = 4,
+    parameter DATA_WIDTH = 24,
 	parameter RESET_POLARITY = 0
 ) (
     input wire       clk,
@@ -40,12 +41,12 @@ module top #(
 );
     wire axis_clk;
     
-    wire [23:0] axis_tx_data;
+    wire [31:0] axis_tx_data;
     wire axis_tx_valid;
     wire axis_tx_ready;
     wire axis_tx_last;
     
-    wire [23:0] axis_rx_data;
+    wire [31:0] axis_rx_data;
     wire axis_rx_valid;
     wire axis_rx_ready;
     wire axis_rx_last;
@@ -119,12 +120,12 @@ module top #(
         .rst_n(~reset),
         .sw(sw),
         
-        .s_axis_data(axis_rx_data),
+        .s_axis_data(axis_rx_data[DATA_WIDTH-1:0]),
         .s_axis_valid(axis_rx_valid),
         .s_axis_ready(axis_rx_ready),
         .s_axis_last(axis_rx_last),
         
-        .m_axis_data(axis_tx_data),
+        .m_axis_data(axis_tx_data[DATA_WIDTH-1:0]),
         .m_axis_valid(axis_tx_valid),
         .m_axis_ready(axis_tx_ready),
         .m_axis_last(axis_tx_last)

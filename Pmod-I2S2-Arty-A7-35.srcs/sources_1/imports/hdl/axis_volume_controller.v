@@ -72,7 +72,7 @@ module axis_volume_controller #(
 //    assign limiter_if0.data_in = m_axis_data;
 //    assign limiter_if0.data_out = data_out;
     
-    limiter #(DATA_WIDTH) limiter0(clk, rst_n, 1, limit, 1, data[0], data_out);
+    limiter #(DATA_WIDTH) limiter0(clk, rst_n, 1'b1, limit, 1'b1, data[0][DATA_WIDTH-1:0], data_out);
     
 //    always @(posedge clk) begin
 //        m_axis_data <= m_axis_data_w;

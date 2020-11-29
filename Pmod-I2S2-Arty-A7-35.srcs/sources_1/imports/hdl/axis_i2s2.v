@@ -89,7 +89,7 @@ module axis_i2s2 (
     reg [23:0] tx_data_r_shift = 24'b0;
     
     always@(posedge axis_clk)
-        if (count == 3'b000000111) begin
+        if (count == 3'b111) begin
             tx_data_l_shift <= tx_data_l[23:0];
             tx_data_r_shift <= tx_data_r[23:0];
         end else if (count[2:0] == 3'b111 && count[7:3] >= 5'd1 && count[7:3] <= 5'd24) begin

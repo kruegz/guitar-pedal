@@ -4,13 +4,13 @@ module sine_generator #(
 		parameter WIDTH = 7,
 		parameter FREQ_STEP = 11
 	)(
-		input clk,
-		input rst_n,
+		input wire clk,
+		input wire rst_n,
 
-		output [WIDTH-1:0] out
+		output reg [WIDTH-1:0] out
 	);
 
-	logic [WIDTH-1:0] out;
+//	logic [WIDTH-1:0] out;
 	logic [WIDTH-1:0] cnt;
 
 	logic [WIDTH-1:0] sine_table[0:255];

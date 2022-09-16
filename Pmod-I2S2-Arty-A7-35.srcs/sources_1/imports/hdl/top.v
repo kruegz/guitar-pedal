@@ -58,9 +58,11 @@ module top #(
     //reg [6:0] LED_out;// cathode patterns of the 7-segment LED display
     reg [31:0] delay = 0;
 
-	wire resetn = (reset == RESET_POLARITY) ? 1'b0 : 1'b1;
+	wire resetn;
+//	assign resetn = (reset == RESET_POLARITY) ? 1'b0 : 1'b1;
+    assign resetn = ~reset;
 	
-	always @(posedge clk, negedge resetn) begin
+	always @(posedge clk) begin
 	   if (resetn) begin
 	       if (delay == 32'd100000000) begin
                seconds <= seconds + 1;

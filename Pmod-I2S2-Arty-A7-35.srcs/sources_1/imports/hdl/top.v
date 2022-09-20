@@ -61,14 +61,18 @@ module top #(
 	wire resetn;
 //	assign resetn = (reset == RESET_POLARITY) ? 1'b0 : 1'b1;
     assign resetn = ~reset;
+    
+    ila_0 ila_0_0(clk, axis_clk, axis_rx_data, axis_rx_valid, axis_tx_data, axis_tx_valid);
 	
 	always @(posedge clk) begin
 	   if (resetn) begin
-	       if (delay == 32'd100000000) begin
-               seconds <= seconds + 1;
-               delay <= 0;
-           end else begin
-               delay <= delay + 1;
+	       if (sw[0]) begin
+               if (delay == 32'd100000000) begin
+                   seconds <= seconds + 1;
+                   delay <= 0;
+               end else begin
+                   delay <= delay + 1;
+               end
            end
 	   end else begin
 	       seconds <= 0;
@@ -138,5 +142,3 @@ module top #(
     
     
 endmodule
-
-

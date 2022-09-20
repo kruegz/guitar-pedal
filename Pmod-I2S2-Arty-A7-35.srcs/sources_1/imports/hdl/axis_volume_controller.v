@@ -64,43 +64,30 @@ module axis_volume_controller #(
     reg m_axis_valid_d;
     assign limit = sw_sync[SWITCH_WIDTH-1:0];
     
-//    limiter_if limiter_if0();
+    reg [15:0] phase;
+    wire [15:0] cordic_out;
+    wire cordic_out_vld;
     
-//    assign limiter_if0.clock = clk;
-//    assign limiter_if0.rst_n = rst_n;
-//    assign limiter_if0.limit = limit;
-//    assign limiter_if0.data_in = m_axis_data;
-//    assign limiter_if0.data_out = data_out;
-    
-    // limiter #(DATA_WIDTH) limiter0(clk, rst_n, 1'b1, limit, 1'b1, data[0][DATA_WIDTH-1:0], data_out);
+    cordic_0 cordic0_0(clk, 1, phase, cordic_out_vld, cordic_out);
 
-    wire [6:0] sine_out;
-    sine_generator sine_generator0(clk, rst_n, sine_out);
-    
-//    always @(posedge clk) begin
-//        m_axis_data <= m_axis_data_w;
-//    end
-    
     
     always@(posedge clk) begin
-        sw_sync_r[2] <= sw_sync_r[1];
-        sw_sync_r[1] <= sw_sync_r[0];
-        sw_sync_r[0] <= sw;
-        
-        
-//        if (&sw_sync == 1'b1)
-//            multiplier <= {1'b1, {MULTIPLIER_WIDTH{1'b0}}};
-//        else
-            // multiplier <= {1'b0, sw, {MULTIPLIER_WIDTH-SWITCH_WIDTH{1'b0}}} + 1;
-//            multiplier <= {sw_sync,{MULTIPLIER_WIDTH{1'b0}}} / {SWITCH_WIDTH{1'b1}};
-            multiplier <= {sw_sync,{MULTIPLIER_WIDTH{1'b0}}} / {SWITCH_WIDTH{1'b1}};
+    
+        if (rst_n) begin
+            sw_sync_r[2] <= sw_sync_r[1];
+            sw_sync_r[1] <= sw_sync_r[0];
+            sw_sync_r[0] <= sw;
             
-        s_new_packet_r <= s_new_packet;
-        s_new_packet_r_q <= s_new_packet_r;
-        
-//        m_axis_valid <= m_axis_valid_d;
-        
-        limit_data[0] <= data_out;
+            phase <= phase + sw;
+                
+            s_new_packet_r <= s_new_packet;
+            s_new_packet_r_q <= s_new_packet_r;
+            
+            limit_data[0] <= data_out;
+        end else begin
+            // Reset
+            phase <= 0;
+        end
     end
     
     always@(posedge clk)
@@ -128,7 +115,9 @@ module axis_volume_controller #(
             
     always@(m_axis_valid, data[0], data[1], m_select)
         if (m_axis_valid == 1'b1)
-            m_axis_data = (data[m_select][DATA_WIDTH-1:0] > limit) ? limit : data[m_select][DATA_WIDTH-1:0];
+            // m_axis_data = (data[m_select][DATA_WIDTH-1:0] > limit) ? limit : data[m_select][DATA_WIDTH-1:0];
+//             m_axis_data = data[m_select][DATA_WIDTH-1:0];
+             m_axis_data = cordic_out;
         else
             m_axis_data = 'b0;
             

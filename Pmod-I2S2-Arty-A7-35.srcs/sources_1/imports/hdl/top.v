@@ -19,7 +19,7 @@
 
 
 module top #(
-	parameter SWITCH_WIDTH = 4,
+	parameter SWITCH_WIDTH = 15,
     parameter DATA_WIDTH = 24,
 	parameter RESET_POLARITY = 0
 ) (
@@ -61,8 +61,10 @@ module top #(
 	wire resetn;
 //	assign resetn = (reset == RESET_POLARITY) ? 1'b0 : 1'b1;
     assign resetn = ~reset;
-    
+
+    `ifdef DEBUG 
     ila_0 ila_0_0(clk, axis_clk, axis_rx_data, axis_rx_valid, axis_tx_data, axis_tx_valid);
+    `endif
 	
 	always @(posedge clk) begin
 	   if (resetn) begin
@@ -92,7 +94,7 @@ module top #(
         .axis_clk(axis_clk)
     );
     
-    Seven_segment_LED_Display_Controller s(clk, reset, seconds, Anode_Activate, LED_out);
+    Seven_segment_LED_Display_Controller s(clk, reset, sw, Anode_Activate, LED_out);
 
     axis_i2s2 m_i2s2 (
         .axis_clk(axis_clk),

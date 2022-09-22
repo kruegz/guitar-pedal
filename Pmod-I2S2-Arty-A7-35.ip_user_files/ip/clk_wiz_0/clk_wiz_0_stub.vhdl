@@ -1,7 +1,7 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
--- Date        : Fri Sep 16 11:26:35 2022
+-- Date        : Mon Sep 19 21:51:28 2022
 -- Host        : ZACH-BOOTCAMP running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               c:/Users/krueg/OneDrive/Documents/GitHub/guitar-pedal/Pmod-I2S2-Arty-A7-35.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_stub.vhdl

@@ -102,15 +102,15 @@ module avc_tb #(
         $finish;
     end
 
-    always @(posedge clk) begin
-        sw <= sw + 1;
-        #100;
-    end
+//    always @(posedge clk) begin
+//        sw <= sw + 1;
+//        #100;
+//    end
     
     initial begin
         // $monitor("%h %h %h", clk, reset, sw);
         reset = 1;
-        sw = 'hF;
+        sw = 'h1111;
         clk = 0;
         rx_data = 0;
         #100ns;

@@ -11,149 +11,245 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="1000000001fs"></ZoomEndTime>
-      <Cursor1Time time="1000000000fs"></Cursor1Time>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="10.000000 us"></ZoomEndTime>
+      <Cursor1Time time="10.000000 us"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="263"></NameColumnWidth>
-      <ValueColumnWidth column_width="182"></ValueColumnWidth>
+      <ValueColumnWidth column_width="166"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="34" />
-   <wvobject fp_name="/avc_tb/avc0/clk" type="logic">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/avc_tb/avc0/cordic0_0/aclk" type="logic">
+      <obj_property name="ElementShortName">aclk</obj_property>
+      <obj_property name="ObjectShortName">aclk</obj_property>
    </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/rst_n" type="logic">
-      <obj_property name="ElementShortName">rst_n</obj_property>
-      <obj_property name="ObjectShortName">rst_n</obj_property>
+   <wvobject fp_name="/avc_tb/avc0/cordic0_0/s_axis_phase_tvalid" type="logic">
+      <obj_property name="ElementShortName">s_axis_phase_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_phase_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/avc_tb/avc0/cordic0_0/s_axis_phase_tdata" type="array">
+      <obj_property name="ElementShortName">s_axis_phase_tdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_phase_tdata[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tvalid" type="logic">
+      <obj_property name="ElementShortName">m_axis_dout_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_dout_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata" type="array">
+      <obj_property name="ElementShortName">m_axis_dout_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_dout_tdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus624" type="vbus">
+      <obj_property name="label">New Virtual Bus 2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[31]" type="logic">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">[31]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[30]" type="logic">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">[30]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[29]" type="logic">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">[29]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[28]" type="logic">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">[28]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[27]" type="logic">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">[27]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[26]" type="logic">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">[26]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[25]" type="logic">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">[25]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[24]" type="logic">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">[24]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[23]" type="logic">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">[23]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[22]" type="logic">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">[22]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[21]" type="logic">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">[21]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[20]" type="logic">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">[20]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[19]" type="logic">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[18]" type="logic">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[17]" type="logic">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[16]" type="logic">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">[16]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus607" type="vbus">
+      <obj_property name="label">New Virtual Bus 1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group590" type="group">
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/avc_tb/avc0/cordic0_0/m_axis_dout_tdata[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
    </wvobject>
    <wvobject fp_name="/avc_tb/avc0/sw" type="array">
       <obj_property name="ElementShortName">sw[15:0]</obj_property>
       <obj_property name="ObjectShortName">sw[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/s_axis_data" type="array">
-      <obj_property name="ElementShortName">s_axis_data[23:0]</obj_property>
-      <obj_property name="ObjectShortName">s_axis_data[23:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/s_axis_valid" type="logic">
-      <obj_property name="ElementShortName">s_axis_valid</obj_property>
-      <obj_property name="ObjectShortName">s_axis_valid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/s_axis_ready" type="logic">
-      <obj_property name="ElementShortName">s_axis_ready</obj_property>
-      <obj_property name="ObjectShortName">s_axis_ready</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/s_axis_last" type="logic">
-      <obj_property name="ElementShortName">s_axis_last</obj_property>
-      <obj_property name="ObjectShortName">s_axis_last</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/m_axis_data" type="array">
-      <obj_property name="ElementShortName">m_axis_data[23:0]</obj_property>
-      <obj_property name="ObjectShortName">m_axis_data[23:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/m_axis_valid" type="logic">
-      <obj_property name="ElementShortName">m_axis_valid</obj_property>
-      <obj_property name="ObjectShortName">m_axis_valid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/m_axis_ready" type="logic">
-      <obj_property name="ElementShortName">m_axis_ready</obj_property>
-      <obj_property name="ObjectShortName">m_axis_ready</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/m_axis_last" type="logic">
-      <obj_property name="ElementShortName">m_axis_last</obj_property>
-      <obj_property name="ObjectShortName">m_axis_last</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/data" type="array">
-      <obj_property name="ElementShortName">data[1:0][47:0]</obj_property>
-      <obj_property name="ObjectShortName">data[1:0][47:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/limit_data" type="array">
-      <obj_property name="ElementShortName">limit_data[1:0][47:0]</obj_property>
-      <obj_property name="ObjectShortName">limit_data[1:0][47:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/sw_sync_r" type="array">
-      <obj_property name="ElementShortName">sw_sync_r[2:0][15:0]</obj_property>
-      <obj_property name="ObjectShortName">sw_sync_r[2:0][15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/sw_sync" type="array">
-      <obj_property name="ElementShortName">sw_sync[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sw_sync[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/multiplier" type="array">
-      <obj_property name="ElementShortName">multiplier[24:0]</obj_property>
-      <obj_property name="ObjectShortName">multiplier[24:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/m_select" type="logic">
-      <obj_property name="ElementShortName">m_select</obj_property>
-      <obj_property name="ObjectShortName">m_select</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/m_new_word" type="logic">
-      <obj_property name="ElementShortName">m_new_word</obj_property>
-      <obj_property name="ObjectShortName">m_new_word</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/m_new_packet" type="logic">
-      <obj_property name="ElementShortName">m_new_packet</obj_property>
-      <obj_property name="ObjectShortName">m_new_packet</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/s_select" type="logic">
-      <obj_property name="ElementShortName">s_select</obj_property>
-      <obj_property name="ObjectShortName">s_select</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/s_new_word" type="logic">
-      <obj_property name="ElementShortName">s_new_word</obj_property>
-      <obj_property name="ObjectShortName">s_new_word</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/s_new_packet" type="logic">
-      <obj_property name="ElementShortName">s_new_packet</obj_property>
-      <obj_property name="ObjectShortName">s_new_packet</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/s_new_packet_r" type="logic">
-      <obj_property name="ElementShortName">s_new_packet_r</obj_property>
-      <obj_property name="ObjectShortName">s_new_packet_r</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/s_new_packet_r_q" type="logic">
-      <obj_property name="ElementShortName">s_new_packet_r_q</obj_property>
-      <obj_property name="ObjectShortName">s_new_packet_r_q</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/limit" type="array">
-      <obj_property name="ElementShortName">limit[23:0]</obj_property>
-      <obj_property name="ObjectShortName">limit[23:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/data_out" type="array">
-      <obj_property name="ElementShortName">data_out[23:0]</obj_property>
-      <obj_property name="ObjectShortName">data_out[23:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/m_axis_data_d" type="array">
-      <obj_property name="ElementShortName">m_axis_data_d[23:0]</obj_property>
-      <obj_property name="ObjectShortName">m_axis_data_d[23:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/m_axis_data_w" type="array">
-      <obj_property name="ElementShortName">m_axis_data_w[23:0]</obj_property>
-      <obj_property name="ObjectShortName">m_axis_data_w[23:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/m_axis_valid_d" type="logic">
-      <obj_property name="ElementShortName">m_axis_valid_d</obj_property>
-      <obj_property name="ObjectShortName">m_axis_valid_d</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/sine_out" type="array">
-      <obj_property name="ElementShortName">sine_out[6:0]</obj_property>
-      <obj_property name="ObjectShortName">sine_out[6:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/SWITCH_WIDTH" type="array">
-      <obj_property name="ElementShortName">SWITCH_WIDTH[31:0]</obj_property>
-      <obj_property name="ObjectShortName">SWITCH_WIDTH[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/DATA_WIDTH" type="array">
-      <obj_property name="ElementShortName">DATA_WIDTH[31:0]</obj_property>
-      <obj_property name="ObjectShortName">DATA_WIDTH[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/MULTIPLIER_WIDTH" type="array">
-      <obj_property name="ElementShortName">MULTIPLIER_WIDTH[31:0]</obj_property>
-      <obj_property name="ObjectShortName">MULTIPLIER_WIDTH[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/sine_generator0/sine_table" type="array">
-      <obj_property name="ElementShortName">sine_table[0:255][6:0]</obj_property>
-      <obj_property name="ObjectShortName">sine_table[0:255][6:0]</obj_property>
    </wvobject>
 </wave_config>

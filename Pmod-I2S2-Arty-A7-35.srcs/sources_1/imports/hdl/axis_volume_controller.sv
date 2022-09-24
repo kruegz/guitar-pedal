@@ -64,22 +64,27 @@ module axis_volume_controller #(
     reg m_axis_valid_d;
     assign limit = sw_sync[SWITCH_WIDTH-1:0];
     
-    reg signed [15:0] phase; // Fixed point XXX.XXXXXXXXXXXX
-    wire [31:0] cordic_out;
+    reg signed [15:0] phase; // Fixed point XXX.XXXXXXXXXXXX Range: (-3.14,3.14)
+    wire [31:0] cordic_out; // {COS, SIN}
+    wire [15:0] sin; // Fixed point XX.XXXXXXXXXXXXXX Range: (-1,1)
+    wire [15:0] cos; // Fixed point XX.XXXXXXXXXXXXXX Range: (-1,1)
     wire cordic_out_vld;
-    reg [SWITCH_WIDTH-1:0] phase_delay;
-    reg [SWITCH_WIDTH-1:0] phase_cnt;
+
+    localparam PI = 16'sb011_0010010000000; // 3.14
+    localparam NEG_PI = 16'sb100_1101110000000; // -3.14
     
     cordic_0 cordic0_0(clk, 1, phase, cordic_out_vld, cordic_out);
 
+    assign sin = cordic_out[15:0];
+    assign cos = cordic_out[31:16];
     
     always@(posedge clk) begin
     
         if (rst_n) begin
             phase <= phase + 1;
 
-            if (phase >= 16'sb0110010010000000) begin // 3.14
-                phase <= 16'sb1001101110000000; // -3.14
+            if (phase >= PI) begin // 3.14
+                phase <= NEG_PI; // -3.14
             end
                 
             s_new_packet_r <= s_new_packet;
@@ -88,9 +93,7 @@ module axis_volume_controller #(
             limit_data[0] <= data_out;
         end else begin
             // Reset
-            phase <= 16'sb1001101110000000; // -3.14
-            phase_delay <= 10;
-            phase_cnt <= 10;
+            phase <= NEG_PI;
         end
     end
     

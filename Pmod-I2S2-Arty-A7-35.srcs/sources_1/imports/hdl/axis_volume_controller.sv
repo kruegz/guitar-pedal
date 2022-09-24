@@ -64,7 +64,7 @@ module axis_volume_controller #(
     reg m_axis_valid_d;
     assign limit = sw_sync[SWITCH_WIDTH-1:0];
     
-    reg [15:0] phase;
+    reg signed [15:0] phase; // Fixed point XXX.XXXXXXXXXXXX
     wire [31:0] cordic_out;
     wire cordic_out_vld;
     reg [SWITCH_WIDTH-1:0] phase_delay;
@@ -76,10 +76,10 @@ module axis_volume_controller #(
     always@(posedge clk) begin
     
         if (rst_n) begin
-            phase_cnt <= phase_cnt + 1;
-            if (phase_cnt == phase_delay) begin
-                phase <= phase + sw;
-                phase_cnt <= 0;
+            phase <= phase + 1;
+
+            if (phase >= 16'sb0110010010000000) begin // 3.14
+                phase <= 16'sb1001101110000000; // -3.14
             end
                 
             s_new_packet_r <= s_new_packet;
@@ -88,7 +88,7 @@ module axis_volume_controller #(
             limit_data[0] <= data_out;
         end else begin
             // Reset
-            phase <= 0;
+            phase <= 16'sb1001101110000000; // -3.14
             phase_delay <= 10;
             phase_cnt <= 10;
         end

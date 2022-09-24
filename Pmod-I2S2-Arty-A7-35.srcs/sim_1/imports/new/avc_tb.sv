@@ -110,7 +110,7 @@ module avc_tb #(
     initial begin
         // $monitor("%h %h %h", clk, reset, sw);
         reset = 1;
-        sw = 'h1111;
+        sw = 'h100;
         clk = 0;
         rx_data = 0;
         #100ns;

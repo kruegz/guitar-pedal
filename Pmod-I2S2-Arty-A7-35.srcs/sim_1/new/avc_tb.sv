@@ -81,6 +81,7 @@ module avc_tb #(
     end                                 
     
     assign m_axis_ready = 1;
+    assign s_axis_ready = 1;
     
     
 //    top top0(.*);

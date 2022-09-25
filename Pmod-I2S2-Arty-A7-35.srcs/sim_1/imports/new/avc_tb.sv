@@ -63,24 +63,18 @@ module avc_tb #(
            
                                         
     always @(posedge clk) begin
-        if (s_axis_ready) begin
-            s_axis_data <= s_axis_data + 1; 
-            s_axis_valid <= 1;
-            if (cnt == 2'b0) begin
-                s_axis_last <= 1;
-            end else begin
-                s_axis_last <= 0;
-            end
-            cnt <= cnt + 1;
-//            packet_done <= (cnt == 2'b0);
-            //packet_done <= 0;
+        s_axis_data <= s_axis_data + 1; 
+        cnt <= cnt + 1;
+
+        if (cnt == 2'b0) begin
+            s_axis_last <= 1;
         end else begin
-            s_axis_valid <= 1;
-            cnt <= 0;
-        end        
+            s_axis_last <= 0;
+        end
     end                                 
     
     assign m_axis_ready = 1;
+    assign s_axis_valid = 1;
     
     
 //    top top0(.*);

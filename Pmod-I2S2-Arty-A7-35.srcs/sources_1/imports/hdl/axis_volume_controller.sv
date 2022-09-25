@@ -63,7 +63,8 @@ module axis_volume_controller #(
     wire [DATA_WIDTH-1:0] m_axis_data_w;
     reg m_axis_valid_d;
     assign limit = sw_sync[SWITCH_WIDTH-1:0];
-    
+
+    reg [DATA_WIDTH-1:0] cnt;
     reg signed [15:0] phase; // Fixed point XXX.XXXXXXXXXXXX Range: (-3.14,3.14)
     wire [31:0] cordic_out; // {COS, SIN}
     wire [15:0] sin; // Fixed point XX.XXXXXXXXXXXXXX Range: (-1,1)
@@ -81,7 +82,11 @@ module axis_volume_controller #(
     always@(posedge clk) begin
     
         if (rst_n) begin
-            phase <= phase + 1;
+            cnt <= cnt + 1;
+            if (cnt >= sw) begin
+                phase <= phase + 4;
+                cnt <= 0;
+            end
 
             if (phase >= PI) begin // 3.14
                 phase <= NEG_PI; // -3.14
@@ -94,6 +99,7 @@ module axis_volume_controller #(
         end else begin
             // Reset
             phase <= NEG_PI;
+            cnt <= 0;
         end
     end
     
@@ -124,7 +130,7 @@ module axis_volume_controller #(
         if (m_axis_valid == 1'b1)
             // m_axis_data = (data[m_select][DATA_WIDTH-1:0] > limit) ? limit : data[m_select][DATA_WIDTH-1:0];
 //             m_axis_data = data[m_select][DATA_WIDTH-1:0];
-             m_axis_data = cordic_out;
+             m_axis_data = sin << 8;
         else
             m_axis_data = 'b0;
             

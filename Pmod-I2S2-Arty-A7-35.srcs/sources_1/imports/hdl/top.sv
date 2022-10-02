@@ -16,33 +16,29 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
-
 module top #(
 	parameter SWITCH_WIDTH = 15,
     parameter DATA_WIDTH = 24,
 	parameter RESET_POLARITY = 0
 ) (
-    input wire clk, // 100 Mhz clock source on Basys 3 FPGA 
-    input wire [SWITCH_WIDTH-1:0] sw, // Switches
-    input wire btnC, // Center button
-    input wire btnU, // Up button
-    input wire btnL, // Left button
-    input wire btnR, // Right button
-    input wire btnD, // Down button
-    input wire reset, // R2
-    
-    output wire tx_mclk,
-    output wire tx_lrck,
-    output wire tx_sclk,
-    output wire tx_data,
-    output wire rx_mclk,
-    output wire rx_lrck,
-    output wire rx_sclk,
-    input  wire rx_data,
-    
-    output wire [3:0] Anode_Activate, // anode signals of the 7-segment LED display
-    output wire [6:0] LED_out // cathode patterns of the 7-segment LED display
+    input clk, // 100 Mhz clock source on Basys 3 FPGA 
+    input [SWITCH_WIDTH-1:0] sw, // Switches
+    input btnC, // Center button
+    input btnU, // Up button
+    input btnL, // Left button
+    input btnR, // Right button
+    input btnD, // Down button
+    input reset, // R2
+    input tx_mclk,
+    input tx_lrck,
+    input tx_sclk,
+    input tx_data,
+    input rx_mclk,
+    input rx_lrck,
+    input rx_sclk,
+    input rx_data,
+    input [3:0] Anode_Activate, // anode signals of the 7-segment LED display
+    input [6:0] LED_out // cathode patterns of the 7-segment LED display
 );
     wire axis_clk;
     
@@ -149,7 +145,8 @@ module top #(
         .clk(axis_clk),
         .rst_n(~reset),
         .sw(sw),
-        .in_value(user_value),
+        .in_value(user_value
+        ),
         
         .s_axis_data(axis_rx_data[DATA_WIDTH-1:0]),
         .s_axis_valid(axis_rx_valid),

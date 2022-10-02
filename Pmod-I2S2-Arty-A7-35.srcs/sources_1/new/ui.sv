@@ -41,12 +41,12 @@ module ui #(
     output [DATA_WIDTH-1:0] user_value
     );
 
-    logic btnU_toggle;
-    logic btnL_toggle;
-    logic btnR_toggle;
-    logic btnD_toggle;
-    logic btnC_toggle;
-    logic [DATA_WIDTH-1:0] user_value;
+    // logic btnU_toggle;
+    // logic btnL_toggle;
+    // logic btnR_toggle;
+    // logic btnD_toggle;
+    // logic btnC_toggle;
+    logic [DATA_WIDTH-1:0] user_value_q;
 
     toggle_reg btnU_toggle_reg(clk, rst_n, btnU, btnU_toggle);
     toggle_reg btnL_toggle_reg(clk, rst_n, btnL, btnL_toggle);
@@ -54,19 +54,21 @@ module ui #(
     toggle_reg btnD_toggle_reg(clk, rst_n, btnD, btnD_toggle);
     toggle_reg btnC_toggle_reg(clk, rst_n, btnC, btnC_toggle);
 
+    assign user_value = user_value_q;
+
     always @(posedge clk) begin
         if (rst_n) begin
             if (btnU_toggle) begin
-                user_value <= user_value + 1;
+                user_value_q <= user_value_q + 1;
             end
             if (btnD_toggle) begin
-                user_value <= user_value - 1;
+                user_value_q <= user_value_q - 1;
             end
             if (btnC_toggle) begin
-                user_value <= 0;
+                user_value_q <= 0;
             end
         end else begin
-            user_value <= 0;
+            user_value_q <= 0;
         end
     end
 

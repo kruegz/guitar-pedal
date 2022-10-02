@@ -27,7 +27,6 @@ module toggle_reg(
     output toggle
     );
 
-    logic toggle;
     logic toggle_reg;
 
     assign toggle = in && !toggle_reg;

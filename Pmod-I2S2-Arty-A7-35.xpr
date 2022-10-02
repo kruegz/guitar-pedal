@@ -59,7 +59,7 @@
     <Option Name="IPStaticSourceDir" Val="$PPRDIR/../Pmod-I2S2-master/arty-a7-35/proj/Pmod-I2S2-Arty-A7-35.ip_user_files/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="basys3"/>
-    <Option Name="WTXSimLaunchSim" Val="145"/>
+    <Option Name="WTXSimLaunchSim" Val="176"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -122,10 +122,10 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/hdl/top.v">
+      <File Path="$PSRCDIR/sources_1/imports/hdl/top.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Pmod-I2S2-master/shared/src/hdl/top.v"/>
-          <Attr Name="ImportTime" Val="1568918168"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/imports/hdl/top.sv"/>
+          <Attr Name="ImportTime" Val="1664729714"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -225,6 +225,13 @@
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sim_1/imports/new/top_tb.sv">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/new/top_test.sv">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

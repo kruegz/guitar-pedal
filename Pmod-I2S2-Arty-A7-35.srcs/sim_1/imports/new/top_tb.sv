@@ -18,91 +18,61 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
+import uvm_pkg::*;
 
-
-module top_tb #(
+interface top_if #(
 	parameter SWITCH_WIDTH = 16,
-	parameter RESET_POLARITY = 0,
-	parameter CLK_HALF_PERIOD = 5,
-    parameter TIMEOUT = 10000,
 	parameter DATA_WIDTH = 24
-	) ();
+	);
+    logic clk; // 100 Mhz clock source on Basys 3 FPGA 
+    logic [SWITCH_WIDTH-1:0] sw; // Switches
+    logic btnC; // Center button
+    logic btnU; // Up button
+    logic btnL; // Left button
+    logic btnR; // Right button
+    logic btnD; // Down button
+    logic reset; // R2
+    logic tx_mclk;
+    logic tx_lrck;
+    logic tx_sclk;
+    logic tx_data;
+    logic rx_mclk;
+    logic rx_lrck;
+    logic rx_sclk;
+    logic rx_data;
+    logic [3:0] Anode_Activate; // anode signals of the 7-segment LED display
+    logic [6:0] LED_out; // cathode patterns of the 7-segment LED display
+endinterface
 
-    reg clk; // 100 Mhz clock source on Basys 3 FPGA 
-    reg [SWITCH_WIDTH-1:0] sw; // Switches
-    reg btnC; // Center button
-    reg btnU; // Up button
-    reg btnL; // Left button
-    reg btnR; // Right button
-    reg btnD; // Down button
-    reg reset; // R2
-    
-    wire tx_mclk;
-    wire tx_lrck;
-    wire tx_sclk;
-    wire tx_data;
-    wire rx_mclk;
-    wire rx_lrck;
-    wire rx_sclk;
-    reg rx_data;
-    
-    wire [3:0] Anode_Activate; // anode signals of the 7-segment LED display
-    wire [6:0] LED_out; // cathode patterns of the 7-segment LED display
-    
-    wire rst_n;
-    assign rst_n = !reset;
-    
-    top top0(.*);
-    
-    always begin
-        #CLK_HALF_PERIOD;
-        // #1;
-        clk = !clk; 
-    end
+module top_tb ();
 
-    reg [7:0] cnt;
-    always @(posedge clk) begin
-        if (rst_n) begin
-            cnt <= cnt + 1;
-        end else begin
-            cnt <= 0;
-        end
-    end
-
+    top_if top_if0(.*); 
+    top #() top0 (
+        .clk               (top_if0.clk),
+        .sw                (top_if0.sw),
+        .btnC              (top_if0.btnC),
+        .btnU              (top_if0.btnU),
+        .btnL              (top_if0.btnL),
+        .btnR              (top_if0.btnR),
+        .btnD              (top_if0.btnD),
+        .reset             (top_if0.reset),
+        .tx_mclk           (top_if0.tx_mclk),
+        .tx_lrck           (top_if0.tx_lrck),
+        .tx_sclk           (top_if0.tx_sclk),
+        .tx_data           (top_if0.tx_data),
+        .rx_mclk           (top_if0.rx_mclk),
+        .rx_lrck           (top_if0.rx_lrck),
+        .rx_sclk           (top_if0.rx_sclk),
+        .rx_data           (top_if0.rx_data),
+        .Anode_Activate    (top_if0.Anode_Activate),
+        .LED_out           (top_if0.LED_out)
+    );
+    
     initial begin
         $dumpfile("waves.vcd");
         $dumpvars(0,top_tb);
-        #TIMEOUT;
-        $finish;
-    end
-    
-    initial begin
-        reset = 1;
-        sw = 'h100;
-        clk = 0;
-        rx_data = 0;
-        btnU <= 0;
-        btnL <= 0;
-        btnR <= 0;
-        btnD <= 0;
-        btnC <= 0;
-        repeat (5) @(posedge clk);
-        reset = 0;
-        repeat (5) @(posedge clk);
-
-        btnU <= 1;
-        repeat (1) @(posedge clk);
-        btnU <= 0;
-        repeat (1) @(posedge clk);
-        btnU <= 1;
-        repeat (1) @(posedge clk);
-        btnU <= 0;
-        btnD <= 1;
-        repeat (5) @(posedge clk);
-        btnD <= 0;
-        btnC <= 1;
-        repeat (5) @(posedge clk);
-        btnC <= 0;
+        uvm_config_db#(virtual top_if)::set(uvm_root::get(),"*","top_if",top_if0);
+        run_test("top_test");
     end
     
 endmodule

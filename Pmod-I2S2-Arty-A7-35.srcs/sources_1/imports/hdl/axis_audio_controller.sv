@@ -1,30 +1,14 @@
 `timescale 1ns / 1ps
 `default_nettype none
-//////////////////////////////////////////////////////////////////////////////////
-// Company: Digilent
-// Engineer: Arthur Brown
-// 
-// Create Date: 03/23/2018 01:23:15 PM
-// Module Name: axis_volume_controller
-// Description: AXI-Stream volume controller intended for use with AXI Stream Pmod I2S2 controller.
-//              Whenever a 2-word packet is received on the slave interface, it is multiplied by 
-//              the value of the switches, taken to represent the range 0.0:1.0, then sent over the
-//              master interface. Reception of data on the slave interface is halted while processing and
-//              transfer is taking place.
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
-module axis_volume_controller #(
-    parameter SWITCH_WIDTH = 4, // WARNING: this module has not been tested with other values of SWITCH_WIDTH, it will likely need some changes
+module axis_audio_controller #(
+    parameter SWITCH_WIDTH = 15,
     parameter DATA_WIDTH = 24
 ) (
-    input wire clk,
+    input wire clk, // Axis clock (?MHz)
     input wire rst_n,
-    input wire [SWITCH_WIDTH-1:0] sw,
+    input wire [SWITCH_WIDTH-1:0] sw, // Switch value
+    input wire [DATA_WIDTH-1:0] in_value, // User input value
     
     //AXIS SLAVE INTERFACE
     input  wire [DATA_WIDTH-1:0] s_axis_data,
@@ -83,7 +67,7 @@ module axis_volume_controller #(
     
         if (rst_n) begin
             cnt <= cnt + 1;
-            if (cnt >= sw) begin
+            if (cnt >= in_value) begin
                 phase <= phase + 4;
                 cnt <= 0;
             end

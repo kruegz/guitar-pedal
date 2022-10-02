@@ -3,91 +3,61 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="avc_tb_behav.wdb" id="1">
+      <db_ref path="top_tb_behav.wdb" id="1">
          <top_modules>
-            <top_module name="avc_tb" />
             <top_module name="glbl" />
+            <top_module name="top_tb" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
-      <ZoomEndTime time="1,010.000001 us"></ZoomEndTime>
-      <Cursor1Time time="1,010.000000 us"></Cursor1Time>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="2,360.775 ns"></ZoomEndTime>
+      <Cursor1Time time="1,000.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <NameColumnWidth column_width="233"></NameColumnWidth>
       <ValueColumnWidth column_width="116"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="13" />
-   <wvobject fp_name="/avc_tb/avc0/phase" type="array">
-      <obj_property name="ElementShortName">phase[15:0]</obj_property>
-      <obj_property name="ObjectShortName">phase[15:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">13</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
-      <obj_property name="CellHeight">100</obj_property>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/top_tb/top0/u_ui/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/sin" type="array">
-      <obj_property name="ElementShortName">sin[15:0]</obj_property>
-      <obj_property name="ObjectShortName">sin[15:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">14</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
-      <obj_property name="CellHeight">100</obj_property>
+   <wvobject fp_name="/top_tb/top0/u_ui/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
    </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/cos" type="array">
-      <obj_property name="ElementShortName">cos[15:0]</obj_property>
-      <obj_property name="ObjectShortName">cos[15:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">14</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
-      <obj_property name="CellHeight">100</obj_property>
+   <wvobject fp_name="/top_tb/top0/u_ui/btnU" type="logic">
+      <obj_property name="ElementShortName">btnU</obj_property>
+      <obj_property name="ObjectShortName">btnU</obj_property>
    </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/m_axis_data" type="array">
-      <obj_property name="ElementShortName">m_axis_data[23:0]</obj_property>
-      <obj_property name="ObjectShortName">m_axis_data[23:0]</obj_property>
+   <wvobject fp_name="/top_tb/top0/u_ui/btnD" type="logic">
+      <obj_property name="ElementShortName">btnD</obj_property>
+      <obj_property name="ObjectShortName">btnD</obj_property>
    </wvobject>
-   <wvobject fp_name="/avc_tb/avc0/m_axis_valid" type="logic">
-      <obj_property name="ElementShortName">m_axis_valid</obj_property>
-      <obj_property name="ObjectShortName">m_axis_valid</obj_property>
+   <wvobject fp_name="/top_tb/top0/u_ui/btnC" type="logic">
+      <obj_property name="ElementShortName">btnC</obj_property>
+      <obj_property name="ObjectShortName">btnC</obj_property>
    </wvobject>
-   <wvobject fp_name="/avc_tb/s_axis_data" type="array">
-      <obj_property name="ElementShortName">s_axis_data[23:0]</obj_property>
-      <obj_property name="ObjectShortName">s_axis_data[23:0]</obj_property>
+   <wvobject fp_name="/top_tb/top0/u_ui/btnU_toggle" type="logic">
+      <obj_property name="ElementShortName">btnU_toggle</obj_property>
+      <obj_property name="ObjectShortName">btnU_toggle</obj_property>
    </wvobject>
-   <wvobject fp_name="/avc_tb/s_axis_valid" type="logic">
-      <obj_property name="ElementShortName">s_axis_valid</obj_property>
-      <obj_property name="ObjectShortName">s_axis_valid</obj_property>
+   <wvobject fp_name="/top_tb/top0/u_ui/btnD_toggle" type="logic">
+      <obj_property name="ElementShortName">btnD_toggle</obj_property>
+      <obj_property name="ObjectShortName">btnD_toggle</obj_property>
    </wvobject>
-   <wvobject fp_name="/avc_tb/s_axis_ready" type="logic">
-      <obj_property name="ElementShortName">s_axis_ready</obj_property>
-      <obj_property name="ObjectShortName">s_axis_ready</obj_property>
+   <wvobject fp_name="/top_tb/top0/u_ui/btnC_toggle" type="logic">
+      <obj_property name="ElementShortName">btnC_toggle</obj_property>
+      <obj_property name="ObjectShortName">btnC_toggle</obj_property>
    </wvobject>
-   <wvobject fp_name="/avc_tb/s_axis_last" type="logic">
-      <obj_property name="ElementShortName">s_axis_last</obj_property>
-      <obj_property name="ObjectShortName">s_axis_last</obj_property>
+   <wvobject fp_name="/top_tb/top0/u_ui/user_value_rst" type="logic">
+      <obj_property name="ElementShortName">user_value_rst</obj_property>
+      <obj_property name="ObjectShortName">user_value_rst</obj_property>
    </wvobject>
-   <wvobject fp_name="/avc_tb/m_axis_data" type="array">
-      <obj_property name="ElementShortName">m_axis_data[23:0]</obj_property>
-      <obj_property name="ObjectShortName">m_axis_data[23:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/m_axis_valid" type="logic">
-      <obj_property name="ElementShortName">m_axis_valid</obj_property>
-      <obj_property name="ObjectShortName">m_axis_valid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/m_axis_ready" type="logic">
-      <obj_property name="ElementShortName">m_axis_ready</obj_property>
-      <obj_property name="ObjectShortName">m_axis_ready</obj_property>
-   </wvobject>
-   <wvobject fp_name="/avc_tb/m_axis_last" type="logic">
-      <obj_property name="ElementShortName">m_axis_last</obj_property>
-      <obj_property name="ObjectShortName">m_axis_last</obj_property>
+   <wvobject fp_name="/top_tb/top0/u_ui/user_value" type="array">
+      <obj_property name="ElementShortName">user_value[23:0]</obj_property>
+      <obj_property name="ObjectShortName">user_value[23:0]</obj_property>
    </wvobject>
 </wave_config>

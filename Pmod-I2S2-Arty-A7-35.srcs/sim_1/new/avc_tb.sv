@@ -85,7 +85,7 @@ module avc_tb #(
     
     
 //    top top0(.*);
-    axis_volume_controller #(SWITCH_WIDTH) avc0(.*);
+    axis_audio_controller #(SWITCH_WIDTH) avc0(.*);
     
     always begin
         #CLK_HALF_PERIOD;

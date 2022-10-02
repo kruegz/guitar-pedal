@@ -23,9 +23,14 @@ module top #(
     parameter DATA_WIDTH = 24,
 	parameter RESET_POLARITY = 0
 ) (
-    input wire       clk,
-    input wire [SWITCH_WIDTH-1:0] sw,
-    input wire       reset,
+    input wire clk, // 100 Mhz clock source on Basys 3 FPGA 
+    input wire [SWITCH_WIDTH-1:0] sw, // Switches
+    input wire btnC, // Center button
+    input wire btnU, // Up button
+    input wire btnL, // Left button
+    input wire btnR, // Right button
+    input wire btnD, // Down button
+    input wire reset, // R2
     
     output wire tx_mclk,
     output wire tx_lrck,
@@ -37,7 +42,7 @@ module top #(
     input  wire rx_data,
     
     output wire [3:0] Anode_Activate, // anode signals of the 7-segment LED display
-    output wire [6:0] LED_out// cathode patterns of the 7-segment LED display
+    output wire [6:0] LED_out // cathode patterns of the 7-segment LED display
 );
     wire axis_clk;
     
@@ -51,54 +56,71 @@ module top #(
     wire axis_rx_ready;
     wire axis_rx_last;
     
-    //logic clk; // 100 Mhz clock source on Basys 3 FPGA
-    //logic reset; // reset
-    reg [15:0] seconds = 0; // number to be displayed
-    //reg [3:0] Anode_Activate; // anode signals of the 7-segment LED display
-    //reg [6:0] LED_out;// cathode patterns of the 7-segment LED display
+    reg [15:0] seconds = 0;
     reg [31:0] delay = 0;
 
-	wire resetn;
-//	assign resetn = (reset == RESET_POLARITY) ? 1'b0 : 1'b1;
-    assign resetn = ~reset;
+    clk_wiz_0 m_clk (
+        .clk_in1(clk),
+        .axis_clk(axis_clk)
+    );
+
+	wire reset_n;
+    assign reset_n = ~reset;
 
     `ifdef DEBUG 
     ila_0 ila_0_0(clk, axis_clk, axis_rx_data, axis_rx_valid, axis_tx_data, axis_tx_valid);
     `endif
 	
 	always @(posedge clk) begin
-	   if (resetn) begin
-	       if (sw[0]) begin
-               if (delay == 32'd100000000) begin
-                   seconds <= seconds + 1;
-                   delay <= 0;
-               end else begin
-                   delay <= delay + 1;
-               end
-           end
-	   end else begin
-	       seconds <= 0;
-	       delay <= 0;
-	   end
-	   
-	   
+        if (reset_n) begin
+            if (delay == 32'd100000000) begin
+                seconds <= seconds + 1;
+                delay <= 0;
+            end else begin
+                delay <= delay + 1;
+            end
+	    end else begin
+	        seconds <= 0;
+	        delay <= 0;
+	    end
 	end
-	
-	reg [31:0] m_axis_data_d = 0;
-	always @(posedge seconds) begin
-	   //m_axis_data_d <= seconds;
-	end
-	
-    clk_wiz_0 m_clk (
-        .clk_in1(clk),
-        .axis_clk(axis_clk)
+
+    wire btnU_toggle;
+    wire btnL_toggle;
+    wire btnR_toggle;
+    wire btnD_toggle;
+    wire btnC_toggle;
+    wire [DATA_WIDTH-1:0] user_value;
+    wire user_value_rst;
+
+    assign user_value_rst = reset;
+
+    ui #(
+        .SWITCH_WIDTH      (15),
+        .DATA_WIDTH        (24)
+    ) u_ui (
+        .clk               (clk),
+        .rst_n             (reset_n),
+        .sw                (sw),
+        .btnU              (btnU),
+        .btnL              (btnL),
+        .btnR              (btnR),
+        .btnD              (btnD),
+        .btnC              (btnC),
+        .btnU_toggle       (btnU_toggle),
+        .btnL_toggle       (btnL_toggle),
+        .btnR_toggle       (btnR_toggle),
+        .btnD_toggle       (btnD_toggle),
+        .btnC_toggle       (btnC_toggle),
+        .user_value_rst    (user_value_rst),
+        .user_value        (user_value)
     );
     
-    Seven_segment_LED_Display_Controller s(clk, reset, sw, Anode_Activate, LED_out);
+    Seven_segment_LED_Display_Controller s(clk, reset, user_value, Anode_Activate, LED_out);
 
     axis_i2s2 m_i2s2 (
         .axis_clk(axis_clk),
-        .axis_resetn(resetn),
+        .axis_resetn(reset_n),
     
         .tx_axis_s_data(axis_tx_data),
         .tx_axis_s_valid(axis_tx_valid),
@@ -120,13 +142,14 @@ module top #(
         .rx_sdin(rx_data)
     );
     
-    axis_volume_controller #(
+    axis_audio_controller #(
 		.SWITCH_WIDTH(SWITCH_WIDTH),
 		.DATA_WIDTH(24)
 	) m_vc (
         .clk(axis_clk),
         .rst_n(~reset),
         .sw(sw),
+        .in_value(user_value),
         
         .s_axis_data(axis_rx_data[DATA_WIDTH-1:0]),
         .s_axis_valid(axis_rx_valid),

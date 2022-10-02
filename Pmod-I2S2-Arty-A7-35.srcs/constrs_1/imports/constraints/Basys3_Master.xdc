@@ -144,16 +144,16 @@ set_property PACKAGE_PIN R2 [get_ports {sw[15]}]
 
 
 ##Buttons
-#set_property PACKAGE_PIN U18 [get_ports btnC]
-#	set_property IOSTANDARD LVCMOS33 [get_ports btnC]
-#set_property PACKAGE_PIN T18 [get_ports btnU]
-#	set_property IOSTANDARD LVCMOS33 [get_ports btnU]
-#set_property PACKAGE_PIN W19 [get_ports btnL]
-#	set_property IOSTANDARD LVCMOS33 [get_ports btnL]
-#set_property PACKAGE_PIN T17 [get_ports btnR]
-#	set_property IOSTANDARD LVCMOS33 [get_ports btnR]
-#set_property PACKAGE_PIN U17 [get_ports btnD]
-#	set_property IOSTANDARD LVCMOS33 [get_ports btnD]
+set_property PACKAGE_PIN U18 [get_ports btnC]
+set_property IOSTANDARD LVCMOS33 [get_ports btnC]
+set_property PACKAGE_PIN T18 [get_ports btnU]
+set_property IOSTANDARD LVCMOS33 [get_ports btnU]
+set_property PACKAGE_PIN W19 [get_ports btnL]
+set_property IOSTANDARD LVCMOS33 [get_ports btnL]
+set_property PACKAGE_PIN T17 [get_ports btnR]
+set_property IOSTANDARD LVCMOS33 [get_ports btnR]
+set_property PACKAGE_PIN U17 [get_ports btnD]
+set_property IOSTANDARD LVCMOS33 [get_ports btnD]
 
 # Pmod Header JA
 #set_property -dict { PACKAGE_PIN G13   IOSTANDARD LVCMOS33 } [get_ports { tx_mclk }]; #IO_0_15 Sch=ja[1]

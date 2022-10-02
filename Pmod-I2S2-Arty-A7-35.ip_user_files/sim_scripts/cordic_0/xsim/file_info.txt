@@ -1,0 +1,2 @@
+cordic_0.vhd,vhdl,xil_defaultlib,../../../../Pmod-I2S2-Arty-A7-35.gen/sources_1/ip/cordic_0/sim/cordic_0.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

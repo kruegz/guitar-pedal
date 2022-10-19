@@ -19,6 +19,8 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 import uvm_pkg::*;
+`include "uvm_macros.svh"
+`include "top_test.sv"
 
 interface top_if #(
 	parameter SWITCH_WIDTH = 16,
@@ -44,10 +46,20 @@ interface top_if #(
     logic [6:0] LED_out; // cathode patterns of the 7-segment LED display
 endinterface
 
-module top_tb ();
+module top_tb #(
+    parameter SWITCH_WIDTH = 16,
+	parameter DATA_WIDTH = 24
+    ) ();
 
-    top_if top_if0(.*); 
-    top #() top0 (
+    top_if #(
+        .SWITCH_WIDTH(SWITCH_WIDTH),
+        .DATA_WIDTH(DATA_WIDTH)
+    ) top_if0(.*); 
+
+    top #(
+        .SWITCH_WIDTH(SWITCH_WIDTH),
+        .DATA_WIDTH(DATA_WIDTH)
+    ) top0 (
         .clk               (top_if0.clk),
         .sw                (top_if0.sw),
         .btnC              (top_if0.btnC),

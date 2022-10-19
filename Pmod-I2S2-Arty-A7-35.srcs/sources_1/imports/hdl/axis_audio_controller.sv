@@ -68,7 +68,7 @@ module axis_audio_controller #(
         if (rst_n) begin
             cnt <= cnt + 1;
             if (cnt >= in_value) begin
-                phase <= phase + 4;
+                phase <= phase + 8;
                 cnt <= 0;
             end
 

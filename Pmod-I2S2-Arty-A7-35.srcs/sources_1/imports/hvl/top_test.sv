@@ -33,7 +33,11 @@ class top_test extends uvm_test;
     task reset_phase(uvm_phase phase);
         phase.raise_objection(this);
         `uvm_info(report_id, "reset_phase begin", UVM_LOW)
+
+
+        clk_rst_driver_h.rst_delay = 10ns;
         clk_rst_driver_h.drive();
+
         `uvm_info(report_id, "reset_phase end", UVM_LOW)
         phase.drop_objection(this);
     endtask : reset_phase 
@@ -41,7 +45,7 @@ class top_test extends uvm_test;
     task main_phase(uvm_phase phase);
         phase.raise_objection(this);
         `uvm_info(report_id, "main_phase begin", UVM_LOW)
-        
+
         top_vip.sw = 'h100;
         top_vip.rx_data = 0;
         top_vip.btnU <= 0;

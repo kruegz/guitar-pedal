@@ -56,9 +56,9 @@ class axis_driver extends uvm_driver #(axis_item);
             end
             forever begin 
                 @(top_vif.clk);
-                top_vif.rx_mclk <= top_vif.clk;
-                top_vif.rx_lclk <= top_vif.clk;
-                top_vif.rx_lclk <= top_vif.clk;
+                // top_vif.rx_mclk <= top_vif.clk;
+                // top_vif.rx_lclk <= top_vif.clk;
+                // top_vif.rx_lclk <= top_vif.clk;
             end
         join
     endtask : run_phase

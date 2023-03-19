@@ -148,7 +148,7 @@ module top #(
 		.DATA_WIDTH(24)
 	) m_vc (
         .clk(axis_clk),
-        .rst_n(~reset),
+        .rst_n(reset_n),
         .sw(sw),
         .in_value(user_value),
         

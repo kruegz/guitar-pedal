@@ -22,22 +22,24 @@ module top #(
 	parameter RESET_POLARITY = 0
 ) (
     input wire clk, // 100 Mhz clock source on Basys 3 FPGA 
+    input wire reset, // R2
+
     input wire [SWITCH_WIDTH-1:0] sw, // Switches
     input wire btnC, // Center button
     input wire btnU, // Up button
     input wire btnL, // Left button
     input wire btnR, // Right button
     input wire btnD, // Down button
-    input wire reset, // R2
 
-    output wire tx_mclk,
-    output wire tx_lrck,
-    output wire tx_sclk,
-    output wire tx_data,
-    output wire rx_mclk,
-    output wire rx_lrck,
-    output wire rx_sclk,
-    input  wire rx_data,
+    output wire tx_mclk, // I2S2 TX MCLK
+    output wire tx_lrck, // I2S2 TX LRCK
+    output wire tx_sclk, // I2S2 TX SCLK
+    output wire tx_data, // I2S2 TX Data
+
+    output wire rx_mclk, // I2S2 RX MCLK
+    output wire rx_lrck, // I2S2 RX LRCK
+    output wire rx_sclk, // I2S2 RX SCLK
+    input  wire rx_data, // I2S2 RX Data
     
     output wire [3:0] Anode_Activate, // anode signals of the 7-segment LED display
     output wire [6:0] LED_out // cathode patterns of the 7-segment LED display
@@ -148,8 +150,7 @@ module top #(
         .clk(axis_clk),
         .rst_n(~reset),
         .sw(sw),
-        .in_value(user_value
-        ),
+        .in_value(user_value),
         
         .s_axis_data(axis_rx_data[DATA_WIDTH-1:0]),
         .s_axis_valid(axis_rx_valid),

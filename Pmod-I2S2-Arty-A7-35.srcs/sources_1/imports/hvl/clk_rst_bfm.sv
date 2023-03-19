@@ -44,15 +44,14 @@ class clk_rst_driver extends uvm_driver #(clk_rst_item);
     virtual task run_phase(uvm_phase phase);
         // forever begin
         // seq_item_port.get_next_item(req);
-        //respond_to_transfer(req);
-        drive();
+        // respond_to_transfer(req);
+        // drive();
         // seq_item_port.item_done();
         // end
     endtask : run_phase
  
     // drive
     virtual task drive();
-        // req.print();
         `uvm_info(report_id, "begin drive", UVM_LOW)
         top_vif.clk <= 0;
         top_vif.reset <= 1;

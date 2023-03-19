@@ -2,6 +2,7 @@
 import uvm_pkg::*;
 `include "uvm_macros.svh"
 `include "clk_rst_bfm.sv"
+`include "axis_agent.sv"
 
 class top_test extends uvm_test;
  
@@ -12,10 +13,12 @@ class top_test extends uvm_test;
     virtual top_if top_vip;
 
     clk_rst_driver clk_rst_driver_h;
+    axis_driver axis_driver_h;
  
     function new(string name = "top_test",uvm_component parent=null);
         super.new(name,parent);
         clk_rst_driver_h = new("clk_rst_driver_h", this);
+        axis_driver_h = new("axis_driver_h", this);
     endfunction : new
  
     virtual function void build_phase(uvm_phase phase);
@@ -23,13 +26,14 @@ class top_test extends uvm_test;
         super.build_phase(phase);
         uvm_config_db#(virtual top_if)::get(this, "", "top_if", top_vip);
         uvm_config_db#(virtual top_if)::set(this, "clk_rst_driver_h", "top_vif", top_vip);
+        uvm_config_db#(virtual top_if)::set(this, "axis_driver_h", "top_vif", top_vip);
         `uvm_info(report_id, "build_phase begin", UVM_LOW)
     endfunction : build_phase
 
     task reset_phase(uvm_phase phase);
         phase.raise_objection(this);
         `uvm_info(report_id, "reset_phase begin", UVM_LOW)
-
+        clk_rst_driver_h.drive();
         `uvm_info(report_id, "reset_phase end", UVM_LOW)
         phase.drop_objection(this);
     endtask : reset_phase 
@@ -37,6 +41,7 @@ class top_test extends uvm_test;
     task main_phase(uvm_phase phase);
         phase.raise_objection(this);
         `uvm_info(report_id, "main_phase begin", UVM_LOW)
+        
         top_vip.sw = 'h100;
         top_vip.rx_data = 0;
         top_vip.btnU <= 0;
@@ -58,6 +63,9 @@ class top_test extends uvm_test;
         top_vip.btnC <= 1;
         repeat (5) @(posedge top_vip.clk);
         top_vip.btnC <= 0;
+
+        repeat (100) @(posedge top_vip.clk);
+
         `uvm_info(report_id, "main_phase end", UVM_LOW)
         phase.drop_objection(this);
     endtask : main_phase 

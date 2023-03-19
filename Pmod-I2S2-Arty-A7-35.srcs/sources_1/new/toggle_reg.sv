@@ -1,24 +1,7 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 10/01/2022 06:35:54 PM
-// Design Name: 
-// Module Name: toggle_reg
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
+// toggle_reg
+// Send a pulse when the input goes from 0 to 1
 
 module toggle_reg(
     input clk,

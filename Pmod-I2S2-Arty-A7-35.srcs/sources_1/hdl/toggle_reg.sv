@@ -4,15 +4,15 @@
 // Send a pulse when the input goes from 0 to 1
 
 module toggle_reg(
-    input clk,
-    input rst_n,
-    input in,
-    output toggle
+    input logic clk,
+    input logic rst_n,
+    input logic in,
+    output logic toggle
     );
 
     logic toggle_reg;
 
-    assign toggle = in && !toggle_reg;
+    assign toggle = in & !toggle_reg;
 
     always @(posedge clk) begin
         if (rst_n) begin

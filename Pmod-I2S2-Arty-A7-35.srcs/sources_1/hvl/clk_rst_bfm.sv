@@ -49,21 +49,41 @@ class clk_rst_driver extends uvm_driver #(clk_rst_item);
         // seq_item_port.item_done();
         // end
     endtask : run_phase
- 
-    // drive
-    virtual task drive();
-        `uvm_info(report_id, "begin drive", UVM_LOW)
+
+    virtual task start_clocks();
+        `uvm_info(report_id, "begin start_clocks", UVM_LOW)
         top_vif.clk <= 0;
-        top_vif.reset <= 1;
         fork forever begin
             #(clk_period);
             top_vif.clk <= ~top_vif.clk;
-        end begin
-            #(rst_delay);
-            top_vif.reset <= 0;
-        end
-        join_none
-        `uvm_info(report_id, "end drive", UVM_LOW)
-    endtask : drive
+        end join_none
+        `uvm_info(report_id, "end start_clocks", UVM_LOW)
+    endtask : start_clocks
+
+    virtual task drive_resets();
+        `uvm_info(report_id, "begin drive_resets", UVM_LOW)
+
+        top_vif.reset <= 1;
+        #(rst_delay);
+        top_vif.reset <= 0;
+
+        `uvm_info(report_id, "end drive_resets", UVM_LOW)
+    endtask : drive_resets
+ 
+    // drive
+    // virtual task drive();
+    //     `uvm_info(report_id, "begin drive", UVM_LOW)
+    //     top_vif.clk <= 0;
+    //     top_vif.reset <= 1;
+    //     fork forever begin
+    //         #(clk_period);
+    //         top_vif.clk <= ~top_vif.clk;
+    //     end begin
+    //         #(rst_delay);
+    //         top_vif.reset <= 0;
+    //     end
+    //     join_none
+    //     `uvm_info(report_id, "end drive", UVM_LOW)
+    // endtask : drive
  
 endclass : clk_rst_driver

@@ -19,7 +19,8 @@
 module top #(
 	parameter SWITCH_WIDTH = 15,
     parameter DATA_WIDTH = 24,
-	parameter RESET_POLARITY = 0
+	parameter RESET_POLARITY = 0,
+    parameter N_USER_REGS = 8
 ) (
     input wire clk, // 100 Mhz clock source on Basys 3 FPGA 
     input wire reset, // R2
@@ -40,6 +41,8 @@ module top #(
     output wire rx_lrck, // I2S2 RX LRCK
     output wire rx_sclk, // I2S2 RX SCLK
     input  wire rx_data, // I2S2 RX Data
+
+    output wire [SWITCH_WIDTH-1:0] led, // LEDs
     
     output wire [3:0] Anode_Activate, // anode signals of the 7-segment LED display
     output wire [6:0] LED_out // cathode patterns of the 7-segment LED display
@@ -57,48 +60,39 @@ module top #(
     wire axis_rx_ready;
     wire axis_rx_last;
     
-    reg [15:0] seconds = 0;
-    reg [31:0] delay = 0;
+    logic [SWITCH_WIDTH-1:0] sw_q;
 
     clk_wiz_0 m_clk (
-        .clk_in1(clk),
-        .axis_clk(axis_clk)
+        .clk_in1(clk), // 100 MHz
+        .axis_clk(axis_clk) // 22.591 MHz
     );
 
 	wire reset_n;
     assign reset_n = ~reset;
 
-    `ifdef DEBUG 
-    ila_0 ila_0_0(clk, axis_clk, axis_rx_data, axis_rx_valid, axis_tx_data, axis_tx_valid);
-    `endif
-	
-	always @(posedge clk) begin
-        if (reset_n) begin
-            if (delay == 32'd100000000) begin
-                seconds <= seconds + 1;
-                delay <= 0;
-            end else begin
-                delay <= delay + 1;
-            end
-	    end else begin
-	        seconds <= 0;
-	        delay <= 0;
-	    end
-	end
+    ila_0 ila_0_0(clk, freq, limit, axis_tx_data[DATA_WIDTH-1:0], axis_tx_valid, axis_tx_ready, axis_tx_last);
+    
+    assign led = 1 << user_regs_ind;
 
     wire btnU_toggle;
     wire btnL_toggle;
     wire btnR_toggle;
     wire btnD_toggle;
     wire btnC_toggle;
+    wire [DATA_WIDTH-1:0] user_regs[N_USER_REGS];
+    wire [DATA_WIDTH-1:0] user_regs_ind;
     wire [DATA_WIDTH-1:0] user_value;
-    wire user_value_rst;
+    wire [DATA_WIDTH-1:0] freq;
+    wire [DATA_WIDTH-1:0] limit;
 
-    assign user_value_rst = reset;
+    assign user_value = user_regs[user_regs_ind];
+    assign freq = user_regs[0];
+    assign limit = user_regs[1];
 
     ui #(
-        .SWITCH_WIDTH      (15),
-        .DATA_WIDTH        (24)
+        .SWITCH_WIDTH      (SWITCH_WIDTH),
+        .DATA_WIDTH        (DATA_WIDTH),
+        .N_USER_REGS(N_USER_REGS)
     ) u_ui (
         .clk               (clk),
         .rst_n             (reset_n),
@@ -113,8 +107,9 @@ module top #(
         .btnR_toggle       (btnR_toggle),
         .btnD_toggle       (btnD_toggle),
         .btnC_toggle       (btnC_toggle),
-        .user_value_rst    (user_value_rst),
-        .user_value        (user_value)
+        .user_regs         (user_regs),
+        .user_regs_ind     (user_regs_ind),
+        .sw_out              (sw_q)
     );
     
     Seven_segment_LED_Display_Controller s(clk, reset, user_value, Anode_Activate, LED_out);
@@ -145,12 +140,14 @@ module top #(
     
     axis_audio_controller #(
 		.SWITCH_WIDTH(SWITCH_WIDTH),
-		.DATA_WIDTH(24)
+		.DATA_WIDTH(DATA_WIDTH)
 	) m_vc (
         .clk(axis_clk),
         .rst_n(reset_n),
-        .sw(sw),
+        .sw(sw_q),
         .in_value(user_value),
+        .freq(freq),
+        .limit(limit),
         
         .s_axis_data(axis_rx_data[DATA_WIDTH-1:0]),
         .s_axis_valid(axis_rx_valid),

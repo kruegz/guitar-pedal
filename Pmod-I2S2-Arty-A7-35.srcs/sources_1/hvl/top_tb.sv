@@ -23,7 +23,7 @@ import uvm_pkg::*;
 `include "top_test.sv"
 
 interface top_if #(
-	parameter SWITCH_WIDTH = 16,
+	parameter SWITCH_WIDTH = 15,
 	parameter DATA_WIDTH = 24
 	);
     logic clk; // 100 Mhz clock source on Basys 3 FPGA 
@@ -47,7 +47,7 @@ interface top_if #(
 endinterface
 
 module top_tb #(
-    parameter SWITCH_WIDTH = 16,
+    parameter SWITCH_WIDTH = 15,
 	parameter DATA_WIDTH = 24
     ) ();
 

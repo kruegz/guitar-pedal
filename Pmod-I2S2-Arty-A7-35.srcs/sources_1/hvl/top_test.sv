@@ -36,17 +36,54 @@ class top_test extends uvm_test;
 
 
         clk_rst_driver_h.rst_delay = 10ns;
-        clk_rst_driver_h.drive();
+        clk_rst_driver_h.start_clocks();
+        clk_rst_driver_h.drive_resets();
 
         `uvm_info(report_id, "reset_phase end", UVM_LOW)
         phase.drop_objection(this);
     endtask : reset_phase 
+
+    task up(int n=1);
+        repeat(n) begin
+            top_vip.btnU <= 1;
+            @(posedge top_vip.clk);
+            top_vip.btnU <= 0;
+            @(posedge top_vip.clk);
+        end
+    endtask : up
+
+    task down(int n=1);
+        repeat(n) begin
+            top_vip.btnD <= 1;
+            @(posedge top_vip.clk);
+            top_vip.btnD <= 0;
+            @(posedge top_vip.clk);
+        end
+    endtask : down
+
+    task left(int n=1);
+        repeat(n) begin
+            top_vip.btnL <= 1;
+            @(posedge top_vip.clk);
+            top_vip.btnL <= 0;
+            @(posedge top_vip.clk);
+        end
+    endtask : left
+
+    task right(int n=1);
+        repeat(n) begin
+            top_vip.btnR <= 1;
+            @(posedge top_vip.clk);
+            top_vip.btnR <= 0;
+            @(posedge top_vip.clk);
+        end
+    endtask : right
  
     task main_phase(uvm_phase phase);
         phase.raise_objection(this);
         `uvm_info(report_id, "main_phase begin", UVM_LOW)
 
-        top_vip.sw = 'h100;
+        top_vip.sw = 'h001;
         top_vip.rx_data = 0;
         top_vip.btnU <= 0;
         top_vip.btnL <= 0;
@@ -54,19 +91,19 @@ class top_test extends uvm_test;
         top_vip.btnD <= 0;
         top_vip.btnC <= 0;
 
-        top_vip.btnU <= 1;
-        repeat (1) @(posedge top_vip.clk);
-        top_vip.btnU <= 0;
-        repeat (1) @(posedge top_vip.clk);
-        top_vip.btnU <= 1;
-        repeat (1) @(posedge top_vip.clk);
-        top_vip.btnU <= 0;
-        top_vip.btnD <= 1;
-        repeat (5) @(posedge top_vip.clk);
-        top_vip.btnD <= 0;
-        top_vip.btnC <= 1;
-        repeat (5) @(posedge top_vip.clk);
-        top_vip.btnC <= 0;
+        up();
+        up();
+        up();
+        right();
+        up();
+        up();
+        up();
+        left();
+        down();
+        down();
+        right();
+        down();
+
 
         repeat (100) @(posedge top_vip.clk);
 

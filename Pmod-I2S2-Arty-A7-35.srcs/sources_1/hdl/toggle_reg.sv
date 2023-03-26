@@ -4,10 +4,10 @@
 // Send a pulse when the input goes from 0 to 1
 
 module toggle_reg(
-    input logic clk,
-    input logic rst_n,
-    input logic in,
-    output logic toggle
+    input wire clk,
+    input wire rst_n,
+    input wire in,
+    output wire toggle
     );
 
     logic toggle_reg;

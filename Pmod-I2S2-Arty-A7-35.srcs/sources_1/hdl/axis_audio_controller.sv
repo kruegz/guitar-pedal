@@ -9,6 +9,9 @@ module axis_audio_controller #(
     input wire rst_n,
     input wire [SWITCH_WIDTH-1:0] sw, // Switch value
     input wire [DATA_WIDTH-1:0] in_value, // User input value
+
+    input wire [DATA_WIDTH-1:0] freq,
+    input wire [DATA_WIDTH-1:0] limit,
     
     //AXIS SLAVE INTERFACE
     input  wire [DATA_WIDTH-1:0] s_axis_data,
@@ -57,18 +60,31 @@ module axis_audio_controller #(
 
     localparam PI = 16'sb011_0010010000000; // 3.14
     localparam NEG_PI = 16'sb100_1101110000000; // -3.14
+    localparam TWO_PI = 16'sb110_0100100000000; // 6.28
+
+    localparam INCREMENT = 16'sb000_0000000000001; // 0.01
+    // 0.000000000000010011
+    // localparam STEPS = TWO_PI / INCREMENT; 
     
     cordic_0 cordic0_0(clk, 1, phase, cordic_out_vld, cordic_out);
 
     assign sin = cordic_out[15:0];
     assign cos = cordic_out[31:16];
-    
+
+    // clk = 22.591 MHz
+    // C4 = 261.63 Hz
+    // steps = clk / C4 = 22.591 MHz / 261.63 Hz = 86347
+    // increment = 2 * PI / steps = 0.000000000000010011
+
+    reg [15:0] phase_delay = 86;
+
     always@(posedge clk) begin
     
         if (rst_n) begin
             cnt <= cnt + 1;
-            if (cnt >= in_value) begin
-                phase <= phase + 8;
+
+            if (cnt >= freq) begin
+                phase <= phase + 1;
                 cnt <= 0;
             end
 
@@ -79,13 +95,14 @@ module axis_audio_controller #(
             s_new_packet_r <= s_new_packet;
             s_new_packet_r_q <= s_new_packet_r;
             
-            limit_data[0] <= data_out;
         end else begin
             // Reset
             phase <= NEG_PI;
             cnt <= 0;
         end
     end
+
+    assign data_out = sin << 8;
     
     always@(posedge clk)
         if (s_new_word == 1'b1) // sign extend and register AXIS slave data
@@ -113,8 +130,10 @@ module axis_audio_controller #(
     always@(m_axis_valid, data[0], data[1], m_select)
         if (m_axis_valid == 1'b1)
             // m_axis_data = (data[m_select][DATA_WIDTH-1:0] > limit) ? limit : data[m_select][DATA_WIDTH-1:0];
-//             m_axis_data = data[m_select][DATA_WIDTH-1:0];
-             m_axis_data = sin << 8;
+            // m_axis_data = data[m_select][DATA_WIDTH-1:0];
+
+            // m_axis_data = data_out;
+            m_axis_data = (data_out > limit) ? limit : data_out;
         else
             m_axis_data = 'b0;
             

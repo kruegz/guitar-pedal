@@ -49,7 +49,7 @@ module axis_audio_controller #(
     reg [DATA_WIDTH-1:0] m_axis_data_d;
     wire [DATA_WIDTH-1:0] m_axis_data_w;
     reg m_axis_valid_d;
-    assign limit = sw_sync[SWITCH_WIDTH-1:0];
+    // assign limit = sw_sync[SWITCH_WIDTH-1:0];
 
     reg [DATA_WIDTH-1:0] cnt;
     reg signed [15:0] phase; // Fixed point XXX.XXXXXXXXXXXX Range: (-3.14,3.14)

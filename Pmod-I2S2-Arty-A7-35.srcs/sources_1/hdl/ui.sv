@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 10/01/2022 06:17:58 PM
+// Create Date: 10/01/2022 '06:17:58 PM
 // Design Name: 
 // Module Name: ui
 // Project Name: 
@@ -14,7 +14,7 @@
 // Dependencies: 
 // 
 // Revision:
-// Revision 0.01 - File Created
+// Revision '0.01 - File Created
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
@@ -38,8 +38,8 @@ module ui #(
     output wire btnR_toggle,
     output wire btnD_toggle,
     output wire btnC_toggle,
-    output reg [DATA_WIDTH-1:0] user_regs[N_USER_REGS],
-    output reg [7:0] user_regs_ind,
+    output reg [N_USER_REGS-1:0][DATA_WIDTH-1:0] user_regs,
+    output reg [DATA_WIDTH-1:0] user_regs_ind,
     output wire [SWITCH_WIDTH-1:0] sw_out
     );
 
@@ -83,17 +83,17 @@ module ui #(
 
             // Reset user reg
             if (btnC_toggle) begin
-                user_regs[user_regs_ind] <= 0;
+                user_regs[user_regs_ind] <= '0;
             end
         end else begin
             foreach(user_regs[i]) begin
-                user_regs[i] <= 0;
+                user_regs[i] <= '0;
             end
-            user_regs_ind <= 0;
-            user_value_q <= 0;
-            sw_sync[0] <= 0;
-            sw_sync[1] <= 0;
-            sw_sync[2] <= 0;
+            user_regs_ind <= '0;
+            user_value_q <= '0;
+            sw_sync[0] <= '0;
+            sw_sync[1] <= '0;
+            sw_sync[2] <= '0;
         end
     end
 

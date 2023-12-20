@@ -70,7 +70,7 @@ module top #(
 	wire reset_n;
     assign reset_n = ~reset;
 
-    ila_0 ila_0_0(clk, freq, limit, axis_tx_data[DATA_WIDTH-1:0], axis_tx_valid, axis_tx_ready, axis_tx_last);
+    // ila_0 ila_0_0(clk, freq, limit, axis_tx_data[DATA_WIDTH-1:0], axis_tx_valid, axis_tx_ready, axis_tx_last);
     
     assign led = 1 << user_regs_ind;
 
@@ -79,7 +79,7 @@ module top #(
     wire btnR_toggle;
     wire btnD_toggle;
     wire btnC_toggle;
-    wire [DATA_WIDTH-1:0] user_regs[N_USER_REGS];
+    wire [N_USER_REGS-1:0][DATA_WIDTH-1:0] user_regs;
     wire [DATA_WIDTH-1:0] user_regs_ind;
     wire [DATA_WIDTH-1:0] user_value;
     wire [DATA_WIDTH-1:0] freq;

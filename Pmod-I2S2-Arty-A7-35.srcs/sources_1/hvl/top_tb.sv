@@ -79,6 +79,27 @@ module top_tb #(
         .Anode_Activate    (top_if0.Anode_Activate),
         .LED_out           (top_if0.LED_out)
     );
+
+    // Checkers
+    // bind axis_audio_controller_checker
+    axis_audio_controller_checker axis_audio_controller_checker0 (
+        .clk               (top_if0.clk),
+        .rst_n             (top_if0.reset),
+        .sw                (top_if0.sw),
+        .in_value          (top_if0.sw),
+        .freq              (top_if0.sw),
+        .limit             (top_if0.sw),
+        .s_axis_data       (top_if0.tx_data),
+        .s_axis_valid      (top_if0.tx_lrck),
+        .s_axis_ready      (top_if0.tx_sclk),
+        .s_axis_last       (top_if0.tx_mclk),
+        .m_axis_data       (top_if0.rx_data),
+        .m_axis_valid      (top_if0.rx_lrck),
+        .m_axis_ready      (top_if0.rx_sclk),
+        .m_axis_last       (top_if0.rx_mclk)
+    );
+    
+
     
     initial begin
         $dumpfile("waves.vcd");

@@ -78,12 +78,11 @@ class top_test extends uvm_test;
             @(posedge top_vip.clk);
         end
     endtask : right
- 
-    task main_phase(uvm_phase phase);
-        phase.raise_objection(this);
-        `uvm_info(report_id, "main_phase begin", UVM_LOW)
 
-        top_vip.sw = 'h001;
+    task stimulus();
+        `uvm_info(report_id, "stimulus begin", UVM_LOW)
+
+        top_vip.sw = 'h10001;
         top_vip.rx_data = 0;
         top_vip.btnU <= 0;
         top_vip.btnL <= 0;
@@ -91,21 +90,35 @@ class top_test extends uvm_test;
         top_vip.btnD <= 0;
         top_vip.btnC <= 0;
 
-        up();
-        up();
-        up();
-        right();
-        up();
-        up();
-        up();
+        up(10);
+        left();
+        up(3);
         left();
         down();
-        down();
         right();
         down();
 
+        repeat (100) @(posedge top_vip.clk);
+
+        `uvm_info(report_id, "stimulus end", UVM_LOW)
+    endtask : stimulus
+
+    task scoreboard();
+        `uvm_info(report_id, "scoreboard begin", UVM_LOW)
 
         repeat (100) @(posedge top_vip.clk);
+
+        `uvm_info(report_id, "scoreboard end", UVM_LOW)
+    endtask 
+ 
+    task main_phase(uvm_phase phase);
+        phase.raise_objection(this);
+        `uvm_info(report_id, "main_phase begin", UVM_LOW)
+        
+        fork
+            stimulus();
+            scoreboard();
+        join
 
         `uvm_info(report_id, "main_phase end", UVM_LOW)
         phase.drop_objection(this);

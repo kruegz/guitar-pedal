@@ -14,50 +14,253 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="257.000 ns"></ZoomEndTime>
-      <Cursor1Time time="257.000 ns"></Cursor1Time>
+      <ZoomStartTime time="20,046.833 ns"></ZoomStartTime>
+      <ZoomEndTime time="20,327.834 ns"></ZoomEndTime>
+      <Cursor1Time time="20,281.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="398"></NameColumnWidth>
-      <ValueColumnWidth column_width="181"></ValueColumnWidth>
+      <NameColumnWidth column_width="217"></NameColumnWidth>
+      <ValueColumnWidth column_width="173"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="9" />
-   <wvobject fp_name="/top_tb/top0/u_ui/clk" type="logic">
+   <WVObjectSize size="60" />
+   <wvobject fp_name="/top_tb/top0/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/top_tb/top0/u_ui/rst_n" type="logic">
-      <obj_property name="ElementShortName">rst_n</obj_property>
-      <obj_property name="ObjectShortName">rst_n</obj_property>
+   <wvobject fp_name="/top_tb/top0/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
    </wvobject>
-   <wvobject fp_name="/top_tb/top0/u_ui/btnU_toggle" type="logic">
+   <wvobject fp_name="/top_tb/top0/sw" type="array">
+      <obj_property name="ElementShortName">sw[14:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[14:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/btnC" type="logic">
+      <obj_property name="ElementShortName">btnC</obj_property>
+      <obj_property name="ObjectShortName">btnC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/btnU" type="logic">
+      <obj_property name="ElementShortName">btnU</obj_property>
+      <obj_property name="ObjectShortName">btnU</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/btnL" type="logic">
+      <obj_property name="ElementShortName">btnL</obj_property>
+      <obj_property name="ObjectShortName">btnL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/btnR" type="logic">
+      <obj_property name="ElementShortName">btnR</obj_property>
+      <obj_property name="ObjectShortName">btnR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/btnD" type="logic">
+      <obj_property name="ElementShortName">btnD</obj_property>
+      <obj_property name="ObjectShortName">btnD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/tx_mclk" type="logic">
+      <obj_property name="ElementShortName">tx_mclk</obj_property>
+      <obj_property name="ObjectShortName">tx_mclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/tx_lrck" type="logic">
+      <obj_property name="ElementShortName">tx_lrck</obj_property>
+      <obj_property name="ObjectShortName">tx_lrck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/tx_sclk" type="logic">
+      <obj_property name="ElementShortName">tx_sclk</obj_property>
+      <obj_property name="ObjectShortName">tx_sclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/tx_data" type="logic">
+      <obj_property name="ElementShortName">tx_data</obj_property>
+      <obj_property name="ObjectShortName">tx_data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/rx_mclk" type="logic">
+      <obj_property name="ElementShortName">rx_mclk</obj_property>
+      <obj_property name="ObjectShortName">rx_mclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/rx_lrck" type="logic">
+      <obj_property name="ElementShortName">rx_lrck</obj_property>
+      <obj_property name="ObjectShortName">rx_lrck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/rx_sclk" type="logic">
+      <obj_property name="ElementShortName">rx_sclk</obj_property>
+      <obj_property name="ObjectShortName">rx_sclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/rx_data" type="logic">
+      <obj_property name="ElementShortName">rx_data</obj_property>
+      <obj_property name="ObjectShortName">rx_data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/led" type="array">
+      <obj_property name="ElementShortName">led[14:0]</obj_property>
+      <obj_property name="ObjectShortName">led[14:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/Anode_Activate" type="array">
+      <obj_property name="ElementShortName">Anode_Activate[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Anode_Activate[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/LED_out" type="array">
+      <obj_property name="ElementShortName">LED_out[6:0]</obj_property>
+      <obj_property name="ObjectShortName">LED_out[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/axis_clk" type="logic">
+      <obj_property name="ElementShortName">axis_clk</obj_property>
+      <obj_property name="ObjectShortName">axis_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/axis_tx_data" type="array">
+      <obj_property name="ElementShortName">axis_tx_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">axis_tx_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/axis_tx_valid" type="logic">
+      <obj_property name="ElementShortName">axis_tx_valid</obj_property>
+      <obj_property name="ObjectShortName">axis_tx_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/axis_tx_ready" type="logic">
+      <obj_property name="ElementShortName">axis_tx_ready</obj_property>
+      <obj_property name="ObjectShortName">axis_tx_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/axis_tx_last" type="logic">
+      <obj_property name="ElementShortName">axis_tx_last</obj_property>
+      <obj_property name="ObjectShortName">axis_tx_last</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/axis_rx_data" type="array">
+      <obj_property name="ElementShortName">axis_rx_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">axis_rx_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/axis_rx_valid" type="logic">
+      <obj_property name="ElementShortName">axis_rx_valid</obj_property>
+      <obj_property name="ObjectShortName">axis_rx_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/axis_rx_ready" type="logic">
+      <obj_property name="ElementShortName">axis_rx_ready</obj_property>
+      <obj_property name="ObjectShortName">axis_rx_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/axis_rx_last" type="logic">
+      <obj_property name="ElementShortName">axis_rx_last</obj_property>
+      <obj_property name="ObjectShortName">axis_rx_last</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/sw_q" type="array">
+      <obj_property name="ElementShortName">sw_q[14:0]</obj_property>
+      <obj_property name="ObjectShortName">sw_q[14:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/reset_n" type="logic">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/btnU_toggle" type="logic">
       <obj_property name="ElementShortName">btnU_toggle</obj_property>
       <obj_property name="ObjectShortName">btnU_toggle</obj_property>
    </wvobject>
-   <wvobject fp_name="/top_tb/top0/u_ui/btnL_toggle" type="logic">
+   <wvobject fp_name="/top_tb/top0/btnL_toggle" type="logic">
       <obj_property name="ElementShortName">btnL_toggle</obj_property>
       <obj_property name="ObjectShortName">btnL_toggle</obj_property>
    </wvobject>
-   <wvobject fp_name="/top_tb/top0/u_ui/btnR_toggle" type="logic">
+   <wvobject fp_name="/top_tb/top0/btnR_toggle" type="logic">
       <obj_property name="ElementShortName">btnR_toggle</obj_property>
       <obj_property name="ObjectShortName">btnR_toggle</obj_property>
    </wvobject>
-   <wvobject fp_name="/top_tb/top0/u_ui/btnD_toggle" type="logic">
+   <wvobject fp_name="/top_tb/top0/btnD_toggle" type="logic">
       <obj_property name="ElementShortName">btnD_toggle</obj_property>
       <obj_property name="ObjectShortName">btnD_toggle</obj_property>
    </wvobject>
-   <wvobject fp_name="/top_tb/top0/u_ui/btnC_toggle" type="logic">
+   <wvobject fp_name="/top_tb/top0/btnC_toggle" type="logic">
       <obj_property name="ElementShortName">btnC_toggle</obj_property>
       <obj_property name="ObjectShortName">btnC_toggle</obj_property>
    </wvobject>
-   <wvobject fp_name="/top_tb/top0/u_ui/user_regs" type="array">
-      <obj_property name="ElementShortName">user_regs[0:7][23:0]</obj_property>
-      <obj_property name="ObjectShortName">user_regs[0:7][23:0]</obj_property>
-      <obj_property name="isExpanded"></obj_property>
+   <wvobject fp_name="/top_tb/top0/user_regs" type="array">
+      <obj_property name="ElementShortName">user_regs[7:0][23:0]</obj_property>
+      <obj_property name="ObjectShortName">user_regs[7:0][23:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/top_tb/top0/u_ui/user_regs_ind" type="array">
-      <obj_property name="ElementShortName">user_regs_ind[7:0]</obj_property>
-      <obj_property name="ObjectShortName">user_regs_ind[7:0]</obj_property>
+   <wvobject fp_name="/top_tb/top0/user_regs_ind" type="array">
+      <obj_property name="ElementShortName">user_regs_ind[23:0]</obj_property>
+      <obj_property name="ObjectShortName">user_regs_ind[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/user_value" type="array">
+      <obj_property name="ElementShortName">user_value[23:0]</obj_property>
+      <obj_property name="ObjectShortName">user_value[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/freq" type="array">
+      <obj_property name="ElementShortName">freq[23:0]</obj_property>
+      <obj_property name="ObjectShortName">freq[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/limit" type="array">
+      <obj_property name="ElementShortName">limit[23:0]</obj_property>
+      <obj_property name="ObjectShortName">limit[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/SWITCH_WIDTH" type="array">
+      <obj_property name="ElementShortName">SWITCH_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SWITCH_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/DATA_WIDTH" type="array">
+      <obj_property name="ElementShortName">DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/RESET_POLARITY" type="array">
+      <obj_property name="ElementShortName">RESET_POLARITY[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RESET_POLARITY[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/top0/N_USER_REGS" type="array">
+      <obj_property name="ElementShortName">N_USER_REGS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">N_USER_REGS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/axis_audio_controller_checker0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/axis_audio_controller_checker0/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/axis_audio_controller_checker0/sw" type="array">
+      <obj_property name="ElementShortName">sw[14:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[14:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/axis_audio_controller_checker0/in_value" type="array">
+      <obj_property name="ElementShortName">in_value[23:0]</obj_property>
+      <obj_property name="ObjectShortName">in_value[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/axis_audio_controller_checker0/freq" type="array">
+      <obj_property name="ElementShortName">freq[23:0]</obj_property>
+      <obj_property name="ObjectShortName">freq[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/axis_audio_controller_checker0/limit" type="array">
+      <obj_property name="ElementShortName">limit[23:0]</obj_property>
+      <obj_property name="ObjectShortName">limit[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/axis_audio_controller_checker0/s_axis_data" type="array">
+      <obj_property name="ElementShortName">s_axis_data[23:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/axis_audio_controller_checker0/s_axis_valid" type="logic">
+      <obj_property name="ElementShortName">s_axis_valid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/axis_audio_controller_checker0/s_axis_ready" type="logic">
+      <obj_property name="ElementShortName">s_axis_ready</obj_property>
+      <obj_property name="ObjectShortName">s_axis_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/axis_audio_controller_checker0/s_axis_last" type="logic">
+      <obj_property name="ElementShortName">s_axis_last</obj_property>
+      <obj_property name="ObjectShortName">s_axis_last</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/axis_audio_controller_checker0/m_axis_data" type="array">
+      <obj_property name="ElementShortName">m_axis_data[23:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/axis_audio_controller_checker0/m_axis_valid" type="logic">
+      <obj_property name="ElementShortName">m_axis_valid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/axis_audio_controller_checker0/m_axis_ready" type="logic">
+      <obj_property name="ElementShortName">m_axis_ready</obj_property>
+      <obj_property name="ObjectShortName">m_axis_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/axis_audio_controller_checker0/m_axis_last" type="logic">
+      <obj_property name="ElementShortName">m_axis_last</obj_property>
+      <obj_property name="ObjectShortName">m_axis_last</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/axis_audio_controller_checker0/SWITCH_WIDTH" type="array">
+      <obj_property name="ElementShortName">SWITCH_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SWITCH_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/axis_audio_controller_checker0/DATA_WIDTH" type="array">
+      <obj_property name="ElementShortName">DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_WIDTH[31:0]</obj_property>
    </wvobject>
 </wave_config>

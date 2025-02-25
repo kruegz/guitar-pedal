@@ -1,0 +1,129 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="master_audio_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=master_audio_control" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="control.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="master_audio_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="control.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="master_audio_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="control.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="master_audio_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="control.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="master_audio_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=temp1 depth=8" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="control.cpp:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="master_audio_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=temp2 depth=8" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="control.cpp:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="master_audio_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=temp3 depth=8" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="eq.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir_filter" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="eq.cpp:35:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="eq_3band" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="eq.cpp:36:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="eq_3band" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="eq.cpp:37:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="eq_3band" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="eq.cpp:48:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="eq_3band" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=delay_low complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="eq.cpp:49:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="eq_3band" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=delay_mid complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="eq.cpp:50:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="eq_3band" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=delay_high complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="echo.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="echo" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="echo.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="echo" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="echo.cpp:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="echo" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="echo.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="echo" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=delay_buffer cyclic factor=16" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="distortion.cpp:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="distortion" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="distortion.cpp:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="distortion" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="distortion.cpp:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="distortion" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="eq.cpp:26:22" msg_body="Loop 'VITIS_LOOP_26_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_26_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="eq.cpp:21:22" msg_body="Loop 'VITIS_LOOP_21_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_21_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="eq.cpp:17:0" msg_body="Unrolling loop 'VITIS_LOOP_26_2' (eq.cpp:26:22) in function 'fir_filter' completely with a factor of 5">
+        <args Factor="5" LoopLoc="eq.cpp:26:22" LoopName="VITIS_LOOP_26_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="eq.cpp:17:0" msg_body="Unrolling loop 'VITIS_LOOP_21_1' (eq.cpp:21:22) in function 'fir_filter' completely with a factor of 4">
+        <args Factor="4" LoopLoc="eq.cpp:21:22" LoopName="VITIS_LOOP_21_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="echo.cpp:9:0" msg_body="Inlining function 'ap_int&lt;24&gt;::ap_int(double)' into 'echo(hls::stream&lt;axis_sample, 0&gt;&amp;, hls::stream&lt;axis_sample, 0&gt;&amp;, bool)'">
+        <args Callee="ap_int&lt;24&gt;::ap_int(double)" Callee-DebugLoc="File {C:/Xilinx/Vitis/2024.2/common/technology/autopilot\ap_int.h} Line 142 Column 0" Caller="echo(hls::stream&lt;axis_sample, 0&gt;&amp;, hls::stream&lt;axis_sample, 0&gt;&amp;, bool)" Caller-DebugLoc="File echo.cpp Line 9 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="eq.cpp:34:0" msg_body="Inlining function 'ap_int&lt;24&gt;::ap_int(float)' into 'eq_3band(hls::stream&lt;axis_sample, 0&gt;&amp;, hls::stream&lt;axis_sample, 0&gt;&amp;, bool, float, float, float)'">
+        <args Callee="ap_int&lt;24&gt;::ap_int(float)" Callee-DebugLoc="File {C:/Xilinx/Vitis/2024.2/common/technology/autopilot\ap_int.h} Line 143 Column 0" Caller="eq_3band(hls::stream&lt;axis_sample, 0&gt;&amp;, hls::stream&lt;axis_sample, 0&gt;&amp;, bool, float, float, float)" Caller-DebugLoc="File eq.cpp Line 34 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="eq.cpp:44:0" msg_body="Applying array_partition to '_ZZ8eq_3bandRN3hls6streamI11axis_sampleLi0EEES3_bfffE9delay_low': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ8eq_3bandRN3hls6streamI11axis_sampleLi0EEES3_bfffE9delay_low"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="eq.cpp:45:0" msg_body="Applying array_partition to '_ZZ8eq_3bandRN3hls6streamI11axis_sampleLi0EEES3_bfffE9delay_mid': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ8eq_3bandRN3hls6streamI11axis_sampleLi0EEES3_bfffE9delay_mid"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="eq.cpp:46:0" msg_body="Applying array_partition to '_ZZ8eq_3bandRN3hls6streamI11axis_sampleLi0EEES3_bfffE10delay_high': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ8eq_3bandRN3hls6streamI11axis_sampleLi0EEES3_bfffE10delay_high"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="echo.cpp:14:0" msg_body="Applying array_partition to '_ZZ4echoRN3hls6streamI11axis_sampleLi0EEES3_bE12delay_buffer': Cyclic partitioning with factor 16 on dimension 1.">
+        <args Dim="1" Factor="16" Mode="Cyclic" UOName="_ZZ4echoRN3hls6streamI11axis_sampleLi0EEES3_bE12delay_buffer"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="control.cpp:13:34" msg_body="Aggregating fifo (hls::stream) variable 'temp2' with compact=bit mode in 25-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="25" HwTyName="fifo (hls::stream)" Name="temp2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="control.cpp:13:27" msg_body="Aggregating fifo (hls::stream) variable 'temp1' with compact=bit mode in 25-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="25" HwTyName="fifo (hls::stream)" Name="temp1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="control.cpp:20:2" msg_body="Automatically inlining function 'distortion(hls::stream&lt;axis_sample, 0&gt;&amp;, hls::stream&lt;axis_sample, 0&gt;&amp;, bool, bool, int)' to improve effectiveness of pipeline pragma in function 'master_audio_control(hls::stream&lt;axis_sample, 0&gt;&amp;, hls::stream&lt;axis_sample, 0&gt;&amp;, bool, bool, bool, int, int, int, int)'">
+        <args Callee="distortion(hls::stream&lt;axis_sample, 0&gt;&amp;, hls::stream&lt;axis_sample, 0&gt;&amp;, bool, bool, int)" Callee-DebugLoc="File distortion.cpp Line 11 Column 0" Caller="master_audio_control(hls::stream&lt;axis_sample, 0&gt;&amp;, hls::stream&lt;axis_sample, 0&gt;&amp;, bool, bool, bool, int, int, int, int)" Caller-DebugLoc="File control.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="control.cpp:23:5" msg_body="Automatically inlining function 'echo(hls::stream&lt;axis_sample, 0&gt;&amp;, hls::stream&lt;axis_sample, 0&gt;&amp;, bool)' to improve effectiveness of pipeline pragma in function 'master_audio_control(hls::stream&lt;axis_sample, 0&gt;&amp;, hls::stream&lt;axis_sample, 0&gt;&amp;, bool, bool, bool, int, int, int, int)'">
+        <args Callee="echo(hls::stream&lt;axis_sample, 0&gt;&amp;, hls::stream&lt;axis_sample, 0&gt;&amp;, bool)" Callee-DebugLoc="File echo.cpp Line 9 Column 0" Caller="master_audio_control(hls::stream&lt;axis_sample, 0&gt;&amp;, hls::stream&lt;axis_sample, 0&gt;&amp;, bool, bool, bool, int, int, int, int)" Caller-DebugLoc="File control.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="control.cpp:26:5" msg_body="Automatically inlining function 'eq_3band(hls::stream&lt;axis_sample, 0&gt;&amp;, hls::stream&lt;axis_sample, 0&gt;&amp;, bool, float, float, float)' to improve effectiveness of pipeline pragma in function 'master_audio_control(hls::stream&lt;axis_sample, 0&gt;&amp;, hls::stream&lt;axis_sample, 0&gt;&amp;, bool, bool, bool, int, int, int, int)'">
+        <args Callee="eq_3band(hls::stream&lt;axis_sample, 0&gt;&amp;, hls::stream&lt;axis_sample, 0&gt;&amp;, bool, float, float, float)" Callee-DebugLoc="File eq.cpp Line 34 Column 0" Caller="master_audio_control(hls::stream&lt;axis_sample, 0&gt;&amp;, hls::stream&lt;axis_sample, 0&gt;&amp;, bool, bool, bool, int, int, int, int)" Caller-DebugLoc="File control.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="eq.cpp:60:26" msg_body="Automatically inlining function 'fir_filter(ap_int&lt;24&gt;, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_int&lt;24&gt;*)' to improve effectiveness of pipeline pragma in function 'master_audio_control(hls::stream&lt;axis_sample, 0&gt;&amp;, hls::stream&lt;axis_sample, 0&gt;&amp;, bool, bool, bool, int, int, int, int)'">
+        <args Callee="fir_filter(ap_int&lt;24&gt;, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_int&lt;24&gt;*)" Callee-DebugLoc="File eq.cpp Line 17 Column 0" Caller="master_audio_control(hls::stream&lt;axis_sample, 0&gt;&amp;, hls::stream&lt;axis_sample, 0&gt;&amp;, bool, bool, bool, int, int, int, int)" Caller-DebugLoc="File control.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="eq.cpp:61:26" msg_body="Automatically inlining function 'fir_filter(ap_int&lt;24&gt;, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_int&lt;24&gt;*)' to improve effectiveness of pipeline pragma in function 'master_audio_control(hls::stream&lt;axis_sample, 0&gt;&amp;, hls::stream&lt;axis_sample, 0&gt;&amp;, bool, bool, bool, int, int, int, int)'">
+        <args Callee="fir_filter(ap_int&lt;24&gt;, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_int&lt;24&gt;*)" Callee-DebugLoc="File eq.cpp Line 17 Column 0" Caller="master_audio_control(hls::stream&lt;axis_sample, 0&gt;&amp;, hls::stream&lt;axis_sample, 0&gt;&amp;, bool, bool, bool, int, int, int, int)" Caller-DebugLoc="File control.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="eq.cpp:62:27" msg_body="Automatically inlining function 'fir_filter(ap_int&lt;24&gt;, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_int&lt;24&gt;*)' to improve effectiveness of pipeline pragma in function 'master_audio_control(hls::stream&lt;axis_sample, 0&gt;&amp;, hls::stream&lt;axis_sample, 0&gt;&amp;, bool, bool, bool, int, int, int, int)'">
+        <args Callee="fir_filter(ap_int&lt;24&gt;, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_int&lt;24&gt;*)" Callee-DebugLoc="File eq.cpp Line 17 Column 0" Caller="master_audio_control(hls::stream&lt;axis_sample, 0&gt;&amp;, hls::stream&lt;axis_sample, 0&gt;&amp;, bool, bool, bool, int, int, int, int)" Caller-DebugLoc="File control.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="eq.cpp:37:9" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'bpf_coeffs' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="bpf_coeffs" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="eq.cpp:37:9" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'hpf_coeffs' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="hpf_coeffs" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="eq.cpp:37:9" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'lpf_coeffs' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="lpf_coeffs" PragmaType="array_partition"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

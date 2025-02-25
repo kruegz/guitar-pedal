@@ -4,4 +4,5 @@ verilog xil_defaultlib --include "../../../../../Pmod-I2S2-master/arty-a7-35/pro
 
 verilog xil_defaultlib "glbl.v"
 
+# Do not sort compile order
 nosort

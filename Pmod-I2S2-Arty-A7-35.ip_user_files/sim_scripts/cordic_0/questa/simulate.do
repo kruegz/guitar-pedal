@@ -1,7 +1,7 @@
 onbreak {quit -f}
 onerror {quit -f}
 
-vsim -lib xil_defaultlib cordic_0_opt
+vsim  -lib xil_defaultlib cordic_0_opt
 
 set NumericStdNoWarnings 1
 set StdArithNoWarnings 1
@@ -14,6 +14,6 @@ view signals
 
 do {cordic_0.udo}
 
-run -all
+run 1000ns
 
 quit -force

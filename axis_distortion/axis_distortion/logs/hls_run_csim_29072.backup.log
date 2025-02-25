@@ -1,0 +1,140 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+WARNING: [HLS 200-2001] file not found 'distortion.h' see [hls] from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying ini 'syn.file=distortion.cpp' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ZachKrueger/Documents/AI/axis_distortion/distortion.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=distortion.h' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(10)
+WARNING: [HLS 200-40] Cannot find design file 'distortion.h'
+INFO: [HLS 200-1465] Applying ini 'syn.file=echo.cpp' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ZachKrueger/Documents/AI/axis_distortion/echo.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=test_distortion.cpp' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/ZachKrueger/Documents/AI/axis_distortion/test_distortion.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=common.h' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/ZachKrueger/Documents/AI/axis_distortion/common.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=test_echo.cpp' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/ZachKrueger/Documents/AI/axis_distortion/test_echo.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=distortion' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7a35tcpg236-1' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7a35t-cpg236-1'
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(5)
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [HLS 211-200] Compiling source code C:/Users/ZachKrueger/Documents/AI/axis_distortion/test_distortion.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Linking executable
+INFO: [HLS 211-200] Computing HLS IR Information
+INFO: [HLS 211-200] Determining source code dependencies
+INFO: [SIM 211-200] Running executable
+Index | Input Sample | Output Sample
+-----------------------------------
+  0    | -1545084  | 0
+  1    | -1545084  | 1545084
+  2    | -1545084  | 2938926
+  3    | -1545084  | 4045084
+  4    | -1545084  | 4755282
+  5    | -1545084  | 5000000
+  6    | -1545084  | 4755282
+  7    | -1545084  | 4045084
+  8    | -1545084  | 2938926
+  9    | -1545084  | 1545084
+  10    | -1545084  | 0
+  11    | -1545084  | -1545084
+  12    | -1545084  | -2938926
+  13    | -1545084  | -4045084
+  14    | -1545084  | -4755282
+  15    | -1545084  | -5000000
+  16    | -1545084  | -4755282
+  17    | -1545084  | -4045084
+  18    | -1545084  | -2938926
+  19    | -1545084  | -1545084
+  20    | -1545084  | 0
+  21    | -1545084  | 1545084
+  22    | -1545084  | 2938926
+  23    | -1545084  | 4045084
+  24    | -1545084  | 4755282
+  25    | -1545084  | 5000000
+  26    | -1545084  | 4755282
+  27    | -1545084  | 4045084
+  28    | -1545084  | 2938926
+  29    | -1545084  | 1545084
+  30    | -1545084  | 0
+  31    | -1545084  | -1545084
+  32    | -1545084  | -2938926
+  33    | -1545084  | -4045084
+  34    | -1545084  | -4755282
+  35    | -1545084  | -5000000
+  36    | -1545084  | -4755282
+  37    | -1545084  | -4045084
+  38    | -1545084  | -2938926
+  39    | -1545084  | -1545084
+  40    | -1545084  | 0
+  41    | -1545084  | 1545084
+  42    | -1545084  | 2938926
+  43    | -1545084  | 4045084
+  44    | -1545084  | 4755282
+  45    | -1545084  | 5000000
+  46    | -1545084  | 4755282
+  47    | -1545084  | 4045084
+  48    | -1545084  | 2938926
+  49    | -1545084  | 1545084
+  50    | -1545084  | 0
+  51    | -1545084  | -1545084
+  52    | -1545084  | -2938926
+  53    | -1545084  | -4045084
+  54    | -1545084  | -4755282
+  55    | -1545084  | -5000000
+  56    | -1545084  | -4755282
+  57    | -1545084  | -4045084
+  58    | -1545084  | -2938926
+  59    | -1545084  | -1545084
+  60    | -1545084  | 0
+  61    | -1545084  | 1545084
+  62    | -1545084  | 2938926
+  63    | -1545084  | 4045084
+  64    | -1545084  | 4755282
+  65    | -1545084  | 5000000
+  66    | -1545084  | 4755282
+  67    | -1545084  | 4045084
+  68    | -1545084  | 2938926
+  69    | -1545084  | 1545084
+  70    | -1545084  | 0
+  71    | -1545084  | -1545084
+  72    | -1545084  | -2938926
+  73    | -1545084  | -4045084
+  74    | -1545084  | -4755282
+  75    | -1545084  | -5000000
+  76    | -1545084  | -4755282
+  77    | -1545084  | -4045084
+  78    | -1545084  | -2938926
+  79    | -1545084  | -1545084
+  80    | -1545084  | 0
+  81    | -1545084  | 1545084
+  82    | -1545084  | 2938926
+  83    | -1545084  | 4045084
+  84    | -1545084  | 4755282
+  85    | -1545084  | 5000000
+  86    | -1545084  | 4755282
+  87    | -1545084  | 4045084
+  88    | -1545084  | 2938926
+  89    | -1545084  | 1545084
+  90    | -1545084  | 0
+  91    | -1545084  | -1545084
+  92    | -1545084  | -2938926
+  93    | -1545084  | -4045084
+  94    | -1545084  | -4755282
+  95    | -1545084  | -5000000
+  96    | -1545084  | -4755282
+  97    | -1545084  | -4045084
+  98    | -1545084  | -2938926
+  99    | -1545084  | -1545084
+Test complete. Results saved in echo_output.txt
+INFO: [SIM 211-200] Analyzing trace data
+INFO: [SIM 211-208] Running Code Analyzer
+WARNING: [SIM 211-207] Code Analyzer does not display the impact of the pipeline pragma in dataflow regions (C:\Users\ZachKrueger\Documents\AI\axis_distortion:0:0)
+INFO: [SIM 211-210] Code Analyzer finished
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 2 seconds. Total elapsed time: 18.861 seconds; peak allocated memory: 161.656 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 24s

@@ -1,0 +1,28 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=distortion.cpp' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ZachKrueger/Documents/AI/axis_distortion/distortion.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=test_distortion.cpp' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/ZachKrueger/Documents/AI/axis_distortion/test_distortion.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=distortion' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7a35tcpg236-1' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7a35t-cpg236-1'
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(5)
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [HLS 211-200] Compiling source code distortion.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code C:/Users/ZachKrueger/Documents/AI/axis_distortion/test_distortion.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code distortion.cpp as test bench code with instrumentation
+C:/Users/ZachKrueger/Documents/AI/axis_distortion/test_distortion.cpp:4:10: fatal error: 'distortion.h' file not found
+#include "distortion.h"
+         ^~~~~~~~~~~~~~
+1 error generated.
+slxcmd:0:0: warning: Non-zero exit code: 1 returned by 'INFO: [HLS 211-200] Compiling source code C:/Users/ZachKrueger/Documents/AI/axis_distortion/test_distortion.cpp as test bench code with instrumentation'
+ERROR: [SIM 211-200] Code Analyzer execution failed. Consider running the classic C simulation instead by disabling the hls.csim.code_analyzer option in the config file.
+ERROR: Problem running csim: child process exited abnormally
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 2 seconds. Total elapsed time: 11.418 seconds; peak allocated memory: 161.859 MB.

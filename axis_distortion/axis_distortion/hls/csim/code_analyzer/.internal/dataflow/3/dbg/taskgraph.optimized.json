@@ -1,0 +1,645 @@
+[
+    {
+        "name": "_Z10distortionRN3hls6streamI11axis_sampleLi0EEES3_b",
+        "df_function": "%F940",
+        "df_type": "Function",
+        "project": "SLX",
+        "processes": {
+            "1": {
+                "id": "1",
+                "name": "Artificial<Start>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                        "line": 8,
+                        "column": 1
+                    },
+                    "end_loc": {
+                        "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                        "line": 36,
+                        "column": 1
+                    }
+                },
+                "display_name": "<START>",
+                "kind": "start"
+            },
+            "2": {
+                "id": "2",
+                "name": "Artificial<End>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                        "line": 8,
+                        "column": 1
+                    },
+                    "end_loc": {
+                        "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                        "line": 36,
+                        "column": 1
+                    }
+                },
+                "display_name": "<END>",
+                "kind": "end"
+            },
+            "3": {
+                "id": "3",
+                "name": "Region<OutlineCall(R2 distortion) BB 'codeRepl' [Atomic] 'Outline_T3_F940_R2_Atomic'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                        "line": 13,
+                        "column": 32
+                    },
+                    "end_loc": {
+                        "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                        "line": 13,
+                        "column": 32
+                    }
+                },
+                "display_name": "Process 1",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                                    "line": 8,
+                                    "column": 0
+                                },
+                                "id": "VId_2322_*0(0,64)arg.A0(0,64)",
+                                "name": "in.Handle",
+                                "display_name": "axis_sample *stream<axis_sample, 0>::Handle"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                                        "line": 13,
+                                        "column": 32
+                                    },
+                                    "access_type": "%struct.axis_sample.104",
+                                    "access_bit_width": 49,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Fifo",
+                            "has_alias": false,
+                            "arg_idx": 0
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                                    "line": 13,
+                                    "column": 17
+                                },
+                                "id": "VId_2325_!c?(?,?)",
+                                "name": "sample_in",
+                                "display_name": "axis_sample sample_in"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 8,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                                        "line": 13,
+                                        "column": 32
+                                    },
+                                    "access_type": "i64",
+                                    "access_bit_width": 64,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                                    "line": 13,
+                                    "column": 17
+                                },
+                                "id": "VId_2325_.A0(0,32)",
+                                "name": "sample_in.data",
+                                "display_name": "audio_sample_t axis_sample::data"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 4,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i24",
+                                    "access_bit_width": 24,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                                    "line": 16,
+                                    "column": 0
+                                },
+                                "id": "VId_2348_!c?(?,?)",
+                                "name": "x",
+                                "display_name": "audio_sample_t x"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 4,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "access_type": "i24",
+                                    "access_bit_width": 24,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F943_R1",
+                        "description": "<function entry>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                                "line": 13,
+                                "column": 32
+                            },
+                            "end_loc": {
+                                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                                "line": 13,
+                                "column": 32
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": []
+            },
+            "4": {
+                "id": "4",
+                "name": "Region<OutlineCall(R3 distortion) BB 'codeRepl1' [Switch,Atomic] 'Outline_T4_F940_R3_Switch'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                        "line": 22,
+                        "column": 15
+                    },
+                    "end_loc": {
+                        "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                        "line": 29,
+                        "column": 16
+                    }
+                },
+                "display_name": "Process 2",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                                    "line": 16,
+                                    "column": 0
+                                },
+                                "id": "VId_2348_!c?(?,?)",
+                                "name": "x",
+                                "display_name": "audio_sample_t x"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 4,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i24",
+                                    "access_bit_width": 24,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                                    "line": 16,
+                                    "column": 0
+                                },
+                                "id": "VId_2355_!c?(?,?)",
+                                "name": "x",
+                                "display_name": "audio_sample_t x"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 4,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "access_type": "i24",
+                                    "access_bit_width": 24,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                                    "line": 8,
+                                    "column": 0
+                                },
+                                "id": "VId_2324_!c?(?,?)",
+                                "name": "soft_clipping",
+                                "display_name": "bool soft_clipping"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false,
+                            "arg_idx": 2
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F944_R1",
+                        "description": "<switch>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                                "line": 22,
+                                "column": 15
+                            },
+                            "end_loc": {
+                                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                                "line": 29,
+                                "column": 16
+                            }
+                        }
+                    },
+                    {
+                        "id": "%F944_R28",
+                        "description": "<function exit>"
+                    }
+                ],
+                "subdataflow": []
+            },
+            "5": {
+                "id": "5",
+                "name": "Region<OutlineCall(R4 distortion) BB 'codeRepl2' [Atomic] 'Outline_T5_F940_R31_Atomic'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                        "line": 35,
+                        "column": 9
+                    },
+                    "end_loc": {
+                        "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                        "line": 35,
+                        "column": 9
+                    }
+                },
+                "display_name": "Process 3",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                                    "line": 16,
+                                    "column": 0
+                                },
+                                "id": "VId_2355_!c?(?,?)",
+                                "name": "x",
+                                "display_name": "audio_sample_t x"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 4,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i24",
+                                    "access_bit_width": 24,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                                    "line": 13,
+                                    "column": 17
+                                },
+                                "id": "VId_2325_.A1(32,8)",
+                                "name": "sample_in.last",
+                                "display_name": "bool axis_sample::last"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 4,
+                                                "end": 5,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i1",
+                                    "access_bit_width": 1,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                                    "line": 8,
+                                    "column": 0
+                                },
+                                "id": "VId_2323_*0(0,64)arg.A0(0,64)",
+                                "name": "out.Handle",
+                                "display_name": "axis_sample *stream<axis_sample, 0>::Handle"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Fifo",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                                        "line": 35,
+                                        "column": 9
+                                    },
+                                    "access_type": "%struct.axis_sample.104",
+                                    "access_bit_width": 49,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Fifo",
+                            "has_alias": false,
+                            "arg_idx": 1
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F945_R1",
+                        "description": "<function entry>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                                "line": 35,
+                                "column": 9
+                            },
+                            "end_loc": {
+                                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                                "line": 35,
+                                "column": 9
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": []
+            }
+        },
+        "channels": {
+            "in.Handle_RAW_1_3_#0": {
+                "name": "in.Handle_RAW_1_3_#0",
+                "variable_id": "VId_2322_*0(0,64)arg.A0(0,64)",
+                "variable_name": "in.Handle",
+                "declaration": "axis_sample *stream<axis_sample, 0>::Handle",
+                "kind": "Fifo",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                    "line": 8,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "soft_clipping_RAW_1_4_#1": {
+                "name": "soft_clipping_RAW_1_4_#1",
+                "variable_id": "VId_2324_!c?(?,?)",
+                "variable_name": "soft_clipping",
+                "declaration": "bool soft_clipping",
+                "kind": "SSA",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                    "line": 8,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "4"
+            },
+            "x_RAW_3_4_#2": {
+                "name": "x_RAW_3_4_#2",
+                "variable_id": "VId_2348_!c?(?,?)",
+                "variable_name": "x",
+                "declaration": "audio_sample_t x",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                    "line": 16,
+                    "column": 0
+                },
+                "source": "3",
+                "sink": "4"
+            },
+            "x_RAW_4_5_#3": {
+                "name": "x_RAW_4_5_#3",
+                "variable_id": "VId_2355_!c?(?,?)",
+                "variable_name": "x",
+                "declaration": "audio_sample_t x",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                    "line": 16,
+                    "column": 0
+                },
+                "source": "4",
+                "sink": "5"
+            },
+            "sample_in.last_RAW_3_5_#4": {
+                "name": "sample_in.last_RAW_3_5_#4",
+                "variable_id": "VId_2325_.A1(32,8)",
+                "variable_name": "sample_in.last",
+                "declaration": "bool axis_sample::last",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                    "line": 13,
+                    "column": 17
+                },
+                "source": "3",
+                "sink": "5"
+            },
+            "out.Handle_RAW_5_2_#5": {
+                "name": "out.Handle_RAW_5_2_#5",
+                "variable_id": "VId_2323_*0(0,64)arg.A0(0,64)",
+                "variable_name": "out.Handle",
+                "declaration": "axis_sample *stream<axis_sample, 0>::Handle",
+                "kind": "Fifo",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                    "line": 8,
+                    "column": 0
+                },
+                "source": "5",
+                "sink": "2"
+            }
+        },
+        "control": [
+            {
+                "source": "3",
+                "sink": "4"
+            },
+            {
+                "source": "4",
+                "sink": "5"
+            },
+            {
+                "source": "1",
+                "sink": "3"
+            },
+            {
+                "source": "5",
+                "sink": "2"
+            }
+        ]
+    }
+]

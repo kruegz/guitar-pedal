@@ -1,0 +1,165 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "3 6 12",
+    "file": "control.cpp",
+    "fileloc": 6,
+    "instructions": 32,
+    "name": "master_audio_control",
+    "total_instructions": 9947
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "5",
+    "file": "hls_fabs.h",
+    "fileloc": 12,
+    "instructions": 2,
+    "name": "generic_fabs<float>",
+    "total_instructions": 959
+  },
+  "10": {
+    "basicblocks": 1,
+    "calls": "9",
+    "file": "x_hls_utils.h",
+    "fileloc": 346,
+    "instructions": 2,
+    "name": "to_ieee",
+    "total_instructions": 303
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "2",
+    "file": "std_abs.h",
+    "fileloc": 74,
+    "instructions": 2,
+    "name": "abs",
+    "total_instructions": 963
+  },
+  "12": {
+    "basicblocks": 18,
+    "calls": "4 4 4",
+    "file": "eq.cpp",
+    "fileloc": 33,
+    "instructions": 164,
+    "loads": {
+      "G": 3,
+      "L": 5
+    },
+    "name": "eq_3band",
+    "stores": {
+      "G": 3,
+      "L": 5
+    },
+    "total_instructions": 7864
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "fabsfloat.cpp",
+    "fileloc": 7,
+    "instructions": 2,
+    "name": "fabsf",
+    "total_instructions": 961
+  },
+  "3": {
+    "basicblocks": 13,
+    "calls": "11",
+    "file": "distortion.cpp",
+    "fileloc": 11,
+    "instructions": 85,
+    "loads": {
+      "L": 6
+    },
+    "name": "distortion",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 1549
+  },
+  "4": {
+    "basicblocks": 13,
+    "calls": "",
+    "file": "eq.cpp",
+    "fileloc": 17,
+    "instructions": 45,
+    "loads": {
+      "L": 2
+    },
+    "name": "fir_filter",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 477
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "8 8 10",
+    "file": "hls_copysign.h",
+    "fileloc": 10,
+    "instructions": 18,
+    "loads": {
+      "L": 1
+    },
+    "name": "generic_copysign<float>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 957
+  },
+  "6": {
+    "basicblocks": 10,
+    "calls": "",
+    "file": "echo.cpp",
+    "fileloc": 9,
+    "instructions": 72,
+    "loads": {
+      "G": 5,
+      "L": 3
+    },
+    "name": "echo",
+    "stores": {
+      "G": 3,
+      "L": 3
+    },
+    "total_instructions": 499
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 309,
+    "instructions": 32,
+    "name": "data",
+    "total_instructions": 279
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 283,
+    "instructions": 55,
+    "loads": {
+      "L": 1
+    },
+    "name": "fp_struct",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 318
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "7",
+    "file": "x_hls_utils.h",
+    "fileloc": 322,
+    "instructions": 18,
+    "loads": {
+      "L": 1
+    },
+    "name": "to_float",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 301
+  }
+}

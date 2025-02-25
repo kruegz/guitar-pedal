@@ -1,0 +1,538 @@
+{
+    "top_level_hw_fn_id": 952,
+    "functions": {
+        "200": {
+            "fn_id": 200,
+            "mangled_name": "_GLOBAL__sub_I_test_distortion.cpp",
+            "fully_qualified_name": "_GLOBAL__sub_I_test_distortion",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\test_distortion.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "201": {
+            "fn_id": 201,
+            "mangled_name": "__cxx_global_var_init",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\test_distortion.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "203": {
+            "fn_id": 203,
+            "mangled_name": "__dtor__ZStL8__ioinit",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\include\\c++\\9.5.0\\iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "531": {
+            "fn_id": 531,
+            "mangled_name": "_GLOBAL__sub_I_test_echo.cpp",
+            "fully_qualified_name": "_GLOBAL__sub_I_test_echo",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\test_echo.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "532": {
+            "fn_id": 532,
+            "mangled_name": "__cxx_global_var_init.2",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\test_echo.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "533": {
+            "fn_id": 533,
+            "mangled_name": "__dtor__ZStL8__ioinit.4",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\include\\c++\\9.5.0\\iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "544": {
+            "fn_id": 544,
+            "mangled_name": "_GLOBAL__sub_I_test_control.cpp",
+            "fully_qualified_name": "_GLOBAL__sub_I_test_control",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\test_control.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "545": {
+            "fn_id": 545,
+            "mangled_name": "__cxx_global_var_init.51",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\test_control.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "546": {
+            "fn_id": 546,
+            "mangled_name": "__dtor__ZStL8__ioinit.53",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\include\\c++\\9.5.0\\iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "548": {
+            "fn_id": 548,
+            "mangled_name": "_GLOBAL__sub_I_control.cpp",
+            "fully_qualified_name": "_GLOBAL__sub_I_control",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\control.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "549": {
+            "fn_id": 549,
+            "mangled_name": "__cxx_global_var_init.60",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\control.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "550": {
+            "fn_id": 550,
+            "mangled_name": "__dtor__ZStL8__ioinit.62",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\include\\c++\\9.5.0\\iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "551": {
+            "fn_id": 551,
+            "mangled_name": "_GLOBAL__sub_I_distortion.cpp",
+            "fully_qualified_name": "_GLOBAL__sub_I_distortion",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "552": {
+            "fn_id": 552,
+            "mangled_name": "__cxx_global_var_init.64",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "553": {
+            "fn_id": 553,
+            "mangled_name": "__dtor__ZStL8__ioinit.66",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\include\\c++\\9.5.0\\iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "685": {
+            "fn_id": 685,
+            "mangled_name": "_GLOBAL__sub_I_echo.cpp",
+            "fully_qualified_name": "_GLOBAL__sub_I_echo",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\echo.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "686": {
+            "fn_id": 686,
+            "mangled_name": "__cxx_global_var_init.84",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\echo.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "687": {
+            "fn_id": 687,
+            "mangled_name": "__dtor__ZStL8__ioinit.86",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\include\\c++\\9.5.0\\iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "693": {
+            "fn_id": 693,
+            "mangled_name": "_GLOBAL__sub_I_eq.cpp",
+            "fully_qualified_name": "_GLOBAL__sub_I_eq",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\eq.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "694": {
+            "fn_id": 694,
+            "mangled_name": "__cxx_global_var_init.90",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\eq.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "695": {
+            "fn_id": 695,
+            "mangled_name": "__dtor__ZStL8__ioinit.92",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\include\\c++\\9.5.0\\iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "940": {
+            "fn_id": 940,
+            "mangled_name": "_GLOBAL__sub_I_distortion.cpp.104",
+            "fully_qualified_name": "_GLOBAL__sub_I_distortion",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "941": {
+            "fn_id": 941,
+            "mangled_name": "_GLOBAL__sub_I_echo.cpp.105",
+            "fully_qualified_name": "_GLOBAL__sub_I_echo",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\echo.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "942": {
+            "fn_id": 942,
+            "mangled_name": "_GLOBAL__sub_I_eq.cpp.106",
+            "fully_qualified_name": "_GLOBAL__sub_I_eq",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\eq.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "943": {
+            "fn_id": 943,
+            "mangled_name": "_GLOBAL__sub_I_control.cpp.107",
+            "fully_qualified_name": "_GLOBAL__sub_I_control",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\control.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "944": {
+            "fn_id": 944,
+            "mangled_name": "__cxx_global_var_init.10",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\control.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "945": {
+            "fn_id": 945,
+            "mangled_name": "__dtor__ZStL8__ioinit.12",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\include\\c++\\9.5.0\\iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "946": {
+            "fn_id": 946,
+            "mangled_name": "__cxx_global_var_init.6",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\eq.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "947": {
+            "fn_id": 947,
+            "mangled_name": "__dtor__ZStL8__ioinit.8",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\include\\c++\\9.5.0\\iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "948": {
+            "fn_id": 948,
+            "mangled_name": "__cxx_global_var_init.2.108",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\echo.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "949": {
+            "fn_id": 949,
+            "mangled_name": "__dtor__ZStL8__ioinit.4.110",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\include\\c++\\9.5.0\\iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "950": {
+            "fn_id": 950,
+            "mangled_name": "__cxx_global_var_init.111",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "951": {
+            "fn_id": 951,
+            "mangled_name": "__dtor__ZStL8__ioinit.113",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\include\\c++\\9.5.0\\iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "952": {
+            "fn_id": 952,
+            "mangled_name": "_Z20master_audio_controlRN3hls6streamI11axis_sampleLi0EEES3_bbb",
+            "fully_qualified_name": "master_audio_control",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\control.cpp",
+                "line": 6,
+                "column": 1
+            }
+        },
+        "953": {
+            "fn_id": 953,
+            "mangled_name": "_Z10distortionRN3hls6streamI11axis_sampleLi0EEES3_bb",
+            "fully_qualified_name": "distortion",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+                "line": 8,
+                "column": 1
+            }
+        },
+        "954": {
+            "fn_id": 954,
+            "mangled_name": "_Z4echoRN3hls6streamI11axis_sampleLi0EEES3_b",
+            "fully_qualified_name": "echo",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\echo.cpp",
+                "line": 9,
+                "column": 1
+            }
+        },
+        "955": {
+            "fn_id": 955,
+            "mangled_name": "_Z8eq_3bandRN3hls6streamI11axis_sampleLi0EEES3_bfff",
+            "fully_qualified_name": "eq_3band",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\eq.cpp",
+                "line": 33,
+                "column": 1
+            }
+        },
+        "956": {
+            "fn_id": 956,
+            "mangled_name": "_Z10fir_filter6ap_intILi24EEPK8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS0_",
+            "fully_qualified_name": "fir_filter",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\eq.cpp",
+                "line": 17,
+                "column": 1
+            }
+        },
+        "21": {
+            "fn_id": 21,
+            "mangled_name": "llvm.fpga.fifo.push.s_struct.axis_sample.121s.p0s_struct.axis_sample.121s",
+            "fully_qualified_name": "llvm.fpga.fifo.push.s_struct.axis_sample.121s.p0s_struct.axis_sample.121s",
+            "is_sys": true,
+            "is_declaration": true,
+            "supports_dataflow": false
+        },
+        "20": {
+            "fn_id": 20,
+            "mangled_name": "llvm.fpga.fifo.pop.s_struct.axis_sample.121s.p0s_struct.axis_sample.121s",
+            "fully_qualified_name": "llvm.fpga.fifo.pop.s_struct.axis_sample.121s.p0s_struct.axis_sample.121s",
+            "is_sys": true,
+            "is_declaration": true,
+            "supports_dataflow": false
+        },
+        "958": {
+            "fn_id": 958,
+            "mangled_name": "_ZSt3absf",
+            "fully_qualified_name": "std::abs",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt\\include\\c++\\9.5.0\\bits\\std_abs.h",
+                "line": 74,
+                "column": 3
+            }
+        }
+    },
+    "loops": {
+        "29": {
+            "fn_id": 956,
+            "lp_id": 29
+        },
+        "30": {
+            "fn_id": 956,
+            "lp_id": 30
+        }
+    }
+}

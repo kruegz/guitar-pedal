@@ -1,0 +1,69 @@
+{
+  "0": {
+    "basicblocks": 73,
+    "calls": "",
+    "file": "control.cpp",
+    "fileloc": 6,
+    "instructions": 531,
+    "loads": {
+      "G": 29
+    },
+    "name": "master_audio_control",
+    "stores": {
+      "G": 32,
+      "L": 6
+    },
+    "total_instructions": 589
+  },
+  "1": {
+    "basicblocks": 12,
+    "calls": "3 3 3",
+    "file": "eq.cpp",
+    "fileloc": 33,
+    "instructions": 87,
+    "loads": {
+      "L": 3
+    },
+    "name": "eq_3band",
+    "total_instructions": 393
+  },
+  "2": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "distortion.cpp",
+    "fileloc": 11,
+    "instructions": 23,
+    "name": "distortion",
+    "total_instructions": 43
+  },
+  "3": {
+    "basicblocks": 11,
+    "calls": "",
+    "file": "eq.cpp",
+    "fileloc": 17,
+    "instructions": 99,
+    "loads": {
+      "L": 9
+    },
+    "name": "fir_filter",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 99
+  },
+  "4": {
+    "basicblocks": 29,
+    "calls": "",
+    "file": "echo.cpp",
+    "fileloc": 9,
+    "instructions": 174,
+    "loads": {
+      "G": 17
+    },
+    "name": "echo",
+    "stores": {
+      "G": 17
+    },
+    "total_instructions": 203
+  }
+}

@@ -1,0 +1,80 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\axis_distortion\\hls\\csim\\code_analyzer\\app.csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Thu Feb 20 14:51:57 2025",
+ "timestampMillis": "1740084717784",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [],
+  "toolVersion": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Feb 20 14:51:57 2025",
+ "timestampMillis": "1740084717785",
+ "buildStep": {
+  "cmdId": "8654ce21-efcc-11ef-8482-00090ffe0001",
+  "name": "vitis_c++",
+  "logFile": "",
+  "commandLine": "vitis_c++ code_analyzer",
+  "args": [
+   "code_analyzer"
+  ],
+  "iniFiles": [],
+  "cwd": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Feb 20 14:51:57 2025",
+ "timestampMillis": "1740084717786",
+ "status": {
+  "cmdId": "8654ce21-efcc-11ef-8482-00090ffe0001",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Feb 20 14:52:35 2025",
+ "timestampMillis": "1740084755385",
+ "status": {
+  "cmdId": "8654ce21-efcc-11ef-8482-00090ffe0001",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Feb 20 14:52:35 2025",
+ "timestampMillis": "1740084755386",
+ "report": {
+  "path": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "VCXX_CODE_ANALYZER",
+  "cmdId": "8654ce21-efcc-11ef-8482-00090ffe0001"
+ }
+}
+</ENTRY>

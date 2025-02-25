@@ -1,0 +1,90 @@
+[
+  {
+    "directory": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion",
+    "arguments": [
+      "C:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis\\2024.2\\common\\technology\\autopilot",
+      "-fhlstoplevel=master_audio_control",
+      "-c",
+      "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\control.cpp"
+    ],
+    "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\control.cpp"
+  },
+  {
+    "directory": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion",
+    "arguments": [
+      "C:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis\\2024.2\\common\\technology\\autopilot",
+      "-fhlstoplevel=master_audio_control",
+      "-c",
+      "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\eq.cpp"
+    ],
+    "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\eq.cpp"
+  },
+  {
+    "directory": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion",
+    "arguments": [
+      "C:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis\\2024.2\\common\\technology\\autopilot",
+      "-fhlstoplevel=master_audio_control",
+      "-c",
+      "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\echo.cpp"
+    ],
+    "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\echo.cpp"
+  },
+  {
+    "directory": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion",
+    "arguments": [
+      "C:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis\\2024.2\\common\\technology\\autopilot",
+      "-fhlstoplevel=master_audio_control",
+      "-c",
+      "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp"
+    ],
+    "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp"
+  },
+  {
+    "directory": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion",
+    "arguments": [
+      "C:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\Vitis\\2024.2\\include",
+      "-c",
+      "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\test_echo.cpp"
+    ],
+    "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\test_echo.cpp"
+  },
+  {
+    "directory": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion",
+    "arguments": [
+      "C:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\Vitis\\2024.2\\include",
+      "-c",
+      "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\test_control.cpp"
+    ],
+    "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\test_control.cpp"
+  },
+  {
+    "directory": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion",
+    "arguments": [
+      "C:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\Vitis\\2024.2\\include",
+      "-c",
+      "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\test_distortion.cpp"
+    ],
+    "file": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\test_distortion.cpp"
+  }
+]

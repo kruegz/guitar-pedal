@@ -1,0 +1,822 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion 
+INFO: [HLS 200-1611] Setting target device to 'xc7a35t-cpg236-1'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=distortion.cpp' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ZachKrueger/Documents/AI/axis_distortion/distortion.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=echo.cpp' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ZachKrueger/Documents/AI/axis_distortion/echo.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=eq.cpp' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ZachKrueger/Documents/AI/axis_distortion/eq.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=control.cpp' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ZachKrueger/Documents/AI/axis_distortion/control.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=test_distortion.cpp' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/ZachKrueger/Documents/AI/axis_distortion/test_distortion.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=common.h' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/ZachKrueger/Documents/AI/axis_distortion/common.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=test_echo.cpp' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/ZachKrueger/Documents/AI/axis_distortion/test_echo.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=test_control.cpp' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(16)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/ZachKrueger/Documents/AI/axis_distortion/test_control.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=master_audio_control' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7a35tcpg236-1' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(5)
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/Vitis/2024.2/vcxx/libexec/clang++"
+   Compiling apatb_master_audio_control_util.cpp
+   Compiling eq.cpp_pre.cpp.tb.cpp
+   Compiling distortion.cpp_pre.cpp.tb.cpp
+   Compiling test_echo.cpp_pre.cpp.tb.cpp
+   Compiling test_control.cpp_pre.cpp.tb.cpp
+   Compiling apatb_master_audio_control.cpp
+   Compiling test_distortion.cpp_pre.cpp.tb.cpp
+   Compiling echo.cpp_pre.cpp.tb.cpp
+   Compiling control.cpp_pre.cpp.tb.cpp
+   Compiling apatb_master_audio_control_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Index | Input | Output
+----------------------
+Input: 0 0    | 0  | 0
+Input: 1545084 1    | 1545084  | -155036
+Input: 2938926 2    | 2938926  | 167950
+Input: 4045084 3    | 4045084  | 2796645
+Input: 4755282 4    | 4755282  | 5668111
+Input: 5000000 5    | 5000000  | 7522225
+Input: 4755282 6    | 4755282  | 7700222
+Input: 4045084 7    | 4045084  | 7593752
+Input: 2938926 8    | 2938926  | 7700222
+Input: 1545084 9    | 1545084  | 7522225
+Input: 0 10    | 0  | 5668111
+Input: -1545084 11    | -1545084  | 2874162
+Input: -2938926 12    | -2938926  | 83975
+Input: -4045084 13    | -4045084  | -1553358
+Input: -4755282 14    | -4755282  | -2834053
+Input: -5000000 15    | -5000000  | -3761113
+Input: -4755282 16    | -4755282  | -3850112
+Input: -4045084 17    | -4045084  | -3796876
+Input: -2938926 18    | -2938926  | -3850112
+Input: -1545084 19    | -1545084  | -3761113
+Input: 0 20    | 0  | -2834053
+Input: 1545084 21    | 1545084  | -1514599
+Input: 2938926 22    | 2938926  | 41987
+Input: 4045084 23    | 4045084  | 2175000
+Input: 4755282 24    | 4755282  | 4251083
+Input: 5000000 25    | 5000000  | 5641670
+Input: 4755282 26    | 4755282  | 5775168
+Input: 4045084 27    | 4045084  | 5695316
+Input: 2938926 28    | 2938926  | 5775168
+Input: 1545084 29    | 1545084  | 5641670
+Input: 0 30    | 0  | 4251083
+Input: -1545084 31    | -1545084  | 2194381
+Input: -2938926 32    | -2938926  | 20995
+Input: -4045084 33    | -4045084  | -1864176
+Input: -4755282 34    | -4755282  | -3542565
+Input: -5000000 35    | -5000000  | -4701387
+Input: -4755282 36    | -4755282  | -4812634
+Input: -4045084 37    | -4045084  | -4746090
+Input: -2938926 38    | -2938926  | -4812634
+Input: -1545084 39    | -1545084  | -4701387
+Input: 0 40    | 0  | -3542565
+Input: 1545084 41    | 1545084  | -1854487
+Input: 2938926 42    | 2938926  | 10499
+Input: 4045084 43    | 4045084  | 2019590
+Input: 4755282 44    | 4755282  | 3896824
+Input: 5000000 45    | 5000000  | 5171529
+Input: 4755282 46    | 4755282  | 5293902
+Input: 4045084 47    | 4045084  | 5220704
+Input: 2938926 48    | 2938926  | 5293902
+Input: 1545084 49    | 1545084  | 5171529
+Input: 0 50    | 0  | 3896824
+Input: -1545084 51    | -1545084  | 2024435
+Input: -2938926 52    | -2938926  | 5249
+Input: -4045084 53    | -4045084  | -1941884
+Input: -4755282 54    | -4755282  | -3719697
+Input: -5000000 55    | -5000000  | -4936459
+Input: -4755282 56    | -4755282  | -5053269
+Input: -4045084 57    | -4045084  | -4983398
+Input: -2938926 58    | -2938926  | -5053269
+Input: -1545084 59    | -1545084  | -4936459
+Input: 0 60    | 0  | -3719697
+Input: 1545084 61    | 1545084  | -1939460
+Input: 2938926 62    | 2938926  | 2625
+Input: 4045084 63    | 4045084  | 1980737
+Input: 4755282 64    | 4755282  | 3808261
+Input: 5000000 65    | 5000000  | 5053996
+Input: 4755282 66    | 4755282  | 5173587
+Input: 4045084 67    | 4045084  | 5102052
+Input: 2938926 68    | 2938926  | 5173587
+Input: 1545084 69    | 1545084  | 5053996
+Input: 0 70    | 0  | 3808261
+Input: -1545084 71    | -1545084  | 1981948
+Input: -2938926 72    | -2938926  | 1313
+Input: -4045084 73    | -4045084  | -1961309
+Input: -4755282 74    | -4755282  | -3763978
+Input: -5000000 75    | -5000000  | -4995226
+Input: -4755282 76    | -4755282  | -5113429
+Input: -4045084 77    | -4045084  | -5042725
+Input: -2938926 78    | -2938926  | -5113429
+Input: -1545084 79    | -1545084  | -4995226
+Input: 0 80    | 0  | -3763978
+Input: 1545084 81    | 1545084  | -1960704
+Input: 2938926 82    | 2938926  | 656
+Input: 4045084 83    | 4045084  | 1971025
+Input: 4755282 84    | 4755282  | 3786119
+Input: 5000000 85    | 5000000  | 5024609
+Input: 4755282 86    | 4755282  | 5143506
+Input: 4045084 87    | 4045084  | 5072387
+Input: 2938926 88    | 2938926  | 5143506
+Input: 1545084 89    | 1545084  | 5024609
+Input: 0 90    | 0  | 3786119
+Input: -1545084 91    | -1545084  | 1971327
+Input: -2938926 92    | -2938926  | 328
+Input: -4045084 93    | -4045084  | -1966167
+Input: -4755282 94    | -4755282  | -3775049
+Input: -5000000 95    | -5000000  | -5009918
+Input: -4755282 96    | -4755282  | -5128466
+Input: -4045084 97    | -4045084  | -5057555
+Input: -2938926 98    | -2938926  | -5128466
+Input: -1545084 99    | -1545084  | -5009918
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 100
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+WARNING: C:/Xilinx/Vivado/2024.2/tps/win64/jre11.0.16_1 does not exist.
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Thu Feb 20 10:39:50 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_vivado_gen_ip.tcl -notrace
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/.autopilot/db/ip_tmp'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'master_audio_control_dadd_64ns_64ns_64_7_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'master_audio_control_dadd_64ns_64ns_64_7_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'master_audio_control_dadd_64ns_64ns_64_7_no_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'master_audio_control_dmul_64ns_64ns_64_7_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'master_audio_control_dmul_64ns_64ns_64_7_max_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'master_audio_control_dmul_64ns_64ns_64_7_max_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'master_audio_control_fadd_32ns_32ns_32_7_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'master_audio_control_fadd_32ns_32ns_32_7_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'master_audio_control_fadd_32ns_32ns_32_7_full_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'master_audio_control_sitodp_32s_64_6_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'master_audio_control_sitodp_32s_64_6_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'master_audio_control_sitodp_32s_64_6_no_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'master_audio_control_sitofp_32s_32_6_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'master_audio_control_sitofp_32s_32_6_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'master_audio_control_sitofp_32s_32_6_no_dsp_1_ip'...
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 20 10:40:13 2025...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+
+C:\Users\ZachKrueger\Documents\AI\axis_distortion\axis_distortion\hls\sim\verilog>set PATH= 
+
+C:\Users\ZachKrueger\Documents\AI\axis_distortion\axis_distortion\hls\sim\verilog>call C:/Xilinx/Vivado/2024.2/bin/xelab xil_defaultlib.apatb_master_audio_control_top glbl -Oenable_linking_all_libraries  -prj master_audio_control.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib "ieee_proposed=./ieee_proposed" -s master_audio_control  
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_master_audio_control_top glbl -Oenable_linking_all_libraries -prj master_audio_control.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib ieee_proposed=./ieee_proposed -s master_audio_control 
+Multi-threading is on. Using 6 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/sim/verilog/ip/xil_defaultlib/master_audio_control_dadd_64ns_64ns_64_7_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module master_audio_control_dadd_64ns_64ns_64_7_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/sim/verilog/ip/xil_defaultlib/master_audio_control_dmul_64ns_64ns_64_7_max_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module master_audio_control_dmul_64ns_64ns_64_7_max_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/sim/verilog/ip/xil_defaultlib/master_audio_control_fadd_32ns_32ns_32_7_full_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module master_audio_control_fadd_32ns_32ns_32_7_full_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/sim/verilog/ip/xil_defaultlib/master_audio_control_sitodp_32s_64_6_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module master_audio_control_sitodp_32s_64_6_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/sim/verilog/ip/xil_defaultlib/master_audio_control_sitofp_32s_32_6_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module master_audio_control_sitofp_32s_32_6_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/sim/verilog/AESL_axi_s_in_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_in_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/sim/verilog/AESL_axi_s_out_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_out_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/sim/verilog/AESL_deadlock_idx0_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx0_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/sim/verilog/AESL_deadlock_kernel_monitor_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_kernel_monitor_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/sim/verilog/master_audio_control.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_master_audio_control_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/sim/verilog/master_audio_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module master_audio_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/sim/verilog/master_audio_control_dadd_64ns_64ns_64_7_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module master_audio_control_dadd_64ns_64ns_64_7_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/sim/verilog/master_audio_control_dmul_64ns_64ns_64_7_max_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module master_audio_control_dmul_64ns_64ns_64_7_max_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/sim/verilog/master_audio_control_fadd_32ns_32ns_32_7_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module master_audio_control_fadd_32ns_32ns_32_7_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/sim/verilog/master_audio_control_fifo_w25_d8_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module master_audio_control_fifo_w25_d8_S
+INFO: [VRFC 10-311] analyzing module master_audio_control_fifo_w25_d8_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/sim/verilog/master_audio_control_mul_24s_10ns_34_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module master_audio_control_mul_24s_10ns_34_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/sim/verilog/master_audio_control_mul_24s_10s_34_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module master_audio_control_mul_24s_10s_34_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/sim/verilog/master_audio_control_mul_24s_11ns_35_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module master_audio_control_mul_24s_11ns_35_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/sim/verilog/master_audio_control_mul_24s_11s_35_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module master_audio_control_mul_24s_11s_35_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/sim/verilog/master_audio_control_mul_24s_12ns_36_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module master_audio_control_mul_24s_12ns_36_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/sim/verilog/master_audio_control_regslice_both.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module master_audio_control_regslice_both
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/sim/verilog/master_audio_control_sitodp_32s_64_6_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module master_audio_control_sitodp_32s_64_6_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/sim/verilog/master_audio_control_sitofp_32s_32_6_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module master_audio_control_sitofp_32s_32_6_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/sim/verilog/master_audio_control_sparsemux_21_4_24_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module master_audio_control_sparsemux_21_4_24_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/sim/verilog/master_audio_control_sparsemux_9_3_24_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module master_audio_control_sparsemux_9_3_24_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package floating_point_v7_1_19.floating_point_v7_1_19_viv_comp
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_14.xbip_utils_v3_0_14_pkg
+Compiling package axi_utils_v2_0_10.axi_utils_v2_0_10_pkg
+Compiling package floating_point_v7_1_19.floating_point_v7_1_19_consts
+Compiling package ieee.math_real
+Compiling package floating_point_v7_1_19.floating_point_v7_1_19_exp_table...
+Compiling package mult_gen_v12_0_22.mult_gen_v12_0_22_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package floating_point_v7_1_19.floating_point_v7_1_19_pkg
+Compiling package floating_point_v7_1_19.flt_utils
+Compiling package xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv_comp
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package floating_point_v7_1_19.vt2mutils
+Compiling package floating_point_v7_1_19.vt2mcomps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=7,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=24,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=16,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [delay_default]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,alumodereg=0...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=4,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=48,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=24,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.dsp48e1_wrapper [\dsp48e1_wrapper(c_part="xc7a35t...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=2)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=13)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=27)\]
+Compiling architecture synth of entity floating_point_v7_1_19.align_add_dsp48e1_sgl [\align_add_dsp48e1_sgl(c_xdevice...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000001111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=27,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=5,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.lead_zero_encode_shift [\lead_zero_encode_shift(ab_fw=24...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=3,length=0)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111110010101001011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00010001010111110000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101110101000001111...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=2)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,alumodereg=0,ca...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=25,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,c_wi...]
+Compiling architecture rtl of entity floating_point_v7_1_19.norm_and_round_dsp48e1_sgl [\norm_and_round_dsp48e1_sgl(c_mu...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10011001100110011001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111000000001111...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=9,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=8,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=9,length=2)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=10)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=4,length=0,fast_inp...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fde_v of entity unisim.FDE [fde_default]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(fast_input=true)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_gt [\compare_gt(c_xdevicefamily="art...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare [\compare(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=8)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=9)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=2,length=3,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=3,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=0,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=2,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=12,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_add_exp_sp [\flt_add_exp_sp(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=23)\]
+Compiling architecture synth of entity floating_point_v7_1_19.flt_dec_op [\flt_dec_op(c_xdevicefamily="art...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_add_dsp [\flt_add_dsp(c_xdevicefamily="ar...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_add [\flt_add(c_xdevicefamily="artix7...]
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=32,length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19_viv [\floating_point_v7_1_19_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19 [\floating_point_v7_1_19(c_xdevic...]
+Compiling module xil_defaultlib.master_audio_control_fadd_32ns_3...
+Compiling module xil_defaultlib.master_audio_control_fadd_32ns_3...
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=31,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=32)\]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=4)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.norm_zero_det [\norm_zero_det(data_width=7,norm...]
+Compiling architecture rtl of entity floating_point_v7_1_19.mux4 [\mux4(c_xdevicefamily="artix7",w...]
+Compiling architecture rtl of entity floating_point_v7_1_19.mux4 [\mux4(c_xdevicefamily="artix7",w...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=8,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture rtl of entity floating_point_v7_1_19.lead_zero_encode [\lead_zero_encode(c_xdevicefamil...]
+Compiling architecture rtl of entity floating_point_v7_1_19.shift_msb_first [\shift_msb_first(a_width=32,resu...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=14,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=2,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_19.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=3)\]
+Compiling architecture synth of entity floating_point_v7_1_19.fix_to_flt_conv_exp [\fix_to_flt_conv_exp(c_xdevicefa...]
+Compiling architecture struct of entity floating_point_v7_1_19.fix_to_flt_conv [\fix_to_flt_conv(c_xdevicefamily...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19_viv [\floating_point_v7_1_19_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19 [\floating_point_v7_1_19(c_xdevic...]
+Compiling module xil_defaultlib.master_audio_control_sitofp_32s_...
+Compiling module xil_defaultlib.master_audio_control_sitofp_32s_...
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=52,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=54,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=11,length=0,fast_in...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=16)\]
+Compiling architecture muxf7_v of entity unisim.MUXF7 [muxf7_default]
+Compiling architecture muxf8_v of entity unisim.MUXF8 [muxf8_default]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_19.zero_det_sel [\zero_det_sel(c_xdevicefamily="a...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=55)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=55,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.shift_msb_first [\shift_msb_first(a_width=54,regi...]
+Compiling architecture rtl of entity floating_point_v7_1_19.alignment [\alignment(c_xdevicefamily="arti...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=26)\]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=29,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=25)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=28,length=2)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=28)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=29,length=0,fast_in...]
+Compiling architecture rtl of entity floating_point_v7_1_19.addsub_logic [\addsub_logic(c_xdevicefamily="a...]
+Compiling architecture rtl of entity floating_point_v7_1_19.addsub [\addsub(c_xdevicefamily="artix7"...]
+Compiling architecture rtl of entity floating_point_v7_1_19.align_add [\align_add(c_xdevicefamily="arti...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=6,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture rtl of entity floating_point_v7_1_19.mux4 [\mux4(c_xdevicefamily="artix7",w...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=2,fast_input=true)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.mux4 [\mux4(c_xdevicefamily="artix7",w...]
+Compiling architecture rtl of entity floating_point_v7_1_19.lead_zero_encode [\lead_zero_encode(c_xdevicefamil...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=56)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=56,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.shift_msb_first [\shift_msb_first(a_width=56,resu...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=26,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=11,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=28,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=6,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_19.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture rtl of entity floating_point_v7_1_19.norm_and_round_logic [\norm_and_round_logic(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=4)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=12,length=0,fast_in...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=12,length=4)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=2,length=2)\]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_19.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_gt [\compare_gt(c_xdevicefamily="art...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare_eq [\compare_eq(c_xdevicefamily="art...]
+Compiling architecture synth of entity floating_point_v7_1_19.compare [\compare(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=2,length=4,fast_inp...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(length=4,fast_input=true)...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_add_exp [\flt_add_exp(c_xdevicefamily="ar...]
+Compiling architecture synth of entity floating_point_v7_1_19.flt_dec_op [\flt_dec_op(c_xdevicefamily="art...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_add_logic [\flt_add_logic(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_add [\flt_add(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=64,length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19_viv [\floating_point_v7_1_19_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19 [\floating_point_v7_1_19(c_xdevic...]
+Compiling module xil_defaultlib.master_audio_control_dadd_64ns_6...
+Compiling module xil_defaultlib.master_audio_control_dadd_64ns_6...
+Compiling architecture rtl of entity floating_point_v7_1_19.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=19,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=17,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=17,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_19.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=17,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_19.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=17,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,alumodereg=0,b_...]
+Compiling architecture rtl of entity floating_point_v7_1_19.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=17,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,alumodereg=0,ca...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=19,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=19,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,alumodereg=0,ca...]
+Compiling architecture rtl of entity floating_point_v7_1_19.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=19,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,alumodereg=0,a_...]
+Compiling architecture rtl of entity floating_point_v7_1_19.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=19,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=2,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_19.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=19,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_19.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=19,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_19.fix_mult_dsp48e1_dbl [\fix_mult_dsp48e1_dbl(mult_usage...]
+Compiling architecture rtl of entity floating_point_v7_1_19.fix_mult [\fix_mult(c_xdevicefamily="artix...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=4,length=4,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=11,length=3)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=3,length=0,fast_inp...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_mult_exp [\flt_mult_exp(c_xdevicefamily="a...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=11)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=18,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_19.dsp48e1_wrapper [\dsp48e1_wrapper(b_width=18,c_wi...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=29)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_19.delay [\delay(width=54,fast_input=true)...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_19.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_mult_round [\flt_mult_round(c_xdevicefamily=...]
+Compiling architecture synth of entity floating_point_v7_1_19.flt_dec_op_lat [\flt_dec_op_lat(c_xdevicefamily=...]
+Compiling architecture rtl of entity floating_point_v7_1_19.flt_mult [\flt_mult(c_xdevicefamily="artix...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19_viv [\floating_point_v7_1_19_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19 [\floating_point_v7_1_19(c_xdevic...]
+Compiling module xil_defaultlib.master_audio_control_dmul_64ns_6...
+Compiling module xil_defaultlib.master_audio_control_dmul_64ns_6...
+Compiling architecture rtl of entity floating_point_v7_1_19.lead_zero_encode [\lead_zero_encode(c_xdevicefamil...]
+Compiling architecture rtl of entity floating_point_v7_1_19.shift_msb_first [\shift_msb_first(a_width=32,dist...]
+Compiling architecture struct of entity floating_point_v7_1_19.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture rtl of entity floating_point_v7_1_19.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture synth of entity floating_point_v7_1_19.fix_to_flt_conv_exp [\fix_to_flt_conv_exp(c_xdevicefa...]
+Compiling architecture synth of entity floating_point_v7_1_19.flt_dec_op [\flt_dec_op(c_xdevicefamily="art...]
+Compiling architecture struct of entity floating_point_v7_1_19.fix_to_flt_conv [\fix_to_flt_conv(c_xdevicefamily...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19_viv [\floating_point_v7_1_19_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_19.floating_point_v7_1_19 [\floating_point_v7_1_19(c_xdevic...]
+Compiling module xil_defaultlib.master_audio_control_sitodp_32s_...
+Compiling module xil_defaultlib.master_audio_control_sitodp_32s_...
+Compiling module xil_defaultlib.master_audio_control_sparsemux_2...
+Compiling module xil_defaultlib.master_audio_control_mul_24s_10s...
+Compiling module xil_defaultlib.master_audio_control_mul_24s_11s...
+Compiling module xil_defaultlib.master_audio_control_sparsemux_9...
+Compiling module xil_defaultlib.master_audio_control_mul_24s_11n...
+Compiling module xil_defaultlib.master_audio_control_mul_24s_10n...
+Compiling module xil_defaultlib.master_audio_control_mul_24s_12n...
+Compiling module xil_defaultlib.master_audio_control_fifo_w25_d8...
+Compiling module xil_defaultlib.master_audio_control_fifo_w25_d8...
+Compiling module xil_defaultlib.master_audio_control_regslice_bo...
+Compiling module xil_defaultlib.master_audio_control
+Compiling module xil_defaultlib.fifo(DEPTH=2,WIDTH=64)
+Compiling module xil_defaultlib.AESL_axi_s_in_r
+Compiling module xil_defaultlib.AESL_axi_s_out_r
+Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor
+Compiling module xil_defaultlib.AESL_deadlock_kernel_monitor_top...
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_master_audio_control_top
+Compiling module work.glbl
+Built simulation snapshot master_audio_control
+
+****** xsim v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Thu Feb 20 10:40:50 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/master_audio_control/xsim_script.tcl
+# xsim {master_audio_control} -autoloadwcfg -tclbatch {master_audio_control.tcl}
+Time resolution is 1 ps
+source master_audio_control.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 100 [0.00%] @ "125000"
+// RTL Simulation : 1 / 100 [61.36%] @ "595000"
+// RTL Simulation : 2 / 100 [61.36%] @ "765000"
+// RTL Simulation : 3 / 100 [61.36%] @ "935000"
+// RTL Simulation : 4 / 100 [61.36%] @ "1105000"
+// RTL Simulation : 5 / 100 [61.36%] @ "1275000"
+// RTL Simulation : 6 / 100 [61.36%] @ "1445000"
+// RTL Simulation : 7 / 100 [61.36%] @ "1615000"
+// RTL Simulation : 8 / 100 [61.36%] @ "1785000"
+// RTL Simulation : 9 / 100 [61.36%] @ "1955000"
+// RTL Simulation : 10 / 100 [61.36%] @ "2125000"
+// RTL Simulation : 11 / 100 [61.36%] @ "2295000"
+// RTL Simulation : 12 / 100 [61.36%] @ "2465000"
+// RTL Simulation : 13 / 100 [61.36%] @ "2635000"
+// RTL Simulation : 14 / 100 [61.36%] @ "2805000"
+// RTL Simulation : 15 / 100 [61.36%] @ "2975000"
+// RTL Simulation : 16 / 100 [61.36%] @ "3145000"
+// RTL Simulation : 17 / 100 [61.36%] @ "3315000"
+// RTL Simulation : 18 / 100 [61.36%] @ "3485000"
+// RTL Simulation : 19 / 100 [61.36%] @ "3655000"
+// RTL Simulation : 20 / 100 [61.36%] @ "3825000"
+// RTL Simulation : 21 / 100 [61.36%] @ "3995000"
+// RTL Simulation : 22 / 100 [61.36%] @ "4165000"
+// RTL Simulation : 23 / 100 [61.36%] @ "4335000"
+// RTL Simulation : 24 / 100 [61.36%] @ "4505000"
+// RTL Simulation : 25 / 100 [61.36%] @ "4675000"
+// RTL Simulation : 26 / 100 [61.36%] @ "4845000"
+// RTL Simulation : 27 / 100 [61.36%] @ "5015000"
+// RTL Simulation : 28 / 100 [61.36%] @ "5185000"
+// RTL Simulation : 29 / 100 [61.36%] @ "5355000"
+// RTL Simulation : 30 / 100 [61.36%] @ "5525000"
+// RTL Simulation : 31 / 100 [61.36%] @ "5695000"
+// RTL Simulation : 32 / 100 [61.36%] @ "5865000"
+// RTL Simulation : 33 / 100 [61.36%] @ "6035000"
+// RTL Simulation : 34 / 100 [61.36%] @ "6205000"
+// RTL Simulation : 35 / 100 [61.36%] @ "6375000"
+// RTL Simulation : 36 / 100 [61.36%] @ "6545000"
+// RTL Simulation : 37 / 100 [61.36%] @ "6715000"
+// RTL Simulation : 38 / 100 [61.36%] @ "6885000"
+// RTL Simulation : 39 / 100 [61.36%] @ "7055000"
+// RTL Simulation : 40 / 100 [61.36%] @ "7225000"
+// RTL Simulation : 41 / 100 [61.36%] @ "7395000"
+// RTL Simulation : 42 / 100 [61.36%] @ "7565000"
+// RTL Simulation : 43 / 100 [61.36%] @ "7735000"
+// RTL Simulation : 44 / 100 [61.36%] @ "7905000"
+// RTL Simulation : 45 / 100 [61.36%] @ "8075000"
+// RTL Simulation : 46 / 100 [61.36%] @ "8245000"
+// RTL Simulation : 47 / 100 [61.36%] @ "8415000"
+// RTL Simulation : 48 / 100 [61.36%] @ "8585000"
+// RTL Simulation : 49 / 100 [61.36%] @ "8755000"
+// RTL Simulation : 50 / 100 [61.36%] @ "8925000"
+// RTL Simulation : 51 / 100 [61.36%] @ "9095000"
+// RTL Simulation : 52 / 100 [61.36%] @ "9265000"
+// RTL Simulation : 53 / 100 [61.36%] @ "9435000"
+// RTL Simulation : 54 / 100 [61.36%] @ "9605000"
+// RTL Simulation : 55 / 100 [61.36%] @ "9775000"
+// RTL Simulation : 56 / 100 [61.36%] @ "9945000"
+// RTL Simulation : 57 / 100 [61.36%] @ "10115000"
+// RTL Simulation : 58 / 100 [61.36%] @ "10285000"
+// RTL Simulation : 59 / 100 [61.36%] @ "10455000"
+// RTL Simulation : 60 / 100 [61.36%] @ "10625000"
+// RTL Simulation : 61 / 100 [61.36%] @ "10795000"
+// RTL Simulation : 62 / 100 [61.36%] @ "10965000"
+// RTL Simulation : 63 / 100 [61.36%] @ "11135000"
+// RTL Simulation : 64 / 100 [61.36%] @ "11305000"
+// RTL Simulation : 65 / 100 [61.36%] @ "11475000"
+// RTL Simulation : 66 / 100 [61.36%] @ "11645000"
+// RTL Simulation : 67 / 100 [61.36%] @ "11815000"
+// RTL Simulation : 68 / 100 [61.36%] @ "11985000"
+// RTL Simulation : 69 / 100 [61.36%] @ "12155000"
+// RTL Simulation : 70 / 100 [61.36%] @ "12325000"
+// RTL Simulation : 71 / 100 [61.36%] @ "12495000"
+// RTL Simulation : 72 / 100 [61.36%] @ "12665000"
+// RTL Simulation : 73 / 100 [61.36%] @ "12835000"
+// RTL Simulation : 74 / 100 [61.36%] @ "13005000"
+// RTL Simulation : 75 / 100 [61.36%] @ "13175000"
+// RTL Simulation : 76 / 100 [61.36%] @ "13345000"
+// RTL Simulation : 77 / 100 [61.36%] @ "13515000"
+// RTL Simulation : 78 / 100 [61.36%] @ "13685000"
+// RTL Simulation : 79 / 100 [61.36%] @ "13855000"
+// RTL Simulation : 80 / 100 [61.36%] @ "14025000"
+// RTL Simulation : 81 / 100 [61.36%] @ "14195000"
+// RTL Simulation : 82 / 100 [61.36%] @ "14365000"
+// RTL Simulation : 83 / 100 [61.36%] @ "14535000"
+// RTL Simulation : 84 / 100 [61.36%] @ "14705000"
+// RTL Simulation : 85 / 100 [61.36%] @ "14875000"
+// RTL Simulation : 86 / 100 [61.36%] @ "15045000"
+// RTL Simulation : 87 / 100 [61.36%] @ "15215000"
+// RTL Simulation : 88 / 100 [61.36%] @ "15385000"
+// RTL Simulation : 89 / 100 [61.36%] @ "15555000"
+// RTL Simulation : 90 / 100 [61.36%] @ "15725000"
+// RTL Simulation : 91 / 100 [61.36%] @ "15895000"
+// RTL Simulation : 92 / 100 [61.36%] @ "16065000"
+// RTL Simulation : 93 / 100 [61.36%] @ "16235000"
+// RTL Simulation : 94 / 100 [61.36%] @ "16405000"
+// RTL Simulation : 95 / 100 [61.36%] @ "16575000"
+// RTL Simulation : 96 / 100 [61.36%] @ "16745000"
+// RTL Simulation : 97 / 100 [61.36%] @ "16915000"
+// RTL Simulation : 98 / 100 [61.36%] @ "17085000"
+// RTL Simulation : 99 / 100 [61.36%] @ "17255000"
+// RTL Simulation : 100 / 100 [100.00%] @ "17425000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 17485 ns : File "C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion/hls/sim/verilog/master_audio_control.autotb.v" Line 429
+## quit
+INFO: [Common 17-206] Exiting xsim at Thu Feb 20 10:40:56 2025...
+INFO: [COSIM 212-316] Starting C post checking ...
+Index | Input | Output
+----------------------
+0    | 0  | 0
+1    | 1545084  | -155036
+2    | 2938926  | 167950
+3    | 4045084  | 2796645
+4    | 4755282  | 5668111
+5    | 5000000  | 7522225
+6    | 4755282  | 7700222
+7    | 4045084  | 7593752
+8    | 2938926  | 7700222
+9    | 1545084  | 7522225
+10    | 0  | 5668111
+11    | -1545084  | 2874162
+12    | -2938926  | 83975
+13    | -4045084  | -1553358
+14    | -4755282  | -2834053
+15    | -5000000  | -3761113
+16    | -4755282  | -3850112
+17    | -4045084  | -3796876
+18    | -2938926  | -3850112
+19    | -1545084  | -3761113
+20    | 0  | -2834053
+21    | 1545084  | -1514599
+22    | 2938926  | 41987
+23    | 4045084  | 2175000
+24    | 4755282  | 4251083
+25    | 5000000  | 5641670
+26    | 4755282  | 5775168
+27    | 4045084  | 5695316
+28    | 2938926  | 5775168
+29    | 1545084  | 5641670
+30    | 0  | 4251083
+31    | -1545084  | 2194381
+32    | -2938926  | 20995
+33    | -4045084  | -1864176
+34    | -4755282  | -3542565
+35    | -5000000  | -4701387
+36    | -4755282  | -4812634
+37    | -4045084  | -4746090
+38    | -2938926  | -4812634
+39    | -1545084  | -4701387
+40    | 0  | -3542565
+41    | 1545084  | -1854487
+42    | 2938926  | 10499
+43    | 4045084  | 2019590
+44    | 4755282  | 3896824
+45    | 5000000  | 5171529
+46    | 4755282  | 5293902
+47    | 4045084  | 5220704
+48    | 2938926  | 5293902
+49    | 1545084  | 5171529
+50    | 0  | 3896824
+51    | -1545084  | 2024435
+52    | -2938926  | 5249
+53    | -4045084  | -1941884
+54    | -4755282  | -3719697
+55    | -5000000  | -4936459
+56    | -4755282  | -5053269
+57    | -4045084  | -4983398
+58    | -2938926  | -5053269
+59    | -1545084  | -4936459
+60    | 0  | -3719697
+61    | 1545084  | -1939460
+62    | 2938926  | 2625
+63    | 4045084  | 1980737
+64    | 4755282  | 3808261
+65    | 5000000  | 5053996
+66    | 4755282  | 5173587
+67    | 4045084  | 5102052
+68    | 2938926  | 5173587
+69    | 1545084  | 5053996
+70    | 0  | 3808261
+71    | -1545084  | 1981948
+72    | -2938926  | 1313
+73    | -4045084  | -1961309
+74    | -4755282  | -3763978
+75    | -5000000  | -4995226
+76    | -4755282  | -5113429
+77    | -4045084  | -5042725
+78    | -2938926  | -5113429
+79    | -1545084  | -4995226
+80    | 0  | -3763978
+81    | 1545084  | -1960704
+82    | 2938926  | 656
+83    | 4045084  | 1971025
+84    | 4755282  | 3786119
+85    | 5000000  | 5024609
+86    | 4755282  | 5143506
+87    | 4045084  | 5072387
+88    | 2938926  | 5143506
+89    | 1545084  | 5024609
+90    | 0  | 3786119
+91    | -1545084  | 1971327
+92    | -2938926  | 328
+93    | -4045084  | -1966167
+94    | -4755282  | -3775049
+95    | -5000000  | -5009918
+96    | -4755282  | -5128466
+97    | -4045084  | -5057555
+98    | -2938926  | -5128466
+99    | -1545084  | -5009918
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 100
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 6 seconds. Total elapsed time: 131.858 seconds; peak allocated memory: 232.648 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 2m 17s

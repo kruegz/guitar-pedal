@@ -1,0 +1,32 @@
+verilog xil_defaultlib --include "../../../../../Pmod-I2S2-master/arty-a7-35/proj/Pmod-I2S2-Arty-A7-35.ip_user_files/ipstatic/hdl/verilog" \
+"../../../../../Pmod-I2S2-master/arty-a7-35/proj/Pmod-I2S2-Arty-A7-35.ip_user_files/ipstatic/hdl/ip/master_audio_control_dadd_64ns_64ns_64_7_no_dsp_1_ip.v" \
+"../../../../../Pmod-I2S2-master/arty-a7-35/proj/Pmod-I2S2-Arty-A7-35.ip_user_files/ipstatic/hdl/ip/master_audio_control_dmul_64ns_64ns_64_7_max_dsp_1_ip.v" \
+"../../../../../Pmod-I2S2-master/arty-a7-35/proj/Pmod-I2S2-Arty-A7-35.ip_user_files/ipstatic/hdl/ip/master_audio_control_fadd_32ns_32ns_32_7_full_dsp_1_ip.v" \
+"../../../../../Pmod-I2S2-master/arty-a7-35/proj/Pmod-I2S2-Arty-A7-35.ip_user_files/ipstatic/hdl/ip/master_audio_control_fmul_32ns_32ns_32_4_max_dsp_1_ip.v" \
+"../../../../../Pmod-I2S2-master/arty-a7-35/proj/Pmod-I2S2-Arty-A7-35.ip_user_files/ipstatic/hdl/ip/master_audio_control_sitodp_32s_64_6_no_dsp_1_ip.v" \
+"../../../../../Pmod-I2S2-master/arty-a7-35/proj/Pmod-I2S2-Arty-A7-35.ip_user_files/ipstatic/hdl/ip/master_audio_control_sitofp_32ns_32_6_no_dsp_1_ip.v" \
+"../../../../../Pmod-I2S2-master/arty-a7-35/proj/Pmod-I2S2-Arty-A7-35.ip_user_files/ipstatic/hdl/verilog/master_audio_control_dadd_64ns_64ns_64_7_no_dsp_1.v" \
+"../../../../../Pmod-I2S2-master/arty-a7-35/proj/Pmod-I2S2-Arty-A7-35.ip_user_files/ipstatic/hdl/verilog/master_audio_control_dmul_64ns_64ns_64_7_max_dsp_1.v" \
+"../../../../../Pmod-I2S2-master/arty-a7-35/proj/Pmod-I2S2-Arty-A7-35.ip_user_files/ipstatic/hdl/verilog/master_audio_control_echo_stream_axis_sample_0_stream_axis_sample_0_bool_delay_buffer_RAM_AUTO_1R1W.v" \
+"../../../../../Pmod-I2S2-master/arty-a7-35/proj/Pmod-I2S2-Arty-A7-35.ip_user_files/ipstatic/hdl/verilog/master_audio_control_fadd_32ns_32ns_32_7_full_dsp_1.v" \
+"../../../../../Pmod-I2S2-master/arty-a7-35/proj/Pmod-I2S2-Arty-A7-35.ip_user_files/ipstatic/hdl/verilog/master_audio_control_fifo_w25_d8_S.v" \
+"../../../../../Pmod-I2S2-master/arty-a7-35/proj/Pmod-I2S2-Arty-A7-35.ip_user_files/ipstatic/hdl/verilog/master_audio_control_fmul_32ns_32ns_32_4_max_dsp_1.v" \
+"../../../../../Pmod-I2S2-master/arty-a7-35/proj/Pmod-I2S2-Arty-A7-35.ip_user_files/ipstatic/hdl/verilog/master_audio_control_hls_deadlock_idx0_monitor.v" \
+"../../../../../Pmod-I2S2-master/arty-a7-35/proj/Pmod-I2S2-Arty-A7-35.ip_user_files/ipstatic/hdl/verilog/master_audio_control_mul_24s_10ns_34_1_1.v" \
+"../../../../../Pmod-I2S2-master/arty-a7-35/proj/Pmod-I2S2-Arty-A7-35.ip_user_files/ipstatic/hdl/verilog/master_audio_control_mul_24s_10s_34_1_1.v" \
+"../../../../../Pmod-I2S2-master/arty-a7-35/proj/Pmod-I2S2-Arty-A7-35.ip_user_files/ipstatic/hdl/verilog/master_audio_control_mul_24s_11ns_35_1_1.v" \
+"../../../../../Pmod-I2S2-master/arty-a7-35/proj/Pmod-I2S2-Arty-A7-35.ip_user_files/ipstatic/hdl/verilog/master_audio_control_mul_24s_11s_35_1_1.v" \
+"../../../../../Pmod-I2S2-master/arty-a7-35/proj/Pmod-I2S2-Arty-A7-35.ip_user_files/ipstatic/hdl/verilog/master_audio_control_mul_24s_12ns_36_1_1.v" \
+"../../../../../Pmod-I2S2-master/arty-a7-35/proj/Pmod-I2S2-Arty-A7-35.ip_user_files/ipstatic/hdl/verilog/master_audio_control_regslice_both.v" \
+"../../../../../Pmod-I2S2-master/arty-a7-35/proj/Pmod-I2S2-Arty-A7-35.ip_user_files/ipstatic/hdl/verilog/master_audio_control_sitodp_32s_64_6_no_dsp_1.v" \
+"../../../../../Pmod-I2S2-master/arty-a7-35/proj/Pmod-I2S2-Arty-A7-35.ip_user_files/ipstatic/hdl/verilog/master_audio_control_sitofp_32ns_32_6_no_dsp_1.v" \
+"../../../../../Pmod-I2S2-master/arty-a7-35/proj/Pmod-I2S2-Arty-A7-35.ip_user_files/ipstatic/hdl/verilog/master_audio_control_sparsemux_9_3_24_1_1.v" \
+"../../../../../Pmod-I2S2-master/arty-a7-35/proj/Pmod-I2S2-Arty-A7-35.ip_user_files/ipstatic/hdl/verilog/master_audio_control_sparsemux_33_4_24_1_1.v" \
+"../../../../../Pmod-I2S2-master/arty-a7-35/proj/Pmod-I2S2-Arty-A7-35.ip_user_files/ipstatic/hdl/verilog/master_audio_control_srem_17ns_17ns_17_21_1.v" \
+"../../../../../Pmod-I2S2-master/arty-a7-35/proj/Pmod-I2S2-Arty-A7-35.ip_user_files/ipstatic/hdl/verilog/master_audio_control.v" \
+"../../../../Pmod-I2S2-Arty-A7-35.gen/sources_1/ip/master_audio_control_4/sim/master_audio_control_4.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

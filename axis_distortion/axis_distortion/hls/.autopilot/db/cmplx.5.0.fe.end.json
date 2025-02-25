@@ -1,0 +1,17 @@
+{
+    "0": {
+        "name": "master_audio_control",
+        "file": "control.cpp",
+        "fileloc": "6",
+        "instructions": "406",
+        "total_instructions": "406",
+        "calls": "",
+        "basicblocks": "27",
+        "loads": {
+            "G": "29"
+        },
+        "stores": {
+            "G": "29"
+        }
+    }
+}

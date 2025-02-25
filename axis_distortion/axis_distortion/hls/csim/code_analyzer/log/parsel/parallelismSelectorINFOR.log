@@ -1,0 +1,7 @@
+parallelismSelector::WARNG: WARNING: [SIM 211-207] Code Analyzer does not display the impact of the pipeline pragma in dataflow regions (C:\Users\ZachKrueger\Documents\AI\axis_distortion:0:0)
+parallelismSelector::WARNG: WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\Users\ZachKrueger\Documents\AI\axis_distortion\echo.cpp:15:1)
+parallelismSelector::WARNG: WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\Users\ZachKrueger\Documents\AI\axis_distortion\eq.cpp:48:1)
+parallelismSelector::WARNG: WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'pipeline' (C:\Users\ZachKrueger\Documents\AI\axis_distortion:0:0) as the pipelined function is not the top-level hardware function
+parallelismSelector::WARNG: WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'pipeline' (C:\Users\ZachKrueger\Documents\AI\axis_distortion:0:0) as the pipelined function is not the top-level hardware function
+parallelismSelector::WARNG: WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'pipeline' (C:\Users\ZachKrueger\Documents\AI\axis_distortion:0:0) as the pipelined function is not the top-level hardware function
+parallelismSelector::WARNG: WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'pipeline' (C:\Users\ZachKrueger\Documents\AI\axis_distortion:0:0) as the pipelined function is not the top-level hardware function

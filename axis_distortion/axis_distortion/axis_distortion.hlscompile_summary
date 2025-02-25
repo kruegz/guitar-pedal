@@ -1,0 +1,248 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\axis_distortion\\axis_distortion.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/20/25 15:31:42",
+ "timestampMillis": "1740087102632",
+ "buildStep": {
+  "cmdId": "78d3b3cd-401b-420d-92f2-019270fd089b",
+  "name": "v++",
+  "logFile": "C:/Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\axis_distortion\\logs\\axis_distortion.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.2/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\hls_config.cfg --work_dir axis_distortion ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\hls_config.cfg",
+   "--work_dir",
+   "axis_distortion"
+  ],
+  "iniFiles": [
+   {
+    "path": "C:/Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\hls_config.cfg",
+    "content": "part=xc7a35tcpg236-1\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\ncsim.code_analyzer=1\nsyn.top=master_audio_control\nsyn.file=distortion.cpp\nsyn.file=echo.cpp\nsyn.file=eq.cpp\nsyn.file=control.cpp\ntb.file=test_distortion.cpp\ntb.file=common.h\ntb.file=test_echo.cpp\ntb.file=test_control.cpp"
+   }
+  ],
+  "cwd": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/20/25 15:31:42",
+ "timestampMillis": "1740087102633",
+ "status": {
+  "cmdId": "78d3b3cd-401b-420d-92f2-019270fd089b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/20/25 15:31:57",
+ "timestampMillis": "1740087117759",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "master_audio_control",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\distortion.cpp",
+     "C:/Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\echo.cpp",
+     "C:/Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\eq.cpp",
+     "C:/Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\control.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/20/25 15:31:57",
+ "timestampMillis": "1740087117762",
+ "buildStep": {
+  "cmdId": "5625f7f5-c4db-4459-a94f-299b31391a15",
+  "name": "",
+  "logFile": "C:/Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\axis_distortion\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\ZachKrueger\\Documents\\AI\\axis_distortion"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/20/25 15:31:57",
+ "timestampMillis": "1740087117764",
+ "status": {
+  "cmdId": "5625f7f5-c4db-4459-a94f-299b31391a15",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/20/25 15:31:57",
+ "timestampMillis": "1740087117764",
+ "report": {
+  "path": "C:/Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\axis_distortion\\hls\\hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/20/25 15:31:57",
+ "timestampMillis": "1740087117765",
+ "report": {
+  "path": "C:/Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\axis_distortion\\hls\\syn\\report\\csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/20/25 15:31:57",
+ "timestampMillis": "1740087117766",
+ "report": {
+  "path": "C:/Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\axis_distortion\\hls\\syn\\report\\csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/20/25 15:33:04",
+ "timestampMillis": "1740087184482",
+ "report": {
+  "path": "C:/Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\axis_distortion\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/20/25 15:33:04",
+ "timestampMillis": "1740087184484",
+ "report": {
+  "path": "C:/Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\axis_distortion\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/20/25 15:33:04",
+ "timestampMillis": "1740087184485",
+ "report": {
+  "path": "C:/Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\axis_distortion\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/20/25 15:33:04",
+ "timestampMillis": "1740087184486",
+ "status": {
+  "cmdId": "5625f7f5-c4db-4459-a94f-299b31391a15",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/20/25 15:33:04",
+ "timestampMillis": "1740087184683",
+ "status": {
+  "cmdId": "78d3b3cd-401b-420d-92f2-019270fd089b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/20/25 15:33:04",
+ "timestampMillis": "1740087184776",
+ "report": {
+  "path": "C:/Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\axis_distortion\\reports\\v++_compile_axis_distortion_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/20/25 15:33:04",
+ "timestampMillis": "1740087184777",
+ "report": {
+  "path": "C:/Users\\ZachKrueger\\Documents\\AI\\axis_distortion\\axis_distortion\\reports\\.db\\v++_compile_axis_distortion_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

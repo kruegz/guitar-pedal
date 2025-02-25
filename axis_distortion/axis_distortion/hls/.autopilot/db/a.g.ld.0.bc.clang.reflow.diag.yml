@@ -1,0 +1,778 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                   Line: 326, Column: 17 }
+Function:        _ZNK9fp_structIfE8to_floatEv
+Args:            
+  - Callee:          'fp_struct<float>::data() const'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 309, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fp_struct<float>::to_float() const'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 322, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                   Line: 347, Column: 16 }
+Function:        _ZNK9fp_structIfE7to_ieeeEv
+Args:            
+  - Callee:          'fp_struct<float>::to_float() const'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 322, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 346, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                   Line: 12, Column: 16 }
+Function:        _Z16generic_copysignIfET_S0_S0_
+Args:            
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 283, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                       Line: 10, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                   Line: 14, Column: 13 }
+Function:        _Z16generic_copysignIfET_S0_S0_
+Args:            
+  - Callee:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h', 
+                       Line: 346, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                       Line: 10, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h', 
+                   Line: 13, Column: 10 }
+Function:        _Z12generic_fabsIfET_S0_
+Args:            
+  - Callee:          'float generic_copysign<float>(float, float)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h', 
+                       Line: 10, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'float generic_fabs<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h', 
+                       Line: 12, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib\hlsmath\src\c\fabsfloat.cpp', 
+                   Line: 8, Column: 12 }
+Function:        fabsf
+Args:            
+  - Callee:          'float generic_fabs<float>(float)'
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h', 
+                       Line: 12, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          fabsf
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib\hlsmath\src\c\fabsfloat.cpp', 
+                       Line: 7, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Xilinx/Vitis/2024.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\bits/std_abs.h', 
+                   Line: 75, Column: 12 }
+Function:        _ZSt3absf
+Args:            
+  - Callee:          fabsf
+    DebugLoc:        { File: 'C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib\hlsmath\src\c\fabsfloat.cpp', 
+                       Line: 7, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'std::abs(float)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis/2024.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\bits/std_abs.h', 
+                       Line: 75, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: distortion.cpp, Line: 36, Column: 13 }
+Function:        _Z10distortionRN3hls6streamI11axis_sampleLi0EEES3_bbi
+Args:            
+  - Callee:          'ap_int<24>::ap_int(float)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis/2024.2/common/technology/autopilot\ap_int.h', 
+                       Line: 143, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'distortion(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool, bool, int)'
+    DebugLoc:        { File: distortion.cpp, Line: 11, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: distortion.cpp, Line: 35, Column: 24 }
+Function:        _Z10distortionRN3hls6streamI11axis_sampleLi0EEES3_bbi
+Args:            
+  - Callee:          'std::abs(float)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis/2024.2/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\bits/std_abs.h', 
+                       Line: 75, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'distortion(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool, bool, int)'
+    DebugLoc:        { File: distortion.cpp, Line: 11, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: echo.cpp, Line: 31, Column: 35 }
+Function:        _Z4echoRN3hls6streamI11axis_sampleLi0EEES3_b
+Args:            
+  - Callee:          'ap_int<24>::ap_int(double)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis/2024.2/common/technology/autopilot\ap_int.h', 
+                       Line: 142, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'echo(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool)'
+    DebugLoc:        { File: echo.cpp, Line: 9, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: eq.cpp, Line: 65, Column: 39 }
+Function:        _Z8eq_3bandRN3hls6streamI11axis_sampleLi0EEES3_bfff
+Args:            
+  - Callee:          'ap_int<24>::ap_int(float)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis/2024.2/common/technology/autopilot\ap_int.h', 
+                       Line: 143, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'eq_3band(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool, float, float, float)'
+    DebugLoc:        { File: eq.cpp, Line: 34, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: eq.cpp, Line: 62, Column: 27 }
+Function:        _Z8eq_3bandRN3hls6streamI11axis_sampleLi0EEES3_bfff
+Args:            
+  - Callee:          'fir_filter(ap_int<24>, ap_fixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_int<24>*)'
+    DebugLoc:        { File: eq.cpp, Line: 17, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'eq_3band(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool, float, float, float)'
+    DebugLoc:        { File: eq.cpp, Line: 34, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: control.cpp, Line: 20, Column: 2 }
+Function:        _Z20master_audio_controlRN3hls6streamI11axis_sampleLi0EEES3_bbbiiii
+Args:            
+  - Callee:          'distortion(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool, bool, int)'
+    DebugLoc:        { File: distortion.cpp, Line: 11, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'master_audio_control(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool, bool, bool, int, int, int, int)'
+    DebugLoc:        { File: control.cpp, Line: 8, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: control.cpp, Line: 23, Column: 5 }
+Function:        _Z20master_audio_controlRN3hls6streamI11axis_sampleLi0EEES3_bbbiiii
+Args:            
+  - Callee:          'echo(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool)'
+    DebugLoc:        { File: echo.cpp, Line: 9, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'master_audio_control(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool, bool, bool, int, int, int, int)'
+    DebugLoc:        { File: control.cpp, Line: 8, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: control.cpp, Line: 26, Column: 5 }
+Function:        _Z20master_audio_controlRN3hls6streamI11axis_sampleLi0EEES3_bbbiiii
+Args:            
+  - Callee:          'eq_3band(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool, float, float, float)'
+    DebugLoc:        { File: eq.cpp, Line: 34, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'master_audio_control(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool, bool, bool, int, int, int, int)'
+    DebugLoc:        { File: control.cpp, Line: 8, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: eq.cpp, Line: 26, Column: 22 }
+Function:        _Z10fir_filter6ap_intILi24EEPK8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS0_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_26_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: eq.cpp, Line: 21, Column: 22 }
+Function:        _Z10fir_filter6ap_intILi24EEPK8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS0_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_21_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: eq.cpp, Line: 17, Column: 0 }
+Function:        _Z10fir_filter6ap_intILi24EEPK8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_26_2
+  - String:          ''' ('
+  - LoopLoc:         'eq.cpp:26:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          fir_filter
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: eq.cpp, Line: 17, Column: 0 }
+Function:        _Z10fir_filter6ap_intILi24EEPK8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_21_1
+  - String:          ''' ('
+  - LoopLoc:         'eq.cpp:21:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          fir_filter
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: echo.cpp, Line: 31, Column: 35 }
+Function:        _Z4echoRN3hls6streamI11axis_sampleLi0EEES3_b
+Args:            
+  - Callee:          'ap_int<24>::ap_int(double)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis/2024.2/common/technology/autopilot\ap_int.h', 
+                       Line: 142, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'echo(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool)'
+    DebugLoc:        { File: echo.cpp, Line: 9, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: eq.cpp, Line: 60, Column: 26 }
+Function:        _Z8eq_3bandRN3hls6streamI11axis_sampleLi0EEES3_bfff
+Args:            
+  - Callee:          'fir_filter(ap_int<24>, ap_fixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_int<24>*)'
+    DebugLoc:        { File: eq.cpp, Line: 17, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'eq_3band(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool, float, float, float)'
+    DebugLoc:        { File: eq.cpp, Line: 34, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: eq.cpp, Line: 65, Column: 39 }
+Function:        _Z8eq_3bandRN3hls6streamI11axis_sampleLi0EEES3_bfff
+Args:            
+  - Callee:          'ap_int<24>::ap_int(float)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis/2024.2/common/technology/autopilot\ap_int.h', 
+                       Line: 143, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'eq_3band(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool, float, float, float)'
+    DebugLoc:        { File: eq.cpp, Line: 34, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: control.cpp, Line: 20, Column: 2 }
+Function:        _Z20master_audio_controlRN3hls6streamI11axis_sampleLi0EEES3_bbbiiii
+Args:            
+  - Callee:          'distortion(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool, bool, int)'
+    DebugLoc:        { File: distortion.cpp, Line: 11, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'master_audio_control(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool, bool, bool, int, int, int, int)'
+    DebugLoc:        { File: control.cpp, Line: 8, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: control.cpp, Line: 23, Column: 5 }
+Function:        _Z20master_audio_controlRN3hls6streamI11axis_sampleLi0EEES3_bbbiiii
+Args:            
+  - Callee:          'echo(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool)'
+    DebugLoc:        { File: echo.cpp, Line: 9, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'master_audio_control(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool, bool, bool, int, int, int, int)'
+    DebugLoc:        { File: control.cpp, Line: 8, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: control.cpp, Line: 26, Column: 5 }
+Function:        _Z20master_audio_controlRN3hls6streamI11axis_sampleLi0EEES3_bbbiiii
+Args:            
+  - Callee:          'eq_3band(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool, float, float, float)'
+    DebugLoc:        { File: eq.cpp, Line: 34, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'master_audio_control(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool, bool, bool, int, int, int, int)'
+    DebugLoc:        { File: control.cpp, Line: 8, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_master_audio_control_ir
+Args:            
+  - Callee:          'master_audio_control(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool, bool, bool, int, int, int, int)'
+    DebugLoc:        { File: control.cpp, Line: 8, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_master_audio_control_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: echo.cpp, Line: 9, Column: 0 }
+Function:        _Z4echoRN3hls6streamI11axis_sampleLi0EEES3_b
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int<24>::ap_int(double)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis/2024.2/common/technology/autopilot\ap_int.h', 
+                       Line: 142, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'echo(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool)'
+    DebugLoc:        { File: echo.cpp, Line: 9, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: eq.cpp, Line: 34, Column: 0 }
+Function:        _Z8eq_3bandRN3hls6streamI11axis_sampleLi0EEES3_bfff
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int<24>::ap_int(float)'
+    DebugLoc:        { File: 'C:/Xilinx/Vitis/2024.2/common/technology/autopilot\ap_int.h', 
+                       Line: 143, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'eq_3band(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool, float, float, float)'
+    DebugLoc:        { File: eq.cpp, Line: 34, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: eq.cpp, Line: 44, Column: 0 }
+Function:        _Z8eq_3bandRN3hls6streamI11axis_sampleLi0EEES3_bfff
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ8eq_3bandRN3hls6streamI11axis_sampleLi0EEES3_bfffE9delay_low
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: eq.cpp, Line: 45, Column: 0 }
+Function:        _Z8eq_3bandRN3hls6streamI11axis_sampleLi0EEES3_bfff
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ8eq_3bandRN3hls6streamI11axis_sampleLi0EEES3_bfffE9delay_mid
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: eq.cpp, Line: 46, Column: 0 }
+Function:        _Z8eq_3bandRN3hls6streamI11axis_sampleLi0EEES3_bfff
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ8eq_3bandRN3hls6streamI11axis_sampleLi0EEES3_bfffE10delay_high
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: echo.cpp, Line: 14, Column: 0 }
+Function:        _Z4echoRN3hls6streamI11axis_sampleLi0EEES3_b
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ4echoRN3hls6streamI11axis_sampleLi0EEES3_bE12delay_buffer
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '16'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: control.cpp, Line: 13, Column: 34 }
+Function:        _Z20master_audio_controlRN3hls6streamI11axis_sampleLi0EEES3_bbbiiii
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            temp2
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '25'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: control.cpp, Line: 13, Column: 27 }
+Function:        _Z20master_audio_controlRN3hls6streamI11axis_sampleLi0EEES3_bbbiiii
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            temp1
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '25'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: control.cpp, Line: 20, Column: 2 }
+Function:        _Z20master_audio_controlRN3hls6streamI11axis_sampleLi0EEES3_bbbiiii
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'distortion(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool, bool, int)'
+    DebugLoc:        { File: distortion.cpp, Line: 11, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'master_audio_control(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool, bool, bool, int, int, int, int)'
+    DebugLoc:        { File: control.cpp, Line: 8, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: control.cpp, Line: 23, Column: 5 }
+Function:        _Z20master_audio_controlRN3hls6streamI11axis_sampleLi0EEES3_bbbiiii
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'echo(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool)'
+    DebugLoc:        { File: echo.cpp, Line: 9, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'master_audio_control(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool, bool, bool, int, int, int, int)'
+    DebugLoc:        { File: control.cpp, Line: 8, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: control.cpp, Line: 26, Column: 5 }
+Function:        _Z20master_audio_controlRN3hls6streamI11axis_sampleLi0EEES3_bbbiiii
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'eq_3band(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool, float, float, float)'
+    DebugLoc:        { File: eq.cpp, Line: 34, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'master_audio_control(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool, bool, bool, int, int, int, int)'
+    DebugLoc:        { File: control.cpp, Line: 8, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: eq.cpp, Line: 60, Column: 26 }
+Function:        _Z20master_audio_controlRN3hls6streamI11axis_sampleLi0EEES3_bbbiiii
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'fir_filter(ap_int<24>, ap_fixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_int<24>*)'
+    DebugLoc:        { File: eq.cpp, Line: 17, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'master_audio_control(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool, bool, bool, int, int, int, int)'
+    DebugLoc:        { File: control.cpp, Line: 8, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: eq.cpp, Line: 61, Column: 26 }
+Function:        _Z20master_audio_controlRN3hls6streamI11axis_sampleLi0EEES3_bbbiiii
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'fir_filter(ap_int<24>, ap_fixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_int<24>*)'
+    DebugLoc:        { File: eq.cpp, Line: 17, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'master_audio_control(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool, bool, bool, int, int, int, int)'
+    DebugLoc:        { File: control.cpp, Line: 8, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: eq.cpp, Line: 62, Column: 27 }
+Function:        _Z20master_audio_controlRN3hls6streamI11axis_sampleLi0EEES3_bbbiiii
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'fir_filter(ap_int<24>, ap_fixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_int<24>*)'
+    DebugLoc:        { File: eq.cpp, Line: 17, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'master_audio_control(hls::stream<axis_sample, 0>&, hls::stream<axis_sample, 0>&, bool, bool, bool, int, int, int, int)'
+    DebugLoc:        { File: control.cpp, Line: 8, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+Function:        _Z8eq_3bandRN3hls6streamI11axis_sampleLi0EEES3_bfff
+Args:            
+  - String:          'Automatically partitioning array '''
+  - Value:           lpf_coeffs
+  - String:          ''' dimension '
+  - Dim:             '1'
+  - String:          ' completely based on constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+Function:        _Z8eq_3bandRN3hls6streamI11axis_sampleLi0EEES3_bfff
+Args:            
+  - String:          'Automatically partitioning array '''
+  - Value:           bpf_coeffs
+  - String:          ''' dimension '
+  - Dim:             '1'
+  - String:          ' completely based on constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+Function:        _Z8eq_3bandRN3hls6streamI11axis_sampleLi0EEES3_bfff
+Args:            
+  - String:          'Automatically partitioning array '''
+  - Value:           hpf_coeffs
+  - String:          ''' dimension '
+  - Dim:             '1'
+  - String:          ' completely based on constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+Function:        _Z20master_audio_controlRN3hls6streamI11axis_sampleLi0EEES3_bbbiiii
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=bpf_coeffs'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  master_audio_control
+  - String:          ' '
+  - PragmaSrcLoc:    'eq.cpp:37:9'
+    DebugLoc:        { File: eq.cpp, Line: 37, Column: 9 }
+  - VarName:         bpf_coeffs
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: eq.cpp, Line: 37, Column: 9 }
+Function:        _Z20master_audio_controlRN3hls6streamI11axis_sampleLi0EEES3_bbbiiii
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            bpf_coeffs
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+Function:        _Z20master_audio_controlRN3hls6streamI11axis_sampleLi0EEES3_bbbiiii
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=hpf_coeffs'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  master_audio_control
+  - String:          ' '
+  - PragmaSrcLoc:    'eq.cpp:37:9'
+    DebugLoc:        { File: eq.cpp, Line: 37, Column: 9 }
+  - VarName:         hpf_coeffs
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: eq.cpp, Line: 37, Column: 9 }
+Function:        _Z20master_audio_controlRN3hls6streamI11axis_sampleLi0EEES3_bbbiiii
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            hpf_coeffs
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+Function:        _Z20master_audio_controlRN3hls6streamI11axis_sampleLi0EEES3_bbbiiii
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=lpf_coeffs'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  master_audio_control
+  - String:          ' '
+  - PragmaSrcLoc:    'eq.cpp:37:9'
+    DebugLoc:        { File: eq.cpp, Line: 37, Column: 9 }
+  - VarName:         lpf_coeffs
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: eq.cpp, Line: 37, Column: 9 }
+Function:        _Z20master_audio_controlRN3hls6streamI11axis_sampleLi0EEES3_bbbiiii
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            lpf_coeffs
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+Function:        _Z20master_audio_controlRN3hls6streamI11axis_sampleLi0EEES3_bbbiiii
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          lpf_coeffs
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+Function:        _Z20master_audio_controlRN3hls6streamI11axis_sampleLi0EEES3_bbbiiii
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          hpf_coeffs
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+Function:        _Z20master_audio_controlRN3hls6streamI11axis_sampleLi0EEES3_bbbiiii
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          bpf_coeffs
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...

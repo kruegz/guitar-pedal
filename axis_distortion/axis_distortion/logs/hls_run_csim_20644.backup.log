@@ -1,0 +1,245 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/Users/ZachKrueger/Documents/AI/axis_distortion/axis_distortion 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+WARNING: [HLS 200-2001] file not found 'distortion.h' see [hls] from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying ini 'syn.file=distortion.cpp' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ZachKrueger/Documents/AI/axis_distortion/distortion.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=distortion.h' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(10)
+WARNING: [HLS 200-40] Cannot find design file 'distortion.h'
+INFO: [HLS 200-1465] Applying ini 'syn.file=echo.cpp' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ZachKrueger/Documents/AI/axis_distortion/echo.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=eq.cpp' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ZachKrueger/Documents/AI/axis_distortion/eq.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=control.cpp' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ZachKrueger/Documents/AI/axis_distortion/control.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=test_distortion.cpp' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/ZachKrueger/Documents/AI/axis_distortion/test_distortion.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=common.h' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/ZachKrueger/Documents/AI/axis_distortion/common.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=test_echo.cpp' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(16)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/ZachKrueger/Documents/AI/axis_distortion/test_echo.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=test_control.cpp' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(17)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/ZachKrueger/Documents/AI/axis_distortion/test_control.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=distortion' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7a35tcpg236-1' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7a35t-cpg236-1'
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/ZachKrueger/Documents/AI/axis_distortion/hls_config.cfg(5)
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [HLS 211-200] Compiling source code C:/Users/ZachKrueger/Documents/AI/axis_distortion/test_control.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Linking executable
+INFO: [HLS 211-200] Computing HLS IR Information
+INFO: [HLS 211-200] Determining source code dependencies
+INFO: [SIM 211-200] Running executable
+Index | Input | Output
+----------------------
+Input: 0 0    | 0  | 0
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+1    | 1545084  | 0
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+2    | 2938926  | 1545084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+3    | 4045084  | 2938926
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+4    | 4755282  | 4045084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+5    | 5000000  | 4755282
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+6    | 4755282  | 5000000
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+7    | 4045084  | 4755282
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+8    | 2938926  | 4045084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+9    | 1545084  | 2938926
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+10    | 0  | 1545084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+11    | -1545084  | 0
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+12    | -2938926  | -1545084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+13    | -4045084  | -2938926
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+14    | -4755282  | -4045084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+15    | -5000000  | -4755282
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+16    | -4755282  | -5000000
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+17    | -4045084  | -4755282
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+18    | -2938926  | -4045084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+19    | -1545084  | -2938926
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+20    | 0  | -1545084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+21    | 1545084  | 0
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+22    | 2938926  | 1545084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+23    | 4045084  | 2938926
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+24    | 4755282  | 4045084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+25    | 5000000  | 4755282
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+26    | 4755282  | 5000000
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+27    | 4045084  | 4755282
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+28    | 2938926  | 4045084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+29    | 1545084  | 2938926
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+30    | 0  | 1545084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+31    | -1545084  | 0
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+32    | -2938926  | -1545084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+33    | -4045084  | -2938926
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+34    | -4755282  | -4045084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+35    | -5000000  | -4755282
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+36    | -4755282  | -5000000
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+37    | -4045084  | -4755282
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+38    | -2938926  | -4045084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+39    | -1545084  | -2938926
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+40    | 0  | -1545084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+41    | 1545084  | 0
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+42    | 2938926  | 1545084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+43    | 4045084  | 2938926
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+44    | 4755282  | 4045084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+45    | 5000000  | 4755282
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+46    | 4755282  | 5000000
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+47    | 4045084  | 4755282
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+48    | 2938926  | 4045084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+49    | 1545084  | 2938926
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+50    | 0  | 1545084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+51    | -1545084  | 0
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+52    | -2938926  | -1545084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+53    | -4045084  | -2938926
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+54    | -4755282  | -4045084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+55    | -5000000  | -4755282
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+56    | -4755282  | -5000000
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+57    | -4045084  | -4755282
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+58    | -2938926  | -4045084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+59    | -1545084  | -2938926
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+60    | 0  | -1545084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+61    | 1545084  | 0
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+62    | 2938926  | 1545084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+63    | 4045084  | 2938926
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+64    | 4755282  | 4045084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+65    | 5000000  | 4755282
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+66    | 4755282  | 5000000
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+67    | 4045084  | 4755282
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+68    | 2938926  | 4045084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+69    | 1545084  | 2938926
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+70    | 0  | 1545084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+71    | -1545084  | 0
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+72    | -2938926  | -1545084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+73    | -4045084  | -2938926
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+74    | -4755282  | -4045084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+75    | -5000000  | -4755282
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+76    | -4755282  | -5000000
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+77    | -4045084  | -4755282
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+78    | -2938926  | -4045084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+79    | -1545084  | -2938926
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+80    | 0  | -1545084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+81    | 1545084  | 0
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+82    | 2938926  | 1545084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+83    | 4045084  | 2938926
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+84    | 4755282  | 4045084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+85    | 5000000  | 4755282
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+86    | 4755282  | 5000000
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+87    | 4045084  | 4755282
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+88    | 2938926  | 4045084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+89    | 1545084  | 2938926
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+90    | 0  | 1545084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+91    | -1545084  | 0
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+92    | -2938926  | -1545084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+93    | -4045084  | -2938926
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+94    | -4755282  | -4045084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+95    | -5000000  | -4755282
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+96    | -4755282  | -5000000
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+97    | -4045084  | -4755282
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+98    | -2938926  | -4045084
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_1' is read while empty, which may result in RTL simulation hanging.
+99    | -1545084  | -2938926
+spec:0:0: warning: Hls::stream 'hls::stream<axis_sample, 0>_0' contains leftover data, which may result in RTL simulation hanging.
+INFO: [SIM 211-200] Analyzing trace data
+INFO: [SIM 211-208] Running Code Analyzer
+WARNING: [SIM 211-207] Code Analyzer does not display the impact of the pipeline pragma in dataflow regions (C:\Users\ZachKrueger\Documents\AI\axis_distortion:0:0)
+INFO: [SIM 211-210] Code Analyzer finished
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 23.651 seconds; peak allocated memory: 161.652 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 29s

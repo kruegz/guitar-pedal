@@ -1,12 +1,12 @@
 # Guitar Pedal
 
-Guitar audio effects module build on FPGA
+Guitar audio effects module build on FPGA using high level synthesis
 
 # Features
-* Sine wave generator
+* Distortion
+* Echo
+* 3 channel EQ
+* User configuration
 
 # Bugs
-[ ] No echo
-[ ] No limiter
-[ ] No scaler
-[ ] Effect values not displayed on 7-segment display
+* [ ] Switches have dual use for enable/disable of effects and configuration increment
